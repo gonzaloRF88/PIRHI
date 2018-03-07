@@ -167,46 +167,68 @@
 \usepackage[none]{hyphenat}
 \usepackage{multicol}
 
+% Regla con color
+\makeatletter
+\let\old@rule\@rule
+\def\@rule[#1]#2#3{\textcolor{rulecolor}{\old@rule[#1]{#2}{#3}}}
+\makeatother
+% Cambiar color de regla
+\definecolor{rulecolor}{RGB}{183,183,183}
+
+% Color para las letras del título
+\definecolor{casinegro}{RGB}{71,71,71}
+
 \begin{document}
 \sloppy 
+
+\newgeometry{left=3cm,bottom=0cm,top=1cm,right=3cm}
 
 \begin{titlepage}
 
 \begin{figure} [H]
-  \includegraphics[width=.25\textwidth]{Logo/bg_gob_logo.png}
+  \includegraphics[width=.2\textwidth]{Logo/bg_gob_logo.png}
 \end{figure}
 
-\fontsize{15}{0} \selectfont{\textbf{"PLANIFICACIÓN DE LA INVERSIÓN EN REVESTIMIENTOS HÍDRICOS"}} \vspace*{.1in}\\
-\fontsize{15}{0} \selectfont{FIC-R 2016}\vspace*{.1in}
+\fontsize{15}{0} \selectfont{\textbf{\textcolor{casinegro}{``PLANIFICACIÓN DE LA INVERSIÓN EN REVESTIMIENTOS HÍDRICOS"}}} \vspace*{.1in}\\ % el inicio de comillas simples es ` y de doble es de ``.
+\fontsize{15}{0} \selectfont{\textcolor{casinegro}{FIC-R 2016}}\\
+\rule{10cm}{.05cm}
+\vspace*{.1in}
 \hspace*{.2in}
 
-\fontsize{14}{0} \selectfont{Universidad de La Serena} \vspace*{.1in}\\
-\fontsize{14}{0} \selectfont{\textbf{Región de Coquimbo}}
+\fontsize{14}{0} \selectfont{\textcolor{casinegro}{Universidad de La Serena}} \vspace*{.1in}\\
+\fontsize{14}{0} \selectfont{\textbf{\textcolor{casinegro}{Región de Coquimbo}}}
+
+\vspace*{.1in}
 
 \begin{figure}[H]
   \centering
-\begin{subfigure}{.25\textwidth}
+\begin{subfigure}[c]{.2\textwidth}
   \includegraphics[width=\textwidth]{Logo/GOB_RGB.png}
 \end{subfigure}
 \hfill
-\begin{subfigure}{.25\textwidth}
+\begin{subfigure}[c]{.23\textwidth}
   \includegraphics[width=\textwidth]{Logo/uls.png} 
 \end{subfigure}
 \end{figure}
 \vspace*{4in}
 
-
-
-\fontsize{14}{0} \selectfont{Marzo 2018}
-
-
-
-
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{.74\textwidth}
+   \fontsize{14}{0} \selectfont{\textcolor{casinegro}{Marzo 2018}} \\
+   {\definecolor{rulecolor}{named}{casinegro}\rule[-3mm]{10cm}{.05cm}}
+\end{subfigure}
+\hfill
+\begin{subfigure}{.25\textwidth}
+\hfill
+  \includegraphics[width=\textwidth]{Logo/lgore.pdf} 
+\end{subfigure}
+\end{figure}
 
 
 \end{titlepage}
 
-
+\restoregeometry
 
 
 \end{document}
