@@ -1,0 +1,1012 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={ACTIVIDAD 1. PIRHI},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{Diagnóstico técnico-social del protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{}
+  \preauthor{}\postauthor{}
+  \date{}
+  \predate{}\postdate{}
+
+\usepackage{geometry}
+\geometry{letterpaper}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{appendix}  
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{rotating}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[		
+ BoldFont={Century Gothic Bold}, 
+ ItalicFont={Century Gothic Italic},
+ BoldItalicFont={Century Gothic Bold Italic}
+ ]{Century Gothic}
+
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Cuadro} 
+\renewcommand{\contentsname}{Tabla de contenidos\\} 
+\renewcommand{\listfigurename}{Índice de figuras\\}
+\renewcommand{\listtablename}{Índice de cuadros\\} 
+\renewcommand{\appendixname}{Anexos}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+
+
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{color}
+\usepackage{framed}
+\usepackage{tabulary}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage[normalem]{ulem}
+\usepackage[none]{hyphenat}
+
+\begin{document}
+\sloppy 
+
+\begin{titlepage}
+
+\begin{figure}
+ \centering \vspace*{1.5in}
+  \includegraphics[width=.3\textwidth]{Logo/horizsinfondo.png}
+  \vspace*{1in}
+\end{figure}
+\maketitle \thispagestyle{empty} \vspace*{3in}
+\begin{center}
+    \fontsize{14}{0} \selectfont{Marzo 2018}
+\end{center}
+
+\end{titlepage}
+
+\section{El Churque - Entrada (FID:0, ID:36)}\label{ID:36}
+
+\subsection{Resumen aforos El Churque - Entrada (FID:0, ID:36)}\label{aforos ID:36}
+
+Se realizaron 19 aforos frente a la estación de monitoreo de caudal, cuya sección de aforo presenta un ancho de 1,31 m con una geometría rectangular y revestida en hormigón. Los aforos corresponden a 7 alturas de lámina de agua registradas en el limnímetro del pozo de aquietamiento de la estación, además se registró una lámina de nivel base o caudal de 0,0 l/s.
+
+\begin{table}[H]
+
+\caption{Resumen de aforos estación telemétrica El Churque - Entrada}
+\centering
+\begin{tabu} to \linewidth {>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+\toprule
+\textbf{Altura (m)} & \textbf{Caudal (l/s)} & \textbf{Caudal promedio (l/s)} & \textbf{Desviación estándar} & \textbf{Coeficiente de variabilidad (\%)}\\
+\midrule
+ & 257,002 &  &  & \\
+
+ & 260,054 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,31} & 260,514 & \multirow{-3}{*}{\centering\arraybackslash 259,190} & \multirow{-3}{*}{\centering\arraybackslash 1,909} & \multirow{-3}{*}{\centering\arraybackslash 0,736}\\
+\cmidrule{1-5}
+ & 275,469 &  &  & \\
+
+ & 279,748 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,33} & 280,542 & \multirow{-3}{*}{\centering\arraybackslash 278,586} & \multirow{-3}{*}{\centering\arraybackslash 2,729} & \multirow{-3}{*}{\centering\arraybackslash 0,979}\\
+\cmidrule{1-5}
+ & 329,665 &  &  & \\
+
+ & 331,859 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,37} & 332,002 & \multirow{-3}{*}{\centering\arraybackslash 331,175} & \multirow{-3}{*}{\centering\arraybackslash 1,310} & \multirow{-3}{*}{\centering\arraybackslash 0,396}\\
+\cmidrule{1-5}
+ & 370,140 &  &  & \\
+
+ & 376,337 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,39} & 378,582 & \multirow{-3}{*}{\centering\arraybackslash 375,020} & \multirow{-3}{*}{\centering\arraybackslash 4,373} & \multirow{-3}{*}{\centering\arraybackslash 1,166}\\
+\cmidrule{1-5}
+ & 542,485 &  &  & \\
+
+ & 543,938 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,51} & 548,722 & \multirow{-3}{*}{\centering\arraybackslash 545,048} & \multirow{-3}{*}{\centering\arraybackslash 3,263} & \multirow{-3}{*}{\centering\arraybackslash 0,599}\\
+\cmidrule{1-5}
+0,64 & 776,961 & 776,961 & NaN & NaN\\
+\cmidrule{1-5}
+ & 948,238 &  &  & \\
+
+ & 950,686 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,67} & 952,687 & \multirow{-3}{*}{\centering\arraybackslash 950,537} & \multirow{-3}{*}{\centering\arraybackslash 2,228} & \multirow{-3}{*}{\centering\arraybackslash 0,234}\\
+\bottomrule
+\end{tabu}
+\end{table}
+
+\subsection{Construcción curvas de descarga estación telemétrica El Churque - Entrada (FID:0, ID:36)}\label{construcción curva}
+
+Se construyeron 2 curvas de descarga de caudal. La primera se denomina "Curva de descarga FID:0" y se generó mediante un proceso de regresión no lineal entre el caudal (\(Q\)) y el nivel de agua correspondiente (\(h\)), el cual utilizó una ecuación polinomial de segundo grado o cuadrática, desarrollada en el programa Microsoft Excel.\\
+\\
+La segunda se denomina "Curva de descarga ID:36" y se generó mediante un modelo que utiliza un proceso de regresión no lineal entre el caudal (\(Q\)) y el nivel de agua correspondiente (\(h\)). Asumiendo un caudal constante, son dos los tipos de ecuaciones principalemente usados en hidrometría\footnote{\emph{En}:  W. Boiten. 2003. Hydrometry: IHE Delft Lecture Note Series. Capítulo   4.}, estas son las ecuación de potencia y la polinomial de segundo grado o cuadrática. Se utilizó la variación del coeficiente de determinación para evaluar el modelo a utilizar, ya que este coeficiente determina la calidad del modelo (se escoje el modelo que obtiene un valor de este indicador más cercano a 1). La construcción del modelo se realizó según el algoritmo de resolución de problemas de mínimos cuadrados no lineales modificado por Levenberg-Marquardt\footnote{J.J. Moré, ``The Leveng-Marquardt   algorithm: implementation and theory,'' in \emph{Lecture Notes} en   \emph{Mathematics} \textbf{630}: Numerial Analysis, G.A. Watson   (Editor), Springer-Verlag: Berlín, 1978, pp.~105-116.} en el ambiente computacional/lenguaje de programación \textbf{R}.
+
+
+
+\subsubsection{Curva de descarga FID:0}\label{CD FID:0}
+
+Ecuación de descarga de caudal:
+
+\[Q = 1493* {{h_w}^2} + 334,45* h_w + 3,8372\]
+
+donde:
+
+\(Q\) = Caudal (l/s); \(h_w\) = altura de referencia (m).
+
+El coeficiente \(R^2\): 0,9907
+
+
+\begin{table}[H]
+
+\caption{Tabla de altura - caudal FID:0}
+\centering
+
+\begin{center}
+\begingroup\fontsize{10pt}{11pt}\selectfont
+\begin{tabular}{rcrrcrrcr}
+  \hline
+ & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) \\ 
+  \hline
+  1 & 0,00 & 0,00 &  26 & 0,25 & 180,81 &  51 & 0,50 & 544,51 \\ 
+    2 & 0,01 & 7,33 &  27 & 0,26 & 191,78 &  52 & 0,51 & 562,94 \\ 
+    3 & 0,02 & 11,12 &  28 & 0,27 & 203,04 &  53 & 0,52 & 581,67 \\ 
+    4 & 0,03 & 15,22 &  29 & 0,28 & 214,60 &  54 & 0,53 & 600,70 \\ 
+    5 & 0,04 & 19,61 &  30 & 0,29 & 226,46 &  55 & 0,54 & 620,03 \\ 
+    6 & 0,05 & 24,29 &  31 & 0,30 & 238,61 &  56 & 0,55 & 639,66 \\ 
+    7 & 0,06 & 29,28 &  32 & 0,31 & 251,07 &  57 & 0,56 & 659,58 \\ 
+    8 & 0,07 & 34,57 &  33 & 0,32 & 263,83 &  58 & 0,57 & 679,81 \\ 
+    9 & 0,08 & 40,15 &  34 & 0,33 & 276,88 &  59 & 0,58 & 700,33 \\ 
+   10 & 0,09 & 46,04 &  35 & 0,34 & 290,23 &  60 & 0,59 & 721,15 \\ 
+   11 & 0,10 & 52,22 &  36 & 0,35 & 303,89 &  61 & 0,60 & 742,28 \\ 
+   12 & 0,11 & 58,70 &  37 & 0,36 & 317,84 &  62 & 0,61 & 763,69 \\ 
+   13 & 0,12 & 65,48 &  38 & 0,37 & 332,08 &  63 & 0,62 & 785,41 \\ 
+   14 & 0,13 & 72,56 &  39 & 0,38 & 346,63 &  64 & 0,63 & 807,43 \\ 
+   15 & 0,14 & 79,94 &  40 & 0,39 & 361,48 &  65 & 0,64 & 829,75 \\ 
+   16 & 0,15 & 87,62 &  41 & 0,40 & 376,63 &  66 & 0,65 & 852,36 \\ 
+   17 & 0,16 & 95,59 &  42 & 0,41 & 392,07 &  67 & 0,66 & 875,27 \\ 
+   18 & 0,17 & 103,86 &  43 & 0,42 & 407,81 &  68 & 0,67 & 898,49 \\ 
+   19 & 0,18 & 112,44 &  44 & 0,43 & 423,85 &  &  &  \\ 
+   20 & 0,19 & 121,31 &  45 & 0,44 & 440,19 &  &  &  \\ 
+   21 & 0,20 & 130,48 &  46 & 0,45 & 456,83 &  &  &  \\ 
+   22 & 0,21 & 139,95 &  47 & 0,46 & 473,77 &  &  &  \\ 
+   23 & 0,22 & 149,72 &  48 & 0,47 & 491,01 &  &  &  \\ 
+   24 & 0,23 & 159,78 &  49 & 0,48 & 508,54 &  &  &  \\ 
+   25 & 0,24 & 170,15 &  50 & 0,49 & 526,38 &  &  &  \\ 
+   \hline
+\end{tabular}
+\endgroup\end{center}
+\end{table}
+
+\clearpage
+
+\subsubsection{Curva de descarga ID:36}\label{ID:36}
+
+Ecuación de descarga de caudal:
+
+\[Q = 351,18* h_w + 1477*{{h_w}^2}\]
+
+donde:
+
+\(Q\) = Caudal (l/s); \(h_w\) = altura de referencia (m).
+
+El coeficiente \(R^2\): 0,986
+
+
+\begin{table}[H]
+
+\caption{Tabla de altura - caudal ID:36}
+\centering
+
+\begin{center}
+\begingroup\fontsize{10pt}{11pt}\selectfont
+\begin{tabular}{rcrrcrrcr}
+  \hline
+ & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) \\ 
+  \hline
+  1 & 0,00 & 0,00 &  26 & 0,25 & 180,11 &  51 & 0,50 & 544,84 \\ 
+    2 & 0,01 & 3,66 &  27 & 0,26 & 191,15 &  52 & 0,51 & 563,27 \\ 
+    3 & 0,02 & 7,61 &  28 & 0,27 & 202,49 &  53 & 0,52 & 582,00 \\ 
+    4 & 0,03 & 11,86 &  29 & 0,28 & 214,13 &  54 & 0,53 & 601,02 \\ 
+    5 & 0,04 & 16,41 &  30 & 0,29 & 226,06 &  55 & 0,54 & 620,33 \\ 
+    6 & 0,05 & 21,25 &  31 & 0,30 & 238,29 &  56 & 0,55 & 639,94 \\ 
+    7 & 0,06 & 26,39 &  32 & 0,31 & 250,81 &  57 & 0,56 & 659,85 \\ 
+    8 & 0,07 & 31,82 &  33 & 0,32 & 263,62 &  58 & 0,57 & 680,05 \\ 
+    9 & 0,08 & 37,55 &  34 & 0,33 & 276,74 &  59 & 0,58 & 700,55 \\ 
+   10 & 0,09 & 43,57 &  35 & 0,34 & 290,14 &  60 & 0,59 & 721,34 \\ 
+   11 & 0,10 & 49,89 &  36 & 0,35 & 303,85 &  61 & 0,60 & 742,43 \\ 
+   12 & 0,11 & 56,50 &  37 & 0,36 & 317,85 &  62 & 0,61 & 763,81 \\ 
+   13 & 0,12 & 63,41 &  38 & 0,37 & 332,14 &  63 & 0,62 & 785,49 \\ 
+   14 & 0,13 & 70,62 &  39 & 0,38 & 346,73 &  64 & 0,63 & 807,47 \\ 
+   15 & 0,14 & 78,11 &  40 & 0,39 & 361,61 &  65 & 0,64 & 829,74 \\ 
+   16 & 0,15 & 85,91 &  41 & 0,40 & 376,79 &  66 & 0,65 & 852,30 \\ 
+   17 & 0,16 & 94,00 &  42 & 0,41 & 392,27 &  67 & 0,66 & 875,16 \\ 
+   18 & 0,17 & 102,39 &  43 & 0,42 & 408,04 &  68 & 0,67 & 898,32 \\ 
+   19 & 0,18 & 111,07 &  44 & 0,43 & 424,11 &  &  &  \\ 
+   20 & 0,19 & 120,04 &  45 & 0,44 & 440,47 &  &  &  \\ 
+   21 & 0,20 & 129,32 &  46 & 0,45 & 457,12 &  &  &  \\ 
+   22 & 0,21 & 138,88 &  47 & 0,46 & 474,08 &  &  &  \\ 
+   23 & 0,22 & 148,75 &  48 & 0,47 & 491,33 &  &  &  \\ 
+   24 & 0,23 & 158,91 &  49 & 0,48 & 508,87 &  &  &  \\ 
+   25 & 0,24 & 169,36 &  50 & 0,49 & 526,71 &  &  &  \\ 
+   \hline
+\end{tabular}
+\endgroup\end{center}
+\end{table}
+
+\subsection{Comparación curvas de descarga estación telemétrica El Churque - Entrada (FID:0, ID:36)}\label{comparación curvas}
+
+Las curvas de descarga generadas para este punto de control no presentan grandes diferencias al analizar las tablas de altura - caudal. Las principales diferencias se presentan en los caudales más bajos, lo cual se puede deber a que no se realizaron aforos con estos caudales.
+
+\clearpage
+
+\section{Control Agrícola Tamaya (ID:37)}\label{ID:37}
+
+\subsection{Resumen aforos Control Agrícola Tamaya (ID:37)}\label{aforos ID:37}
+
+Se realizaron 16 aforos frente a la estación de monitoreo de caudal, cuya sección de aforo se encuentra revestida con hormigón en el fondo y losetas de hormigón en los costados, presenta una forma geométrica de tipo trapezoidal, por lo que el ancho o espejo de agua se encuentra condicionado a la altura de lámina de agua pasante, el cual varía hasta los 1,68 m según la máxima altura aforada. Los aforos corresponden a 6 alturas de lámina de agua registradas en el limnímetro del pozo de aquietamiento de la estación, además se registró una lámina de nivel base o caudal de 0,0 l/s.
+
+\begin{table}[H]
+
+\caption{Resumen de aforos estación telemétrica Control Agrícola Tamaya}
+\centering
+\begin{tabu} to \linewidth {>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+\toprule
+\textbf{Altura (m)} & \textbf{Caudal (l/s)} & \textbf{Caudal promedio (l/s)} & \textbf{Desviación estándar} & \textbf{Coeficiente de variabilidad (\%)}\\
+\midrule
+ & 233,342 &  &  & \\
+
+ & 233,700 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,34} & 233,735 & \multirow{-3}{*}{\centering\arraybackslash 233,592} & \multirow{-3}{*}{\centering\arraybackslash 0,217} & \multirow{-3}{*}{\centering\arraybackslash 0,093}\\
+\cmidrule{1-5}
+ & 283,597 &  &  & \\
+
+ & 284,092 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,38} & 284,099 & \multirow{-3}{*}{\centering\arraybackslash 283,929} & \multirow{-3}{*}{\centering\arraybackslash 0,288} & \multirow{-3}{*}{\centering\arraybackslash 0,102}\\
+\cmidrule{1-5}
+ & 472,592 &  &  & \\
+
+ & 472,888 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,46} & 473,931 & \multirow{-3}{*}{\centering\arraybackslash 473,137} & \multirow{-3}{*}{\centering\arraybackslash 0,703} & \multirow{-3}{*}{\centering\arraybackslash 0,149}\\
+\cmidrule{1-5}
+ & 499,055 &  &  & \\
+
+ & 504,825 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,50} & 505,768 & \multirow{-3}{*}{\centering\arraybackslash 503,216} & \multirow{-3}{*}{\centering\arraybackslash 3,634} & \multirow{-3}{*}{\centering\arraybackslash 0,722}\\
+\cmidrule{1-5}
+0,54 & 555,199 & 555,199 & NaN & NaN\\
+\cmidrule{1-5}
+ & 784,376 &  &  & \\
+
+ & 786,095 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,64} & 788,091 & \multirow{-3}{*}{\centering\arraybackslash 786,187} & \multirow{-3}{*}{\centering\arraybackslash 1,859} & \multirow{-3}{*}{\centering\arraybackslash 0,237}\\
+\bottomrule
+\end{tabu}
+\end{table}
+
+\subsection{Construcción curvas de descarga estación telemétrica Control Agrícola Tamaya (ID:37)}\label{construcción curva}
+
+Se construyeron 2 curvas de descarga de caudal. La primera se denomina "Curva de descarga Control Agrícola Tamaya" y se generó mediante un proceso de regresión no lineal entre el caudal (\(Q\)) y el nivel de agua correspondiente (\(h\)), el cual utilizó una ecuación polinomial de segundo grado o cuadrática, desarrollada en el programa Microsoft Excel.\\
+\\
+La segunda se denomina "Curva de descarga ID:37" y se generó mediante un modelo que utiliza un proceso de regresión no lineal entre el caudal (\(Q\)) y el nivel de agua correspondiente (\(h\)). Asumiendo un caudal constante, son dos los tipos de ecuaciones principalemente usados en hidrometría\footnote{\emph{En}:  W. Boiten. 2003. Hydrometry: IHE Delft Lecture Note Series. Capítulo   4.}, estas son las ecuación de potencia y la polinomial de segundo grado o cuadrática. Se utilizó la variación del coeficiente de determinación para evaluar el modelo a utilizar, ya que este coeficiente determina la calidad del modelo (se escoje el modelo que obtiene un valor de este indicador más cercano a 1). La construcción del modelo se realizó según el algoritmo de resolución de problemas de mínimos cuadrados no lineales modificado por Levenberg-Marquardt\footnote{J.J. Moré, ``The Leveng-Marquardt   algorithm: implementation and theory,'' in \emph{Lecture Notes} en   \emph{Mathematics} \textbf{630}: Numerial Analysis, G.A. Watson   (Editor), Springer-Verlag: Berlín, 1978, pp.~105-116.} en el ambiente computacional/lenguaje de programación \textbf{R}.
+
+
+
+\subsubsection{Curva de descarga Control Agrícola Tamaya}\label{CD CAT}
+
+Ecuación de descarga de caudal:
+
+\[Q = 1679,8* {{h_w}^2} + 161,58* h_w - 2,416\]
+
+donde:
+
+\(Q\) = Caudal (l/s); \(h_w\) = altura de referencia (m).
+
+El coeficiente \(R^2\): 0,99232
+
+
+\begin{table}[H]
+
+\caption{Tabla de altura - caudal Control Agrícola Tamaya}
+\centering
+
+\begin{center}
+\begingroup\fontsize{10pt}{11pt}\selectfont
+\begin{tabular}{rcrrcrrcr}
+  \hline
+ & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) \\ 
+  \hline
+  1 & 0,00 & 0,00 &  23 & 0,22 & 114,4 &  45 & 0,44 & 393,9 \\ 
+    2 & 0,01 & 0,6 &  24 & 0,23 & 123,6 &  46 & 0,45 & 410,5 \\ 
+    3 & 0,02 & 1,5 &  25 & 0,24 & 133,1 &  47 & 0,46 & 427,4 \\ 
+    4 & 0,03 & 3,9 &  26 & 0,25 & 143,0 &  48 & 0,47 & 444,6 \\ 
+    5 & 0,04 & 6,7 &  27 & 0,26 & 153,1 &  49 & 0,48 & 462,2 \\ 
+    6 & 0,05 & 9,9 &  28 & 0,27 & 163,7 &  50 & 0,49 & 480,1 \\ 
+    7 & 0,06 & 13,3 &  29 & 0,28 & 174,5 &  51 & 0,50 & 498,3 \\ 
+    8 & 0,07 & 17,1 &  30 & 0,29 & 185,7 &  52 & 0,51 & 516,9 \\ 
+    9 & 0,08 & 21,3 &  31 & 0,30 & 197,2 &  53 & 0,52 & 535,8 \\ 
+   10 & 0,09 & 25,7 &  32 & 0,31 & 209,1 &  54 & 0,53 & 555,1 \\ 
+   11 & 0,10 & 30,5 &  33 & 0,32 & 221,3 &  55 & 0,54 & 574,7 \\ 
+   12 & 0,11 & 35,7 &  34 & 0,33 & 233,8 &  56 & 0,55 & 594,6 \\ 
+   13 & 0,12 & 41,2 &  35 & 0,34 & 246,7 &  57 & 0,56 & 614,9 \\ 
+   14 & 0,13 & 47,0 &  36 & 0,35 & 259,9 &  58 & 0,57 & 635,5 \\ 
+   15 & 0,14 & 53,1 &  37 & 0,36 & 273,5 &  59 & 0,58 & 656,4 \\ 
+   16 & 0,15 & 59,6 &  38 & 0,37 & 287,3 &  60 & 0,59 & 677,7 \\ 
+   17 & 0,16 & 66,4 &  39 & 0,38 & 301,5 &  61 & 0,60 & 699,3 \\ 
+   18 & 0,17 & 73,6 &  40 & 0,39 & 316,1 &  62 & 0,61 & 721,2 \\ 
+   19 & 0,18 & 81,1 &  41 & 0,40 & 331,0 &  63 & 0,62 & 743,5 \\ 
+   20 & 0,19 & 88,9 &  42 & 0,41 & 346,2 &  64 & 0,63 & 766,1 \\ 
+   21 & 0,20 & 97,1 &  43 & 0,42 & 361,8 &  65 & 0,64 & 789,0 \\ 
+   22 & 0,21 & 105,6 &  44 & 0,43 & 377,7 &  &  &  \\ 
+   \hline
+\end{tabular}
+\endgroup\end{center}
+\end{table}
+
+\clearpage
+
+\subsubsection{Curva de descarga ID:37}\label{ID:37}
+
+Ecuación de descarga de caudal:
+
+\[Q = 1787,97*{h_w}^{1,84}\]
+
+donde:
+
+\(Q\) = Caudal (l/s); \(h_w\) = altura de referencia (m).
+
+El coeficiente \(R^2\): 0,986
+
+
+\begin{table}[H]
+
+\caption{Tabla de altura - caudal ID:37}
+\centering
+
+\begin{center}
+\begingroup\fontsize{10pt}{11pt}\selectfont
+\begin{tabular}{rcrrcrrcr}
+  \hline
+ & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) \\ 
+  \hline
+  1 & 0,00 & 0,00 &  23 & 0,22 & 110,42 &  45 & 0,44 & 395,06 \\ 
+    2 & 0,01 & 0,38 &  24 & 0,23 & 119,83 &  46 & 0,45 & 411,73 \\ 
+    3 & 0,02 & 1,34 &  25 & 0,24 & 129,58 &  47 & 0,46 & 428,71 \\ 
+    4 & 0,03 & 2,83 &  26 & 0,25 & 139,69 &  48 & 0,47 & 446,01 \\ 
+    5 & 0,04 & 4,80 &  27 & 0,26 & 150,14 &  49 & 0,48 & 463,61 \\ 
+    6 & 0,05 & 7,24 &  28 & 0,27 & 160,93 &  50 & 0,49 & 481,53 \\ 
+    7 & 0,06 & 10,12 &  29 & 0,28 & 172,06 &  51 & 0,50 & 499,76 \\ 
+    8 & 0,07 & 13,44 &  30 & 0,29 & 183,53 &  52 & 0,51 & 518,29 \\ 
+    9 & 0,08 & 17,18 &  31 & 0,30 & 195,33 &  53 & 0,52 & 537,14 \\ 
+   10 & 0,09 & 21,34 &  32 & 0,31 & 207,47 &  54 & 0,53 & 556,29 \\ 
+   11 & 0,10 & 25,90 &  33 & 0,32 & 219,95 &  55 & 0,54 & 575,74 \\ 
+   12 & 0,11 & 30,86 &  34 & 0,33 & 232,75 &  56 & 0,55 & 595,50 \\ 
+   13 & 0,12 & 36,22 &  35 & 0,34 & 245,89 &  57 & 0,56 & 615,56 \\ 
+   14 & 0,13 & 41,96 &  36 & 0,35 & 259,35 &  58 & 0,57 & 635,93 \\ 
+   15 & 0,14 & 48,09 &  37 & 0,36 & 273,14 &  59 & 0,58 & 656,60 \\ 
+   16 & 0,15 & 54,60 &  38 & 0,37 & 287,26 &  60 & 0,59 & 677,57 \\ 
+   17 & 0,16 & 61,48 &  39 & 0,38 & 301,70 &  61 & 0,60 & 698,84 \\ 
+   18 & 0,17 & 68,73 &  40 & 0,39 & 316,46 &  62 & 0,61 & 720,41 \\ 
+   19 & 0,18 & 76,35 &  41 & 0,40 & 331,54 &  63 & 0,62 & 742,27 \\ 
+   20 & 0,19 & 84,33 &  42 & 0,41 & 346,95 &  64 & 0,63 & 764,44 \\ 
+   21 & 0,20 & 92,67 &  43 & 0,42 & 362,67 &  65 & 0,64 & 786,90 \\ 
+   22 & 0,21 & 101,37 &  44 & 0,43 & 378,70 &  &  &  \\ 
+   \hline
+\end{tabular}
+\endgroup\end{center}
+\end{table}
+
+\subsection{Comparación curvas de descarga estación telemétrica Control Agrícola Tamaya (ID:37)}\label{comparación curvas}
+
+Las curvas de descarga generadas para este punto de control no presentan grandes diferencias al analizar las tablas de altura - caudal. Las principales diferencias se presentan en los caudales críticos, lo cual se puede deber a que se realizaron pocos o nulos aforos con estos caudales.
+
+\clearpage
+
+\section{Embalse Rumay - Entrada (FID:15 ID:39)}\label{ID:39}
+
+\subsection{Resumen aforos Embalse Rumay - Entrada (FID:15 ID:39)}\label{aforos ID:39}
+
+Se realizaron 18 aforos frente a la estación de monitoreo de caudal, cuya sección de aforo presenta un ancho de 0.9 metros con una geometría rectangular y revestida en hormigón, además presenta un aforador de tipo vertedero, con una altura de 0,20 m, equivalentes al nivel base o caudal de 0,0 l/s. Los aforos corresponden a 6 alturas de lámina de agua registradas en el limnímetro del pozo de aquietamiento de la estación.
+
+\begin{table}[H]
+
+\caption{Resumen de aforos estación telemétrica Embalse Rumay - Entrada (FID:15 ID:39)}
+\centering
+\begin{tabu} to \linewidth {>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+\toprule
+\textbf{Altura (m)} & \textbf{Caudal (l/s)} & \textbf{Caudal promedio (l/s)} & \textbf{Desviación estándar} & \textbf{Coeficiente de variabilidad (\%)}\\
+\midrule
+ & 13,990 &  &  & \\
+
+ & 14,102 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,23} & 14,136 & \multirow{-3}{*}{\centering\arraybackslash 14,076} & \multirow{-3}{*}{\centering\arraybackslash 0,077} & \multirow{-3}{*}{\centering\arraybackslash 0,545}\\
+\cmidrule{1-5}
+ & 31,079 &  &  & \\
+
+ & 31,531 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,27} & 31,709 & \multirow{-3}{*}{\centering\arraybackslash 31,440} & \multirow{-3}{*}{\centering\arraybackslash 0,324} & \multirow{-3}{*}{\centering\arraybackslash 1,032}\\
+\cmidrule{1-5}
+ & 85,212 &  &  & \\
+
+ & 85,692 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,32} & 86,844 & \multirow{-3}{*}{\centering\arraybackslash 85,916} & \multirow{-3}{*}{\centering\arraybackslash 0,839} & \multirow{-3}{*}{\centering\arraybackslash 0,976}\\
+\cmidrule{1-5}
+ & 114,726 &  &  & \\
+
+ & 114,988 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,35} & 115,854 & \multirow{-3}{*}{\centering\arraybackslash 115,189} & \multirow{-3}{*}{\centering\arraybackslash 0,591} & \multirow{-3}{*}{\centering\arraybackslash 0,513}\\
+\cmidrule{1-5}
+ & 169,347 &  &  & \\
+
+ & 169,988 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,38} & 170,544 & \multirow{-3}{*}{\centering\arraybackslash 169,960} & \multirow{-3}{*}{\centering\arraybackslash 0,599} & \multirow{-3}{*}{\centering\arraybackslash 0,352}\\
+\cmidrule{1-5}
+ & 221,569 &  &  & \\
+
+ & 221,708 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,41} & 223,906 & \multirow{-3}{*}{\centering\arraybackslash 222,394} & \multirow{-3}{*}{\centering\arraybackslash 1,311} & \multirow{-3}{*}{\centering\arraybackslash 0,590}\\
+\bottomrule
+\end{tabu}
+\end{table}
+
+\subsection{Construcción curvas de descarga estación telemétrica Embalse Rumay - Entrada (FID:15 ID:39)}\label{construcción curva}
+
+Se construyeron 2 curvas de descarga de caudal. La primera se denomina "Curva de descarga FID:15" y se generó mediante un proceso de regresión no lineal entre el caudal (\(Q\)) y el nivel de agua correspondiente (\(h\)), el cual utilizó una ecuación polinomial de segundo grado o cuadrática, desarrollada en el programa Microsoft Excel.\\
+\\
+La segunda se denomina "Curva de descarga ID:39" y se generó mediante un modelo que utiliza un proceso de regresión no lineal entre el caudal (\(Q\)) y el nivel de agua correspondiente (\(h\)). Asumiendo un caudal constante, son dos los tipos de ecuaciones principalemente usados en hidrometría\footnote{\emph{En}:  W. Boiten. 2003. Hydrometry: IHE Delft Lecture Note Series. Capítulo   4.}, estas son las ecuación de potencia y la polinomial de segundo grado o cuadrática. Se utilizó la variación del coeficiente de determinación para evaluar el modelo a utilizar, ya que este coeficiente determina la calidad del modelo (se escoje el modelo que obtiene un valor de este indicador más cercano a 1). La construcción del modelo se realizó según el algoritmo de resolución de problemas de mínimos cuadrados no lineales modificado por Levenberg-Marquardt\footnote{J.J. Moré, ``The Leveng-Marquardt   algorithm: implementation and theory,'' in \emph{Lecture Notes} en   \emph{Mathematics} \textbf{630}: Numerial Analysis, G.A. Watson   (Editor), Springer-Verlag: Berlín, 1978, pp.~105-116.} en el ambiente computacional/lenguaje de programación \textbf{R}.
+
+
+
+\subsubsection{Curva de descarga FID:15}\label{CD FID:15}
+
+Ecuación de descarga de caudal:
+
+\[Q = 4250,6* {{h_w}^2} - 1544,3* h_w + 140,59\]
+
+donde:
+
+\(Q\) = Caudal (l/s); \(h_w\) = altura de referencia (m).
+
+El coeficiente \(R^2\): 0,99
+
+
+\begin{table}[H]
+
+\caption{Tabla de altura - caudal FID:15}
+\centering
+
+\begin{center}
+\begingroup\fontsize{10pt}{11pt}\selectfont
+\begin{tabular}{rcrrcr}
+  \hline
+ & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) \\ 
+  \hline
+  1 & 0,20 & 2,0 &  17 & 0,36 & 135,7 \\ 
+    2 & 0,21 & 3,9 &  18 & 0,37 & 151,3 \\ 
+    3 & 0,22 & 6,8 &  19 & 0,38 & 167,7 \\ 
+    4 & 0,23 & 10,5 &  20 & 0,39 & 185,0 \\ 
+    5 & 0,24 & 15,0 &  21 & 0,40 & 203,2 \\ 
+    6 & 0,25 & 20,4 &  22 & 0,41 & 222,2 \\ 
+    7 & 0,26 & 26,6 &  &  &  \\ 
+    8 & 0,27 & 33,7 &  &  &  \\ 
+    9 & 0,28 & 41,6 &  &  &  \\ 
+   10 & 0,29 & 50,4 &  &  &  \\ 
+   11 & 0,30 & 60,1 &  &  &  \\ 
+   12 & 0,31 & 70,5 &  &  &  \\ 
+   13 & 0,32 & 81,9 &  &  &  \\ 
+   14 & 0,33 & 94,1 &  &  &  \\ 
+   15 & 0,34 & 107,1 &  &  &  \\ 
+   16 & 0,35 & 121,0 &  &  &  \\ 
+   \hline
+\end{tabular}
+\endgroup\end{center}
+\end{table}
+
+\clearpage
+
+\subsubsection{Curva de descarga ID:39}\label{ID:39}
+
+Ecuación de descarga de caudal:
+
+\[Q = 190,56*(h_w - h_0) + 4122,94*{(h_w - h_0)^2}\]
+
+donde:
+
+\(Q\) = Caudal (l/s); \(h_w\) = altura de referencia (m); \(h_0\) =
+peralte (m).
+
+El coeficiente \(R^2\): 0,997
+
+
+\begin{table}[H]
+
+\caption{Tabla de altura - caudal ID:39}
+\centering
+
+\begin{center}
+\begingroup\fontsize{10pt}{11pt}\selectfont
+\begin{tabular}{rcrrcr}
+  \hline
+ & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) \\ 
+  \hline
+  1 & 0,20 & 0,00 &  17 & 0,36 & 136,04 \\ 
+    2 & 0,21 & 2,32 &  18 & 0,37 & 151,55 \\ 
+    3 & 0,22 & 5,46 &  19 & 0,38 & 167,88 \\ 
+    4 & 0,23 & 9,43 &  20 & 0,39 & 185,04 \\ 
+    5 & 0,24 & 14,22 &  21 & 0,40 & 203,03 \\ 
+    6 & 0,25 & 19,84 &  22 & 0,41 & 221,84 \\ 
+    7 & 0,26 & 26,28 &  &  &  \\ 
+    8 & 0,27 & 33,54 &  &  &  \\ 
+    9 & 0,28 & 41,63 &  &  &  \\ 
+   10 & 0,29 & 50,55 &  &  &  \\ 
+   11 & 0,30 & 60,29 &  &  &  \\ 
+   12 & 0,31 & 70,85 &  &  &  \\ 
+   13 & 0,32 & 82,24 &  &  &  \\ 
+   14 & 0,33 & 94,45 &  &  &  \\ 
+   15 & 0,34 & 107,49 &  &  &  \\ 
+   16 & 0,35 & 121,35 &  &  &  \\ 
+   \hline
+\end{tabular}
+\endgroup\end{center}
+\end{table}
+
+\subsection{Comparación curvas de descarga estación telemétrica Embalse Rumay - Entrada (FID:15 ID:39)}\label{comparación curvas}
+
+Las curvas de descarga generadas para este punto de control no presentan grandes diferencias al analizar las tablas de altura - caudal. Las principales diferencias se presentan en los caudales críticos, lo cual se puede deber al ajuste de la "curva de descarga FID:15", ya que en el nivel base que corresponde a 0,0 l/s, esta comienza en 2,0 l/s.
+
+\clearpage
+
+\section{Embalse Santa Cristina - Entrada (ID:41)}\label{ID:41}
+
+\subsection{Resumen aforos Embalse Santa Cristina - Entrada (ID:41)}\label{aforos ID:41}
+
+Se realizaron 19 aforos frente a la estación de monitoreo de caudal, cuya sección de aforo presenta un ancho de 1,40 metros con una geometría rectangular y revestida en hormigón.  Los aforos corresponden a 6 alturas de lámina de agua registradas en el limnímetro del pozo de aquietamiento de la estación, además se registró el nivel base o caudal de 0,0 l/s.
+
+\begin{table}[H]
+
+\caption{Resumen de aforos estación telemétrica Embalse Santa Cristina - Entrada (ID:41)}
+\centering
+\begin{tabu} to \linewidth {>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+\toprule
+\textbf{Altura (m)} & \textbf{Caudal (l/s)} & \textbf{Caudal promedio (l/s)} & \textbf{Desviación estándar} & \textbf{Coeficiente de variabilidad (\%)}\\
+\midrule
+ & 41,394 &  &  & \\
+
+ & 41,798 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,08} & 42,701 & \multirow{-3}{*}{\centering\arraybackslash 41,965} & \multirow{-3}{*}{\centering\arraybackslash 0,669} & \multirow{-3}{*}{\centering\arraybackslash 1,595}\\
+\cmidrule{1-5}
+0,10 & 58,106 & 58,106 & NaN & NaN\\
+\cmidrule{1-5}
+ & 92,681 &  &  & \\
+
+ & 92,874 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,13} & 94,002 & \multirow{-3}{*}{\centering\arraybackslash 93,186} & \multirow{-3}{*}{\centering\arraybackslash 0,713} & \multirow{-3}{*}{\centering\arraybackslash 0,765}\\
+\cmidrule{1-5}
+ & 116,162 &  &  & \\
+
+ & 117,045 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,16} & 117,492 & \multirow{-3}{*}{\centering\arraybackslash 116,900} & \multirow{-3}{*}{\centering\arraybackslash 0,676} & \multirow{-3}{*}{\centering\arraybackslash 0,579}\\
+\cmidrule{1-5}
+ & 184,047 &  &  & \\
+
+ & 185,166 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,20} & 185,571 & \multirow{-3}{*}{\centering\arraybackslash 184,928} & \multirow{-3}{*}{\centering\arraybackslash 0,789} & \multirow{-3}{*}{\centering\arraybackslash 0,427}\\
+\cmidrule{1-5}
+ & 271,999 &  &  & \\
+
+ & 272,496 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,25} & 273,070 & \multirow{-3}{*}{\centering\arraybackslash 272,522} & \multirow{-3}{*}{\centering\arraybackslash 0,536} & \multirow{-3}{*}{\centering\arraybackslash 0,197}\\
+\cmidrule{1-5}
+ & 327,382 &  &  & \\
+
+ & 328,358 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,28} & 328,924 & \multirow{-3}{*}{\centering\arraybackslash 328,221} & \multirow{-3}{*}{\centering\arraybackslash 0,780} & \multirow{-3}{*}{\centering\arraybackslash 0,238}\\
+\bottomrule
+\end{tabu}
+\end{table}
+
+\subsection{Construcción curvas de descarga estación telemétrica Embalse Santa Cristina - Entrada (ID:41)}\label{construcción curva}
+
+Se construyeron 2 curvas de descarga de caudal. La primera se denomina "Curva de descarga Embalse Santa Cristina - Entrada" y se generó mediante un proceso de regresión no lineal entre el caudal (\(Q\)) y el nivel de agua correspondiente (\(h\)), el cual utilizó una ecuación polinomial de segundo grado o cuadrática, desarrollada en el programa Microsoft Excel.\\
+\\
+La segunda se denomina "Curva de descarga ID:41" y se generó mediante un modelo que utiliza un proceso de regresión no lineal entre el caudal (\(Q\)) y el nivel de agua correspondiente (\(h\)). Asumiendo un caudal constante, son dos los tipos de ecuaciones principalemente usados en hidrometría\footnote{\emph{En}:  W. Boiten. 2003. Hydrometry: IHE Delft Lecture Note Series. Capítulo   4.}, estas son las ecuación de potencia y la polinomial de segundo grado o cuadrática. Se utilizó la variación del coeficiente de determinación para evaluar el modelo a utilizar, ya que este coeficiente determina la calidad del modelo (se escoje el modelo que obtiene un valor de este indicador más cercano a 1). La construcción del modelo se realizó según el algoritmo de resolución de problemas de mínimos cuadrados no lineales modificado por Levenberg-Marquardt\footnote{J.J. Moré, ``The Leveng-Marquardt   algorithm: implementation and theory,'' in \emph{Lecture Notes} en   \emph{Mathematics} \textbf{630}: Numerial Analysis, G.A. Watson   (Editor), Springer-Verlag: Berlín, 1978, pp.~105-116.} en el ambiente computacional/lenguaje de programación \textbf{R}.
+
+
+
+\subsubsection{Curva de descarga Embalse Santa Cristina - Entrada}\label{CD Embalse Santa Cristina - Entrada}
+
+Ecuación de descarga de caudal:
+
+\[Q = 3321,5* {{h_w}^2} + 247,27* h_w + 0,322\]
+
+donde:
+
+\(Q\) = Caudal (l/s); \(h_w\) = altura de referencia (m).
+
+El coeficiente \(R^2\): 0,99
+
+
+\begin{table}[H]
+
+\caption{Tabla de altura - caudal Embalse Santa Cristina - Entrada}
+\centering
+
+\begin{center}
+\begingroup\fontsize{10pt}{11pt}\selectfont
+\begin{tabular}{rcrrcr}
+  \hline
+ & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) \\ 
+  \hline
+  1 & 0,00 & 0,00 &  17 & 0,16 & 124,9 \\ 
+    2 & 0,01 & 3,1 &  18 & 0,17 & 138,3 \\ 
+    3 & 0,02 & 6,6 &  19 & 0,18 & 152,4 \\ 
+    4 & 0,03 & 10,7 &  20 & 0,19 & 167,2 \\ 
+    5 & 0,04 & 15,5 &  21 & 0,20 & 182,6 \\ 
+    6 & 0,05 & 21,0 &  22 & 0,21 & 198,7 \\ 
+    7 & 0,06 & 27,1 &  23 & 0,22 & 215,5 \\ 
+    8 & 0,07 & 33,9 &  24 & 0,23 & 232,9 \\ 
+    9 & 0,08 & 41,4 &  25 & 0,24 & 251,0 \\ 
+   10 & 0,09 & 49,5 &  26 & 0,25 & 269,7 \\ 
+   11 & 0,10 & 58,3 &  27 & 0,26 & 289,1 \\ 
+   12 & 0,11 & 67,7 &  28 & 0,27 & 309,2 \\ 
+   13 & 0,12 & 77,8 &  29 & 0,28 & 330,0 \\ 
+   14 & 0,13 & 88,6 &  &  &  \\ 
+   15 & 0,14 & 100,0 &  &  &  \\ 
+   16 & 0,15 & 112,1 &  &  &  \\ 
+   \hline
+\end{tabular}
+\endgroup\end{center}
+\end{table}
+
+\clearpage
+
+\subsubsection{Curva de descarga ID:41}\label{ID:41}
+
+Ecuación de descarga de caudal:
+
+\[Q = 251,01* h_w + 3312,2*{{h_w}^2}\]
+
+donde:
+
+\(Q\) = Caudal (l/s); \(h_w\) = altura de referencia (m).
+
+El coeficiente \(R^2\): 0,999
+
+
+\begin{table}[H]
+
+\caption{Tabla de altura - caudal ID:41}
+\centering
+
+\begin{center}
+\begingroup\fontsize{10pt}{11pt}\selectfont
+\begin{tabular}{rcrrcr}
+  \hline
+ & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) \\ 
+  \hline
+  1 & 0,00 & 0,00 &  17 & 0,16 & 124,95 \\ 
+    2 & 0,01 & 2,84 &  18 & 0,17 & 138,39 \\ 
+    3 & 0,02 & 6,35 &  19 & 0,18 & 152,50 \\ 
+    4 & 0,03 & 10,51 &  20 & 0,19 & 167,26 \\ 
+    5 & 0,04 & 15,34 &  21 & 0,20 & 182,69 \\ 
+    6 & 0,05 & 20,83 &  22 & 0,21 & 198,78 \\ 
+    7 & 0,06 & 26,98 &  23 & 0,22 & 215,53 \\ 
+    8 & 0,07 & 33,80 &  24 & 0,23 & 232,95 \\ 
+    9 & 0,08 & 41,28 &  25 & 0,24 & 251,02 \\ 
+   10 & 0,09 & 49,42 &  26 & 0,25 & 269,76 \\ 
+   11 & 0,10 & 58,22 &  27 & 0,26 & 289,17 \\ 
+   12 & 0,11 & 67,69 &  28 & 0,27 & 309,23 \\ 
+   13 & 0,12 & 77,82 &  29 & 0,28 & 329,96 \\ 
+   14 & 0,13 & 88,61 &  &  &  \\ 
+   15 & 0,14 & 100,06 &  &  &  \\ 
+   16 & 0,15 & 112,18 &  &  &  \\ 
+   \hline
+\end{tabular}
+\endgroup\end{center}
+\end{table}
+
+\subsection{Comparación curvas de descarga estación telemétrica Embalse Santa Cristina - Entrada (ID:41)}\label{comparación curvas}
+
+Las curvas de descarga generadas para este punto de control no presentan grandes diferencias al analizar las tablas de altura - caudal.
+
+\clearpage
+
+\section{Embalse Santa Cristina - Salida (ID:42)}\label{ID:42}
+
+\subsection{Resumen aforos Embalse Santa Cristina - Salida (ID:42)}\label{aforos ID:42}
+
+Se realizaron 18 aforos frente a la estación de monitoreo de caudal, cuya sección de aforo presenta un ancho de 1,40 metros con una geometría rectangular y revestida en hormigón.  Los aforos corresponden a 6 alturas de lámina de agua registradas en el limnímetro del pozo de aquietamiento de la estación, además se registró el nivel base o caudal de 0,0 l/s, que corresponde a 0,20 m, debido al aforador de tipo vertedero presente.
+
+\begin{table}[H]
+
+\caption{Resumen de aforos estación telemétrica Embalse Santa Cristina - Salida (ID:42)}
+\centering
+\begin{tabu} to \linewidth {>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+\toprule
+\textbf{Altura (m)} & \textbf{Caudal (l/s)} & \textbf{Caudal promedio (l/s)} & \textbf{Desviación estándar} & \textbf{Coeficiente de variabilidad (\%)}\\
+\midrule
+ & 17,765 &  &  & \\
+
+ & 18,011 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,23} & 18,087 & \multirow{-3}{*}{\centering\arraybackslash 17,954} & \multirow{-3}{*}{\centering\arraybackslash 0,169} & \multirow{-3}{*}{\centering\arraybackslash 0,939}\\
+\cmidrule{1-5}
+ & 43,106 &  &  & \\
+
+ & 43,348 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,26} & 43,513 & \multirow{-3}{*}{\centering\arraybackslash 43,322} & \multirow{-3}{*}{\centering\arraybackslash 0,205} & \multirow{-3}{*}{\centering\arraybackslash 0,472}\\
+\cmidrule{1-5}
+ & 86,922 &  &  & \\
+
+ & 87,492 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,30} & 88,310 & \multirow{-3}{*}{\centering\arraybackslash 87,575} & \multirow{-3}{*}{\centering\arraybackslash 0,698} & \multirow{-3}{*}{\centering\arraybackslash 0,797}\\
+\cmidrule{1-5}
+ & 146,084 &  &  & \\
+
+ & 146,401 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,33} & 147,306 & \multirow{-3}{*}{\centering\arraybackslash 146,597} & \multirow{-3}{*}{\centering\arraybackslash 0,634} & \multirow{-3}{*}{\centering\arraybackslash 0,433}\\
+\cmidrule{1-5}
+ & 222,779 &  &  & \\
+
+ & 222,982 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,37} & 223,293 & \multirow{-3}{*}{\centering\arraybackslash 223,018} & \multirow{-3}{*}{\centering\arraybackslash 0,259} & \multirow{-3}{*}{\centering\arraybackslash 0,116}\\
+\cmidrule{1-5}
+ & 309,019 &  &  & \\
+
+ & 309,902 &  &  & \\
+
+\multirow{-3}{*}{\centering\arraybackslash 0,40} & 311,750 & \multirow{-3}{*}{\centering\arraybackslash 310,224} & \multirow{-3}{*}{\centering\arraybackslash 1,393} & \multirow{-3}{*}{\centering\arraybackslash 0,449}\\
+\bottomrule
+\end{tabu}
+\end{table}
+
+\subsection{Construcción curvas de descarga estación telemétrica Embalse Santa Cristina - Salida (ID:42)}\label{construcción curva}
+
+Se construyeron 2 curvas de descarga de caudal. La primera se denomina "Curva de descarga Embalse Santa Cristina - Salida" y se generó mediante un proceso de regresión no lineal entre el caudal (\(Q\)) y el nivel de agua correspondiente (\(h\)), el cual utilizó una ecuación polinomial de segundo grado o cuadrática, desarrollada en el programa Microsoft Excel.\\
+\\
+La segunda se denomina "Curva de descarga ID:42" y se generó mediante un modelo que utiliza un proceso de regresión no lineal entre el caudal (\(Q\)) y el nivel de agua correspondiente (\(h\)). Asumiendo un caudal constante, son dos los tipos de ecuaciones principalemente usados en hidrometría\footnote{\emph{En}:  W. Boiten. 2003. Hydrometry: IHE Delft Lecture Note Series. Capítulo   4.}, estas son las ecuación de potencia y la polinomial de segundo grado o cuadrática. Se utilizó la variación del coeficiente de determinación para evaluar el modelo a utilizar, ya que este coeficiente determina la calidad del modelo (se escoje el modelo que obtiene un valor de este indicador más cercano a 1). La construcción del modelo se realizó según el algoritmo de resolución de problemas de mínimos cuadrados no lineales modificado por Levenberg-Marquardt\footnote{J.J. Moré, ``The Leveng-Marquardt   algorithm: implementation and theory,'' in \emph{Lecture Notes} en   \emph{Mathematics} \textbf{630}: Numerial Analysis, G.A. Watson   (Editor), Springer-Verlag: Berlín, 1978, pp.~105-116.} en el ambiente computacional/lenguaje de programación \textbf{R}.
+
+
+
+\subsubsection{Curva de descarga Embalse Santa Cristina - Salida}\label{CD Embalse Santa Cristina - Salida}
+
+Ecuación de descarga de caudal:
+
+\[Q = 6316,6* {{h_w}^2} - 2267,1* h_w + 203,04\]
+
+donde:
+
+\(Q\) = Caudal (l/s); \(h_w\) = altura de referencia (m).
+
+El coeficiente \(R^2\): 0,99
+
+
+\begin{table}[H]
+
+\caption{Tabla de altura - caudal Embalse Santa Cristina - Entrada}
+\centering
+
+\begin{center}
+\begingroup\fontsize{10pt}{11pt}\selectfont
+\begin{tabular}{rcrrcr}
+  \hline
+ & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) \\ 
+  \hline
+  1 & 0,20 & 2,28 &  17 & 0,36 & 205,52 \\ 
+    2 & 0,21 & 5,51 &  18 & 0,37 & 228,96 \\ 
+    3 & 0,22 & 10,00 &  19 & 0,38 & 253,66 \\ 
+    4 & 0,23 & 15,76 &  20 & 0,39 & 279,63 \\ 
+    5 & 0,24 & 22,77 &  21 & 0,40 & 306,86 \\ 
+    6 & 0,25 & 31,05 &  &  &  \\ 
+    7 & 0,26 & 40,60 &  &  &  \\ 
+    8 & 0,27 & 51,40 &  &  &  \\ 
+    9 & 0,28 & 63,47 &  &  &  \\ 
+   10 & 0,29 & 76,81 &  &  &  \\ 
+   11 & 0,30 & 91,40 &  &  &  \\ 
+   12 & 0,31 & 107,26 &  &  &  \\ 
+   13 & 0,32 & 124,39 &  &  &  \\ 
+   14 & 0,33 & 142,77 &  &  &  \\ 
+   15 & 0,34 & 162,42 &  &  &  \\ 
+   16 & 0,35 & 183,34 &  &  &  \\ 
+   \hline
+\end{tabular}
+\endgroup\end{center}
+\end{table}
+
+\clearpage
+
+\subsubsection{Curva de descarga ID:42}\label{ID:42}
+
+Ecuación de descarga de caudal:
+
+\[Q = 302,34*(h_w - h_0) + 6150,9*{(h_w - h_0)^2}\]
+
+donde:
+
+\(Q\) = Caudal (l/s); \(h_w\) = altura de referencia (m); \(h_0\) =
+peralte (m).
+
+El coeficiente \(R^2\): 0,998
+
+
+\begin{table}[H]
+
+\caption{Tabla de altura - caudal ID:42}
+\centering
+
+\begin{center}
+\begingroup\fontsize{10pt}{11pt}\selectfont
+\begin{tabular}{rcrrcr}
+  \hline
+ & altura (m) & Q (l/s) &  & altura (m) & Q (l/s) \\ 
+  \hline
+  1 & 0,20 & 0,00 &  17 & 0,36 & 205,84 \\ 
+    2 & 0,21 & 3,64 &  18 & 0,37 & 229,16 \\ 
+    3 & 0,22 & 8,51 &  19 & 0,38 & 253,71 \\ 
+    4 & 0,23 & 14,61 &  20 & 0,39 & 279,49 \\ 
+    5 & 0,24 & 21,94 &  21 & 0,40 & 306,50 \\ 
+    6 & 0,25 & 30,49 &  &  &  \\ 
+    7 & 0,26 & 40,28 &  &  &  \\ 
+    8 & 0,27 & 51,30 &  &  &  \\ 
+    9 & 0,28 & 63,55 &  &  &  \\ 
+   10 & 0,29 & 77,03 &  &  &  \\ 
+   11 & 0,30 & 91,74 &  &  &  \\ 
+   12 & 0,31 & 107,68 &  &  &  \\ 
+   13 & 0,32 & 124,85 &  &  &  \\ 
+   14 & 0,33 & 143,25 &  &  &  \\ 
+   15 & 0,34 & 162,89 &  &  &  \\ 
+   16 & 0,35 & 183,75 &  &  &  \\ 
+   \hline
+\end{tabular}
+\endgroup\end{center}
+\end{table}
+
+\subsection{Comparación curvas de descarga estación telemétrica Embalse Santa Cristina - Salida (ID:42)}\label{comparación curvas}
+
+Las curvas de descarga generadas para este punto de control no presentan grandes diferencias al analizar las tablas de altura - caudal.
+
+
+\end{document}
