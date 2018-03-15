@@ -1,0 +1,682 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+\usepackage{graphicx}			% insertar gráficos
+\usepackage{amssymb}			% Símbolos
+\usepackage[hidelinks]{hyperref}			% para incluir hiper-referencias
+\usepackage{titlesec}			% Cambiar formato de títulos
+\usepackage[plain, noabstract, nocomment]{flexbib} % Para citar con paréntesis y cosas así 
+% https://www.nacho-alvarezx.es/index.php/blog/2007/04/15/estilo-de-bibliografia-para-bibte/
+% http://www.latex.um.es/retazos/leccion_15/flexbib_manual.pdf
+% Editato el spanishbst.tex y flexbib.sty
+\usepackage{appendix} % Anexos
+\usepackage{subfigure} % Para incluir varias figuras
+\usepackage{float}
+\usepackage{booktabs} %PARA TABLAS
+\usepackage{multirow} % para tablas
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{lscape}
+\usepackage[pages=all]{background}  %Fondo del documento
+\usepackage{fontspec,xltxtra,xunicode}		% Por defecto
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\usepackage[12pt]{moresize}
+\usepackage{stackengine}
+\defaultfontfeatures{Mapping=tex-text}		% Para usar Century Gothic
+
+\setmainfont[		% Para usar Century Gothic
+ BoldFont={Century Gothic Bold}, 
+ ItalicFont={Century Gothic Italic},
+ BoldItalicFont={Century Gothic Bold Italic}
+ ]{Century Gothic}
+ 
+ 
+ 
+
+\bibpunct{(}{)}{;}{a}{,}{,} % Modificar como se cita https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management
+
+\renewcommand{\bibsection}{\section{Bibliografía\\}} % Cambiar nombre de la bibliografía insertada al final del documento
+\renewcommand{\figurename}{Figura} % Cambiar el nombre de las figuras
+\renewcommand{\tablename}{Cuadro} % Cambiar el nombre de las tablas
+\renewcommand{\contentsname}{Tabla de contenidos\\} % Cambiar el nombre de la tabla de contenidos
+\renewcommand{\listfigurename}{Índice de figuras\\} % lista de figuras
+\renewcommand{\listtablename}{Índice de cuadros\\} % lista de cuadros
+%http://www.elmundoenbits.com/2012/03/latex-problemas-con-el-anexos.html#.WOrWdVKZNE4
+\renewcommand{\appendixname}{Anexos}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+
+
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+
+\title{Manual Usuario Plataformas Uso de Suelo y Caracterización de Regantes}
+\author{Laboratorio PROMMRA}
+\date{}                                           % Activate to display a given date or no date
+
+%\usepackage{fancyhdr} % para pie de pagina
+%\pagestyle{fancy} % para pie de pagina
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{}
+\lhead{}
+\cfoot{ Laboratorio de Prospección, Monitoreo y Modelación de Recursos Agrícolas y Ambientales  PROMMRA}
+%  Laboratorio de Prospección, Monitoreo y Modelación de Recursos Agrícolas y Ambientales  PROMMRA  \\
+		%\Mundus\ \href{http://www.prommra.cl}{www.prommra.cl}	\quad
+		%\Telefon\ +56 51 255 4907 / 51 255 4914 / 51 255 4918	\quad
+		%\Letter\ \href{mailto:prommra@userena.cl}{prommra@userena.cl}
+%\cfoot{ }
+\rfoot{\thepage}
+\renewcommand{\headrulewidth} {0pt}
+\renewcommand{\footrulewidth} {1pt}
+
+\contourlength{.4em}
+
+%%%%%% Contornos
+
+
+\newcommand\shadowfy[1]{\expandafter\shadowfypars#1\par\relax\relax}
+\long\def\shadowfypars#1\par#2\relax{%
+  \ifx#1\relax\else
+    \shadowfywords#1 \relax\relax%
+  \fi%
+  \ifx\relax#2\else\par\shadowfypars#2\relax\fi%
+}
+\def\shadowfywords#1 #2\relax{%
+  \ifx#1\relax\else
+    \shadowfyletters#1\relax\relax%
+  \fi%
+  \ifx\relax#2\else\ \shadowfywords#2\relax\fi%
+}
+\def\shadowfyletters#1#2\relax{%
+  \shadow{#1}%
+  \ifx\relax#2\else\shadowfyletters#2\relax\fi}
+
+\newlength\shadowHoffset
+\newlength\shadowVoffset
+\setlength\shadowHoffset{.2pt}
+\setlength\shadowVoffset{.1pt}
+\def\primarycolor{white}
+\def\secondarycolor{black}
+
+\def\shadow#1{\setstackgap{L}{0pt}\def\stacktype{L}%
+\def\useanchorwidth{T}% CAN BE COMMENTEDD FOR MORE INTERLETTER SPACE.
+\Longstack{%
+\raisebox{0pt}{\textcolor{\primarycolor}{#1}} 
+\kern.7\shadowHoffset\raisebox{.7\shadowVoffset}{\textcolor{\secondarycolor}{#1}}
+\kern-.7\shadowHoffset\raisebox{.7\shadowVoffset}{\textcolor{\secondarycolor}{#1}}
+\kern\shadowHoffset\raisebox{0pt}{\textcolor{\secondarycolor}{#1}}
+\kern-\shadowHoffset\raisebox{0pt}{\textcolor{\secondarycolor}{#1}}
+\kern.7\shadowHoffset\raisebox{-.7\shadowVoffset}{\textcolor{\secondarycolor}{#1}}
+\kern-.7\shadowHoffset\raisebox{-.7\shadowVoffset}{\textcolor{\secondarycolor}{#1}}
+\kern0pt\raisebox{\shadowVoffset}{\textcolor{\secondarycolor}{#1}}
+\kern0pt\raisebox{-\shadowVoffset}{\textcolor{\secondarycolor}{#1}}%
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+% para el sello de agua
+\backgroundsetup{
+	scale=1, %escala de la imagen, es recomendable que sea del mismo tamaño que el pdf
+	color=black, %fondo a usar para transparencia
+	opacity=1, %nivel de transparencia
+	angle=0, %en caso de querer una rotación
+	contents={%
+		\includegraphics[width=\paperwidth,height=\paperheight]{Figuras_manual/para_fondo_manual2.pdf}
+	}%
+}
+%***********para portada
+
+\begin{titlepage}
+\newgeometry{left=3cm,bottom=0.1cm}
+\begin{center}
+\vspace*{30mm}
+
+\setlength\shadowHoffset{1pt}
+\setlength\shadowVoffset{1pt}
+
+\HUGE\textbf{\shadowfy{Manual de usuario Plataformas Uso de Suelo Agrícola y Caracterización de Regantes
+}}
+
+\vspace{70mm}
+
+\large\textbf{\shadowfy{“Programa de Difusión Tecnológica en uso eficiente de los recursos hídricos y la optimización de las inversiones público - privadas en obras de riego extra e intrapredial en el área de influencia de la Junta de Vigilancia del río Choapa y sus Afluentes”
+}}
+
+\vspace{2mm}
+
+\large\textbf{\shadowfy{Proyecto financiado con aportes CORFO 2017
+}}
+
+\vspace{2mm}
+
+
+
+\vfill
+
+
+
+
+
+\vspace{13.5mm}
+
+\end{center}
+\clearpage
+\restoregeometry
+\end{titlepage}
+
+\newpage
+
+% para el sello de agua
+\backgroundsetup{
+	scale=0.8, %escala de la imagen, es recomendable que sea del mismo tamaño que el pdf
+	color=black, %fondo a usar para transparencia
+	opacity=0., %nivel de transparencia
+	angle=0, %en caso de querer una rotación
+	contents={%
+		\includegraphics[width=\paperwidth,height=\paperheight]{Figuras_manual/fondo_prommra.pdf}
+	}%
+}
+
+
+%\maketitle
+%\begin{figure}[H]
+%\caption{}
+%\centering
+%\includegraphics[scale=0.5]{Figuras_manual/visor_estilo.png}
+%\end{figure}
+
+
+%PORTADA
+\newpage
+\tableofcontents
+
+\newpage
+
+\backgroundsetup{
+	scale=0.8, %escala de la imagen, es recomendable que sea del mismo tamaño que el pdf
+	color=black, %fondo a usar para transparencia
+	opacity=0.1, %nivel de transparencia
+	angle=0, %en caso de querer una rotación
+	contents={%
+		\includegraphics[width=\paperwidth,height=\paperheight]{Figuras_manual/fondo_prommra.pdf}
+	}%
+}
+\section{Presentacion}
+
+
+
+Contar con la información geoespacializada del uso de suelo agrícola, permite disponer de la distribución de los cultivos que componen el territorio. Con esta información se puede estimar la demanda del recurso hídrico por estos cultivos, siendo un aporte importante para la gestión del recurso.\bigskip\setlength{\parindent}{0pt}
+
+La caracterización de los diferentes usuarios que componen la organización permite conocer como se componen productivamente las diferentes explotaciones de cada uno y las condiciones en que se encuentran, permitiendo hacer un diagnostico del área de interés.\bigskip\setlength{\parindent}{0pt}
+
+Las plataformas de visualización y operación del uso de suelo agrícola y caracterización de regantes del área de influencia del PDT-Choapa, está realizada bajo el servicio de CARTO, el cual posee las características de ser un servicio libre y gratuito hasta cierto tamaño de almacenamiento de información. Esta plataforma permite visualizar y hacer consultas online de manera simple e interactiva mediantes complementos gráficos (widgets).  \bigskip\setlength{\parindent}{0pt}
+
+A continuación se presenta la operación para las plataformas de uso de suelo y caracteri-\\zación de regantes realizada bajo el Programa de Difusión Tecnológica en uso eficiente de los recursos hídricos y la optimización de las inversiones público - privadas en obras de riego extra e intrapredial en el área de influencia de la Junta de Vigilancia del río Choapa y  sus Afluentes.
+\newpage
+
+\section{Plataforma uso de suelo agrícola}
+
+
+La información presentada corresponde a la levantada en terreno en las diferentes campañas de catastros realizados en el año 2017, más información obtenida por medio de teledetección. 
+La información visualizada se presenta clasificada en los siguientes grupos de cultivos:
+
+\begin{itemize}
+
+\item[-]Sin cultivos: Superficie no cultivada.
+\item[-]Caduco: Superficie cultivada con frutales caducos como: Vides, Nogales, Damascos etc,
+\item[-]Persistente: Superficie cultivada con frutales persitentes como: Paltos, cítricos, etc.
+\item[-]Pradera: Superficie cultivada con pasturas como: alfalfa.
+\item[-]Cultivos ciclo corto: Superficie con cultivos como: hortalizas, cultivos anuales, cereales, etc.
+\item[-]Huerto casero: Superficie sin cultivo principal.
+\item[-]Bajo plástico: Superficie con cultivos de ciclo corto bajo cubierta (invernaderos). \bigskip\setlength{\parindent}{0pt}
+\end{itemize}
+
+\subsection{Componentes Plataforma Uso Suelo Agrícola}
+\label{2.1}
+
+La plataforma de uso de suelo consta de 3 componentes, en la figura \ref{1} se presentan.
+
+\begin{enumerate}
+\item Leyenda: Indica el grupo de cultivo identificado y el color de representación en el mapa.
+\item Visor: Visualiza los polígonos correspondiente a zonas con cultivos o zonas que fueron cultivadas.
+\item	Complementos (widgets): Entrega información con respecto al uso de suelo agrícola (superficies) y la distribución por unidades homogéneas del territorio. Permite interactuar activando o desactivando las opciones de análisis y mediante erl área visualizada, modificando la información presente en cada widget en función de la extensión de la vista.
+
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Figuras_manual/componentesvisor12.png}
+\caption{Componentes plataforma}
+\label{1}
+\end{figure}
+
+\subsubsection{Leyenda}
+Indica a que corresponde cada unidad presente en el territorio con el color correspondiente al grupo de cultivo definido (ver figura \ref{2}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Figuras_manual/Leyenda_2.pdf}
+\caption{Leyenda grupo de cultivo}
+\label{2}
+\end{figure}
+
+\begin{itemize}
+\item[-]Sin cultivos: Corresponde a superficie que no se encuentra con cultivos.
+\item[-]Caduco: Corresponde al grupo de frutales caducos como: vides, nogales, durazneros, damascos, entre otros.
+\item[-]Persistente: Corresponde a frutales persistentes como: paltos, cítricos (naranjos, mandarinos, entre otros).
+\item[-]Pradera: Corresponde principalmente a pasturas (alfalfa o pasturas mixtas) bajo riego.
+\item[-]Cultivos ciclo corto: Correspondes a cultivos hortícolas, cultivos anuales, cereales, al aire libre. 
+\item[-]Huerto casero: Corresponde a la superficie sin un cultivo principal.
+\item[-]Bajo plástico: Corresponde a cultivos de ciclo corto bajo cubiertas (invernaderos).
+\end{itemize}
+
+\subsubsection{Visor}
+
+En este se visualiza cada polígono analizado mediante la utilización de la aplicación CARTO utilizando el mapa base de Google Earth, el cual representa una superficie cultivada o que haya sido cultivada. Cada polígono está coloreado en función de la clase que lo representa, las cuales están informadas en la leyenda .
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Figuras_manual/visor.pdf}
+\caption{Visor de grupos de cultivos en el territorio.}
+\end{figure}
+
+El visor cuenta con una ventana desplegable ( figura \ref{4}), al darle clic se despliega la información correspondiente al polígono en particular, según lo logrado identificar, indicando: 
+
+\begin{itemize}
+\item[-]\textbf{Tipo}: Grupo de cultivo a cual corresponde, pudiendo ser: sin cultivo, caduco, persistente, pradera, cultivo de ciclo corto, huerto casero y bajo plástico.
+\item[-]\textbf{Especie}: Especie de cultivo.
+\item[-]\textbf{Variedad}: Variedad de la especie correspondiente.
+\item[-]\textbf{Sobre hilera (m)}: Marco de plantación indicando la sobre hilera, distancia en metros.
+\item[-]\textbf{Entre hilera (m)}: Marco de plantación indicando la entre hilera, distancia en metros.
+\item[-]\textbf{Método de riego}: Indica que método de riego posee.
+\item[-]\textbf{Plantación}: Año de plantación o siembra del cultivo.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Figuras_manual/visor_popup.png}
+\caption{Identificación del polígono.}
+\label{4}
+\end{figure}
+
+\subsubsection{Complementos}
+
+Al costado derecho de la pantalla, se despliegan ciertos complementos gráficos o widgets (figura \ref{5}), los cuales proporcionan información de la superficie agrícola, dando la posibilidad de ir mostrando la superficie por territorios de interés en este caso por localidades y comunidad de agua, al igual por grupo de cultivo, especie, superficie por sistema de riego y acciones por comunidad.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Figuras_manual/widget_3.png}
+\caption{Complementos}
+\label{5}
+\end{figure}
+
+\subsection{Operación}
+\label{operasuel 2.2}
+
+Mediante los widget, la plataforma permite ir filtrando la visualización de los resultados. Esto se realiza seleccionando las opciones presentes para que se visualicen sólo las características seleccionadas. Para un análisis puntual se puede consultar ya sea por superficie cultivada, comunidad, localidad, tipo, especie, sistema de riego.\bigskip\setlength{\parindent}{0pt}
+
+A continuación se describe el procedimiento para hacer la consulta por una superficie que riega un canal en particular, para este caso canal Buzeta.\bigskip\setlength{\parindent}{0pt}
+
+
+
+Se debe dar clic en la opción de canal Buzeta en Comunidad (figura \ref{6}). Al realizar esto, solo se visualizaran los polígonos perteneciente a esta comunidad, la superficie total cambiará a la superficie perteneciente al canal y los resultados de superficie cultivada igual indicara la superficie con o sin cultivo correspondiente al canal. Las superficie de tipo de cultivo y especie igual serán las correspondientes al canal.\bigskip\setlength{\parindent}{0pt}
+
+Para visualizar la totalidad de los polígonos sin filtro de alguna opción, se debe dar clic en “ ALL ” en la opción donde se aplicó el filtro, así se visualizará y obtendrá la información total.\bigskip\setlength{\parindent}{0pt}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Figuras_manual/visor_filtro.png}
+\caption{Visualización por filtro de comunidad.}
+\label{6}
+\end{figure}
+
+El listado de los canales en la opción de Comunidad no aparecen los 33 canales incorporados en el programa, por lo cual para aplicar el filtro de un canal que no aparece en el listado, debe dar clic en \texttt{“ SEARCH IN 34 CATEGORIES ”} e ingresar el nombre del canal a consultar en este ejemplo ingresamos “ canal el boldo ” y dar aplicar\texttt{ “APPLY  ”} (figura \ref{7}). En el listado de la base de datos para los 33 canales se incluye como nombre de canal \texttt{“ Otro canal "} por el motivo que había superficie que no se podía atribuir por el trazado alguno de los 33 canales contemplados en el PDT ( cuadro \ref{cuadro canales})\bigskip\setlength{\parindent}{0pt}
+
+\begin{table}[H]
+\centering
+\caption{Listados canales}
+\label{cuadro canales}
+\begin{tabular}{|l|l|}
+\hline
+Canal Aguas Claras de Chillepin & Canal Aguas Claras de Salamanca \\ \hline
+Canal Araya                     & Canal Barraco Chico             \\ \hline
+Canal Barraco Grande            & Canal Batuco                    \\ \hline
+Canal Breas o Molino de Llimpo  & Canal Buzeta                    \\ \hline
+Canal Camisas o Batito          & Canal Carachas                  \\ \hline
+Canal El Boldo                  & Canal El Jote                   \\ \hline
+Canal El Pardo                  & Canal El Pavo                   \\ \hline
+Canal El Quene                  & Canal El Sauco                  \\ \hline
+Canal Higueral                  & Canal Las Viudas                \\ \hline
+Canal Los Loros                 & Canal Molino de Choapa          \\ \hline
+Canal Molino de Los Ranchos     & Canal Molino de Peralillo       \\ \hline
+Canal Molino de Quelen          & Canal Molino de Tranquilla      \\ \hline
+Canal Pangue o Inquilino        & Canal Panguesillo Dos           \\ \hline
+Canal Panguesillo Uno           & Canal Pintacura Alto            \\ \hline
+Canal Pintacura Bajo            & Canal Poblacion                 \\ \hline
+Canal Rodadero                  & Canal Silvano                   \\ \hline
+Canal Tahuincano                & Otro Canal                      \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Figuras_manual/buscar_canal.png}
+\caption{Buscar canal}
+\label{7}
+\end{figure}
+
+Se puede realizar más de un filtro dependiendo del número de widget que se posea. Por ejemplo, se podría realizar un análisis de la superficie cultivada por localidad y clase de cultivo. En este caso se aplica a la localidad de Quelen y tipo de cultivo frutales persistentes. Se visualiza solo los polígonos correspondientes a la localidad agrupada como Quelen y que cuyos polígonos sean del tipo frutal persistente. Una vez aplicado este filtro las superficies serán correspondiente al filtro seleccionado. En la opción de especies solo serán las especies del grupo frutal persistentes la información que aparezca, se indica una especie \texttt{ “ S.I "} la cual corresponde a Sin Información, por el motivo que solo se pudo obtener su grupo de cultivo mediante teledetección.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Figuras_manual/visor_2filtro.png}
+\caption{Filtro de información por mas de una variable de consulta}
+\end{figure}
+
+\newpage
+
+\section{Plataforma Caracterización de Regantes}
+
+Esta plataforma opera con el mismo principio de la plataforma anterior, es hecha bajo el servicio de carto.com. Los componentes son los presentados en el punto (\ref{2.1}), sin embargo no se presenta leyenda para esta, solo presenta el visor y los complementos (widget) para análisis de la información.\bigskip\setlength{\parindent}{0pt}
+
+En la figura \ref{9} se presentan el visor (1) y al costado derecho los complementos (2).
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Figuras_manual/componentes_regantes2.png}
+\caption{Componentes Plataforma caracterización regantes}
+\label{9}
+\end{figure}
+
+\subsection{Componentes plataforma regantes}
+
+\subsubsection{Visor}
+
+En el visor se observa los polígonos que representan los roles de propiedad agrícola. Para realizar la plataforma de caracterización de regantes, se tomaron los roles que presentan agricultura. Para esto, con la capa de roles de propiedad 2012 obtenida del proyecto FIC-R 2012 ejecutado por el CIREN, fue intersectada con la capa de uso de suelo agrícola, con esto fueron seleccionados solo los roles con agricultura. Los roles aparecen etiquetados con su rol correspondiente, Al dar clic en algún polígono se desplegara una pestaña (figura \ref{10}) entregando la siguiente información:
+\begin{itemize}
+\item[-]\textbf{ID}: Es el identificador de cada polígono que representa una propiedad. 
+\item[-]\textbf{ROL}: Corresponde al rol de propiedad.
+\item[-]\textbf{SUPERFICIE ROL (HA)}: Corresponde a la superficie de cada polígono en hectáreas.
+\item[-]\textbf{LOCALIDAD}: Indica en que localidad se encuentra el polígono consultado.
+\item[-]\textbf{SUPERFICIE PARA AGRICULTURA}: Corresponde a la superficie total de que posee o ha tenido agricultura alguna vez, la base de esto es la capa de cuarteles utilizada en la plataforma de uso de suelo.
+\item[-]\textbf{\% EXPLOTADO AGRICULTURA}: Corresponde al porcentaje que representa “ SUPERFICIE PARA AGRICULTURA " con respecto a la superficie total de la propiedad “ SUPERFICIE ROL (HA) ".
+\item[-]\textbf{SUPERFICIE RIEGO TECNIFICADO}: Corresponde al porcentaje que representa la superficie con riego tecnificado (goteo y microaspersión) en la propiedad.
+\item[-]\textbf{SUPERFICIE RIEGO TRADICIONAL}: Corresponde al porcentaje que representa la superficie con riego tradicional (surco y tendido) en la propiedad.
+\item[-]\textbf{SUPERFICIE CULTIVO PERMANENTE}: Es la superficie con cultivos con demanda permanente de agua, correspondiente a frutales caducos y persistentes, esta representado en hectáreas.
+\item[-]\textbf{SUPERFICIE CULTIVO TEMPORAL}: Es la superficie con cultivos de demanda temporal de agua, clasificados como cultivos de ciclo corto, praderas, cultivos bajo plástico y huertos caseros, la superficie se expresa en hectáreas.
+\item[-]\textbf{OBRA DE ACUMULACIÓN}: Indica si la propiedad posee obra de acumulación hídrica destinada a riego. 
+\item[-]\textbf{N° OBRAS}: Indica el número de obras destinadas a riego en la propiedad.
+\item[-]\textbf{NÚMERO DE CANALES}: Indican el número de canales con que riega la propiedad. Cabe mencionar que fue determinado a partir del trazado de los canales en la capa de uso de suelo.
+\item[-]\textbf{CANAL 1}: Indica el nombre del canal que riega la propiedad.
+\item[-]\textbf{CANAL 2}: Indica el nombre del segundo canal que riega la propiedad si corresponde.
+\item[-]\textbf{CANAL 3}: Indica el nombre del tercer canal que riega la propiedad si corresponde.
+\item[-]\textbf{SUPERFICIE RIEGO GOTEO}: Indica la superficie que es regada por riego por goteo,expresada en hectáreas.
+\item[-]\textbf{SUPERFICIE RIEGO MICROASPERSIÓN}: Indica la superficie que es regada por microaspersión, expresada en hectáreas.
+\item[-]\textbf{SUPERFICIE RIEGO SURCO}:Indica la superficie que es regada por surco, expresada en hectáreas.
+\item[-]\textbf{SUPERFICIE RIEGO TENDIDO}:Indica la superficie que es regada por tendido, expresada en hectáreas.
+\item[-]\textbf{SUPERFICIE RIEGO SIN INFORMACIÓN}: Indica la superficie que no se tiene la información del sistema de riego con que riega la propiedad, expresada en hectáreas.
+\item[-]\textbf{SUPERFICIE RIEGO NO APLICA}: Indica la superficie a la cual por no presentar cultivo no se le atribuye sistema de riego, expresada en hectáreas.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Figuras_manual/visorregantes.png}
+\caption{Visor plataforma caracterización regantes}
+\label{10}
+\end{figure}
+
+\subsubsection{Complementos}
+\label{complementos}
+
+Los complementos gráficos al costado derecho ( figura \ref{11}) al  igual que la plataforma de uso de suelo, entregaran información de diferentes items, permitiendo filtrar según el tópico de interés. La información presentada en los complementos es la siguiente:
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Figuras_manual/widget_regantes.png}
+\caption{Complementos plataforma caracterización de regantes}
+\label{11}
+\end{figure}
+
+ \begin{itemize}
+ \item[-]\textbf{N° de roles}: Indica el número de roles (propiedades) que presentan agricultura o han sido explotado con agricultura.
+ \item[-]\textbf{Localidad}: Indica por localidad la superficie en hectáreas utilizada para agricultura. Se presentan 16 localidades (cuadro \ref{cuadro 2}) para consultas. 
+
+\begin{table}[H]
+\centering
+\caption{Localidades bajo análisis}
+\label{cuadro 2}
+\begin{tabular}{@{}l@{}}
+\toprule
+\textbf{Localidades} \\ \midrule
+Chalinga             \\
+Chillepin            \\
+Choapa               \\
+Chuchini             \\
+Coiron               \\
+Cuncumen             \\
+Higuerilla           \\
+Limahuida            \\
+Llimpo               \\
+Quelen               \\
+Salamanca            \\
+Santa Rosa           \\
+Tahuinco             \\
+Tambo                \\
+Tebal                \\
+Tranquilla           \\ \bottomrule
+\end{tabular}
+\end{table}
+ 
+ Ejemplo, si deseamos filtrar la localidad de Choapa, solo se visualizara los roles presentes en esta localidad, por lo tanto la información de los demás items estarán sujeta al filtro aplicado.
+ 
+ 
+ 
+ \item[-]\textbf{Tamaño explotación}: Este widget categoriza los roles según su tamaño. Se agruparon los roles en 12 categorías distintas desde propiedades de una hectárea a mas de 300, las cuales son la suma de superficie que presenten cultivos o sin cultivos. En el cuadro \ref{cuadro3}  se presentan las categorías de tamaño de explotación
+ 
+\begin{table}[H]
+\centering
+\caption{Tamaño de explotación}
+\label{cuadro3}
+\begin{tabular}{@{}c@{}}
+\toprule
+\textbf{Tamaño explotación} \\ \midrule
+< 1 ha                      \\
+1 a 5 ha                    \\
+5 a 10 ha                   \\
+10 a 15 ha                  \\
+15 a 20 ha                  \\
+20 a 25 ha                  \\
+25 a 30 ha                  \\
+30 a 50 ha                  \\
+50 a 100 ha                 \\
+100 a 200 ha                \\
+200 a 300 ha                \\
+>300 ha                     \\ \bottomrule
+\end{tabular}
+\end{table}
+ 
+ \item[-]\textbf{N° de canales por rol}: Indica el número de roles que es regado por por 1, 2 o 3 canales.
+ \item[-]\textbf{Canal 1}: Indica la superficie que es regada por cada canal,
+ \item[-]\textbf{Canal 2}: Indica la superficie regada por un segundo canal, si corresponde.
+ \item[-]\textbf{Canal 3}: Indica la superficie regada por un tercer canal, si corresponde.
+ \item[-]\textbf{Porcentaje explotado}: Muestra en una gráfica de histograma la concentración de roles según el porcentaje explotado, este fue calculado por la superficie de cada cuartel de la capa de uso suelo con respecto a la superficie total de la propiedad calculado del polígono de la capa de roles.  
+ 
+ \item[-]\textbf{Superficie cultivos permanentes}: Indica la cantidad de superficie frutal (caducos y persistentes) en hectáreas.
+ \item[-]\textbf{Rol cultivos permanentes (ha)}: Indica por medio de gráfica de histograma el número de roles que presentan una determinada superficie de cultivos de demanda hídrica permanente en hectáreas.
+ \item[-]\textbf{Superficie cultivos temporales}: Indica la cantidad de superficie cultivos de demanda hídrica temporal (cultivos de ciclo corto, praderas, huertos caseros, bajo plástico) en hectáreas.
+ \item[-]\textbf{Roles cultivos temporales (ha)}: Indica por medio de gráfica de histograma el número de roles que presentan una determinada superficie de cultivos de demanda hídrica permanente en hectáreas.
+ \item[-]\textbf{Superficie sin cultivo}: Indica la cantidad de superficie sin cultivo en hectáreas.
+ \item[-]\textbf{Roles sin cultivos (ha)}: Indica por medio de gráfica de histograma el número de roles que presentan una determinada superficie sin cultivo.
+ \item[-]\textbf{Obras de acumulación}: Indica el número de roles que poseen obras de acumulación hídrica para riego, se indica los roles \texttt{“ Sin información "},\texttt{ “ NO "} no poseen obra, \texttt{“ SI "} posee obra,\texttt{“ NO RESPONDE "} y \texttt{“ COMUNITARIO "}. 
+\item[-]\textbf{Goteo}: Indica la superficie que es regada con riego por goteo.
+\item[-]\textbf{Roles con riego por goteo (ha)}: Indica el número de roles según superficies (ha) de riego por goteo. 
+\item[-]\textbf{Microaspersión}: Indica la superficie que es regada con riego por microaspersión.
+\item[-]\textbf{Roles con riego por microaspersión (ha)}: Indica el número de roles según superficies (ha) de riego por microaspersión. 
+\item[-]\textbf{Surco}: Indica la superficie que es regada con riego por surco.
+\item[-]\textbf{Roles con riego por surco (ha)}: Indica el número de roles según superficies de riego por surco.
+\item[-]\textbf{Tendido}: Indica la superficie que es regada con riego por tendido.
+\item[-]\textbf{Roles con riego por tendido (ha)}: Indica el número de roles según superficies (ha) de riego por tendido.
+\item[-]\textbf{No aplica}:Indica la superficie la cual por no poseer cultivos se atribuye sistema de riego.
+\item[-]\textbf{Sin información}: Indica la superficie que no se tiene información del sistema de riego con que se riega.
+\item[-]\textbf{Tecnología riego}:Es una caracterización basado en la tecnología utilizado con respecto al riego en la propiedad, clasificados en 4 categorías. 
+
+\begin{table}[H]
+\centering
+\caption{Tecnología en riego}
+\label{4}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Nivel}                  & \multicolumn{1}{c|}{\textbf{Definición}}                                                                                                                                \\ \hline
+\textbf{Alto}                   & \begin{tabular}[c]{@{}l@{}}La propiedad posee el 50\% o más de su superficie con riego tecnológico y \\ cuenta con obras de almacenamiento hídrico propio.\end{tabular} \\ \hline
+\multirow{3}{*}{\textbf{Medio}} & \begin{tabular}[c]{@{}l@{}}La propiedad posee el 50\% de su superficie con riego tecnológico y obra \\ de inversión comunitaria.\end{tabular}                           \\ \cline{2-2} 
+                                & \begin{tabular}[c]{@{}l@{}}La propiedad posee solo el 50\% de su superficie con riego tecnificado sin \\ presentar obra de acumulación.\end{tabular}                    \\ \cline{2-2} 
+                                & \begin{tabular}[c]{@{}l@{}}La propiedad posee menos del 50\% de su superficie con tecnología y cuenta \\ con obra de acumulación propia.\end{tabular}                   \\ \hline
+\multirow{2}{*}{\textbf{Bajo}}  & \begin{tabular}[c]{@{}l@{}}Posee solo obra de acumulación propia o comunitaria sin reunión riego \\  tecnificado.\end{tabular}                                          \\ \cline{2-2} 
+                                & Posee menos del 50\% de la superficie con riego tecnificado.                                                                                                            \\ \hline
+\textbf{Nulo}                   & No posee obra de acumulación y riego tecnificado.                                                                                                                       \\ \hline
+\end{tabular}
+\end{table}
+
+ \end{itemize}
+
+\subsection{Operación}
+
+Como se menciono en la sección de la plataforma de uso de suelo, mediante los widgets permitirán ir entregando información que se va visualizando, al igual que al dar clic en cada polígono se desplegara una pestaña con la información especifica para el objeto consultado.
+
+Los widget pueden ser dinámicos o no, para el primero los datos se van ajustando con respecto al visor, dependiendo del zoom serán los datos informados. Para los que no son dinámicos la información se presenta fija independiente de los niveles de zoom que se haga al visor, solo cambian al aplicar algún filtro.\setlength{\parindent}{0pt}
+
+Los widgets fueron asignados dinámicos o no, según fuese mejor la operatividad de la plataforma, ya que tener todos los widgets dinámicos se esta sujeto al visor.  
+
+
+
+
+\subsubsection{Complementos No dinámicos}
+
+Estos complementos gráficos (widgets) permiten ir filtrando la visualización de los resultados, por lo cual dando clic a las opciones presentes en los complementos muestra solo los resultados de la opción elegida.\bigskip\setlength{\parindent}{0pt}
+
+Ejemplo al seleccionar alguna localidad en este caso Choapa, la información de los demás widget se ajustara al filtro aplicado (figura \ref{13}).
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Figuras_manual/filtro_localidades.png}
+\caption{Filtro localidad}
+\label{13}
+\end{figure}
+
+\subsubsection{Complementos dinámicos}
+
+Para estos widgets, la información se presenta de manera dinámica, esto quiere decir que la información va cambiando sujeto a donde se enfoca el visor, por lo cual al ir haciendo zoom (acercamiento) la información se ira ajustando a solo  lo visualizado.\bigskip\setlength{\parindent}{0pt}
+
+En las figuras \ref{14} y \ref{15}, se muestra como cambian los datos mostrados por el widget “ Tamaño explotación ", se encuentran filtrado por la localidad, pero al cambiar el visor, se observa que los tamaños de explotaciones cambian. Al analizar la superficie menor a 1 hectárea (<1 HA), en la figura \ref{14} son 153 roles que presentan esa condición. Al hacer el acercamiento ( figura \ref{15}) se observa que los roles que son menor a 1 hectárea son solo 35.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{Figuras_manual/tam_explot111.png}
+\caption{Visualización sin acercamiento}
+\label{14}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{Figuras_manual/tam_explot2.png}
+\caption{Visualización con acercamiento}
+\label{15}
+\end{figure}
+
+Los widget que presentan esta condición de dinámicos con respecto al visor son: tamaño explotación, Porcentaje explotado,  Roles cultivos permanentes (ha), Roles cultivos temporales (ha), Roles sin cultivos (ha), Roles con riego por goteo (ha), Roles con riego por microaspersión (ha), Roles con riego por surco (ha) y Roles con riego por tendido (ha).
+
+Para los demás widget los datos irán cambiando cuando se vayan aplicando filtro en algunos de estos como se muestra en la figura \ref{13}. 
+
+
+\subsubsection{Complementos de histogramas}
+
+Estos widgets entregan la información en un gráfica de histogramas, son complementos dinámicos, los cuales mediante columnas informan la cantidad de roles que presentan cierto valor indicado en la abscisa de la gráfica, que puede ser para esta plataforma porcentaje o superficie. \bigskip\setlength{\parindent}{0pt}
+
+En la figura \ref{histo12}, se muestra el widget de histograma, para este ejemplo se muestra “ Porcentaje explotado" donde las columnas verdes (1) indica la cantidad de roles que posee un porcentaje explotado indicado en la eje de la abscisa (2). La gráfica muestra la cantidad de roles seleccionados (3) en el histograma.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1.2]{Figuras_manual/widget_histograma.png}
+\caption{Widget de histograma}
+\label{histo12}
+\end{figure}
+
+Este tipo de complemento permite hacer filtro de los elementos que se desean visualizar. Ejemplo: se 
+requiere visualizar solo los roles que presentan el porcentaje explotado mayor al 50\%. Para esto con el mouse se fija en la gráfica los porcentaje que se desean visualizar (figura \ref{16}) . Al realizar esto, en el visor sólo se presentarán los roles que se ajusten a esta condición, en el circulo de color azul indica que fueron seleccionados alrededor de 1.600 roles que cumple esta condición. Al hacer esta selección se puede hacer un zoom (circulo de color rojo), para ver el histograma con la condición seleccionada.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1.2]{Figuras_manual/selec_rol_histo2.png}
+\caption{Selección de roles con porcentaje explotado mayor a 50\%}
+\label{16}
+\end{figure}
+
+En la figura \ref{17}, se observa el visor (2) con los roles seleccionados que presentan porcentaje explotado mayor al 50\%. En la sección de los complementos se observa al histograma con el zoom aplicado a la selección mayor del 50\%. Se puede volver a seleccionar en este segundo gráfico los roles que presenten cierto porcentaje explotado. Para que se vuelvan a visualizar todos los roles nuevamente solo se debe dar clic en \texttt{ “CLEAR "}.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Figuras_manual/filtro_histo.png}
+\caption{Zoom histograma}
+\label{17}
+\end{figure}
+
+\subsection{Consideraciones}
+\begin{enumerate}
+
+\item En la sección de los complementos donde se presenta la información, no siempre aparece la totalidad de la información que están en el análisis por el motivo que son componentes, así por ejemplo, en el widget de localidad, canal 1, canal 2 y tamaño explotación no aparecen todos los resultados, por lo cual para buscar y seleccionar alguna localidad, canal, rango de tamaño de explotación que no aparezca en el visor, se debe dirigir a \texttt  {“ SEARCH IN (número según corresponda) CATEGORIES "} ( figura \ref{search}) escribir alguna de las opciones listadas en los complementos expuestos en el punto \ref{complementos}  y dar “ APPLY ". 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{Figuras_manual/search.png}
+\caption{Buscar categoría}
+\label{search}
+\end{figure}
+
+\item Para dar una visión mas rápida a los resultados presentes en el visor, se puede categorizar los diferentes widget de análisis aplicando un estilo de color para los valores. En los widgets disponible, en la parte superior derecha estará un icono para generar un estilo automático ( figura \ref{aplicarestilo}).
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{Figuras_manual/aplicar_color.png}
+\caption{Aplicar estilo automático.}
+\label{aplicarestilo}
+\end{figure}
+
+Al aplicar este estilo, se visualizará en este caso los roles que sean regados por 1, 2 o 3 canales de colores diferentes, como se ve en la figura \ref{estilocolor}.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Figuras_manual/visor_estilo.png}
+\caption{Estilo aplicado}
+\label{estilocolor}
+\end{figure}
+
+
+
+\end{enumerate}
+\end{document}  
