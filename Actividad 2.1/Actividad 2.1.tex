@@ -1,49 +1,102 @@
-\documentclass[10pt]{article}
-\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
-\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
-\usepackage{graphicx}			% insertar gráficos
-\usepackage{amssymb}			% Símbolos
-\usepackage[hidelinks]{hyperref}			% para incluir hiper-referencias
-\usepackage{titlesec}			% Cambiar formato de títulos
-\usepackage[plain, noabstract, nocomment]{flexbib} % Para citar con paréntesis y cosas así 
-% https://www.nacho-alvarezx.es/index.php/blog/2007/04/15/estilo-de-bibliografia-para-bibte/
-% http://www.latex.um.es/retazos/leccion_15/flexbib_manual.pdf
-% Editato el spanishbst.tex y flexbib.sty
-\usepackage{appendix} % Anexos
-\usepackage{subfigure} % Para incluir varias figuras
-\usepackage{float}
-\usepackage{booktabs} %PARA TABLAS
-\usepackage{multirow} % para tablas
-\usepackage{longtable}
-\usepackage{multicol}
-\usepackage[table,xcdraw]{xcolor}
-\usepackage{lscape}
-\usepackage[pages=all]{background}  %Fondo del documento
-\usepackage{fontspec,xltxtra,xunicode}		% Por defecto
-\usepackage[outline]{contour}
-\usepackage{xcolor}
-\usepackage[12pt]{moresize}
-\usepackage{stackengine}
-\defaultfontfeatures{Mapping=tex-text}		% Para usar Century Gothic
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={ACTIVIDAD 1. PIRHI},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
 
-\setmainfont[		% Para usar Century Gothic
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{Diagnóstico técnico-social del protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica.}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{}
+  \preauthor{}\postauthor{}
+  \date{}
+  \predate{}\postdate{}
+
+\usepackage{geometry}
+\geometry{letterpaper}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{appendix}  
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{rotating}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[		
  BoldFont={Century Gothic Bold}, 
  ItalicFont={Century Gothic Italic},
  BoldItalicFont={Century Gothic Bold Italic}
  ]{Century Gothic}
- 
- 
- 
 
-\bibpunct{(}{)}{;}{a}{,}{,} % Modificar como se cita https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management
-
-\renewcommand{\bibsection}{\section{Bibliografía\\}} % Cambiar nombre de la bibliografía insertada al final del documento
-\renewcommand{\figurename}{Figura} % Cambiar el nombre de las figuras
-\renewcommand{\tablename}{Cuadro} % Cambiar el nombre de las tablas
-\renewcommand{\contentsname}{Tabla de contenidos\\} % Cambiar el nombre de la tabla de contenidos
-\renewcommand{\listfigurename}{Índice de figuras\\} % lista de figuras
-\renewcommand{\listtablename}{Índice de cuadros\\} % lista de cuadros
-%http://www.elmundoenbits.com/2012/03/latex-problemas-con-el-anexos.html#.WOrWdVKZNE4
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Cuadro} 
+\renewcommand{\contentsname}{Tabla de contenidos\\} 
+\renewcommand{\listfigurename}{Índice de figuras\\}
+\renewcommand{\listtablename}{Índice de cuadros\\} 
 \renewcommand{\appendixname}{Anexos}
 \renewcommand{\appendixtocname}{Anexos}
 \renewcommand{\appendixpagename}{Anexos}
@@ -53,630 +106,672 @@
 \titleformat*{\subsection}{\normalsize\bfseries}
 \titleformat*{\subsubsection}{\normalsize\bfseries}
 
-\title{Manual Usuario Plataformas Uso de Suelo y Caracterización de Regantes}
-\author{Laboratorio PROMMRA}
-\date{}                                           % Activate to display a given date or no date
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{color}
+\usepackage{framed}
+\usepackage{tabulary}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage[normalem]{ulem}
+\usepackage[none]{hyphenat}
+\usepackage{multicol}
+\usepackage{lscape}
 
-%\usepackage{fancyhdr} % para pie de pagina
-%\pagestyle{fancy} % para pie de pagina
+% Regla con color
+\makeatletter
+\let\old@rule\@rule
+\def\@rule[#1]#2#3{\textcolor{rulecolor}{\old@rule[#1]{#2}{#3}}}
+\makeatother
+% Cambiar color de regla
+\definecolor{rulecolor}{RGB}{183,183,183}
 
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\rhead{}
-\lhead{}
-\cfoot{ Laboratorio de Prospección, Monitoreo y Modelación de Recursos Agrícolas y Ambientales  PROMMRA}
-%  Laboratorio de Prospección, Monitoreo y Modelación de Recursos Agrícolas y Ambientales  PROMMRA  \\
-		%\Mundus\ \href{http://www.prommra.cl}{www.prommra.cl}	\quad
-		%\Telefon\ +56 51 255 4907 / 51 255 4914 / 51 255 4918	\quad
-		%\Letter\ \href{mailto:prommra@userena.cl}{prommra@userena.cl}
-%\cfoot{ }
-\rfoot{\thepage}
-\renewcommand{\headrulewidth} {0pt}
-\renewcommand{\footrulewidth} {1pt}
-
-\contourlength{.4em}
-
-%%%%%% Contornos
-
-
-\newcommand\shadowfy[1]{\expandafter\shadowfypars#1\par\relax\relax}
-\long\def\shadowfypars#1\par#2\relax{%
-  \ifx#1\relax\else
-    \shadowfywords#1 \relax\relax%
-  \fi%
-  \ifx\relax#2\else\par\shadowfypars#2\relax\fi%
-}
-\def\shadowfywords#1 #2\relax{%
-  \ifx#1\relax\else
-    \shadowfyletters#1\relax\relax%
-  \fi%
-  \ifx\relax#2\else\ \shadowfywords#2\relax\fi%
-}
-\def\shadowfyletters#1#2\relax{%
-  \shadow{#1}%
-  \ifx\relax#2\else\shadowfyletters#2\relax\fi}
-
-\newlength\shadowHoffset
-\newlength\shadowVoffset
-\setlength\shadowHoffset{.2pt}
-\setlength\shadowVoffset{.1pt}
-\def\primarycolor{white}
-\def\secondarycolor{black}
-
-\def\shadow#1{\setstackgap{L}{0pt}\def\stacktype{L}%
-\def\useanchorwidth{T}% CAN BE COMMENTEDD FOR MORE INTERLETTER SPACE.
-\Longstack{%
-\raisebox{0pt}{\textcolor{\primarycolor}{#1}} 
-\kern.7\shadowHoffset\raisebox{.7\shadowVoffset}{\textcolor{\secondarycolor}{#1}}
-\kern-.7\shadowHoffset\raisebox{.7\shadowVoffset}{\textcolor{\secondarycolor}{#1}}
-\kern\shadowHoffset\raisebox{0pt}{\textcolor{\secondarycolor}{#1}}
-\kern-\shadowHoffset\raisebox{0pt}{\textcolor{\secondarycolor}{#1}}
-\kern.7\shadowHoffset\raisebox{-.7\shadowVoffset}{\textcolor{\secondarycolor}{#1}}
-\kern-.7\shadowHoffset\raisebox{-.7\shadowVoffset}{\textcolor{\secondarycolor}{#1}}
-\kern0pt\raisebox{\shadowVoffset}{\textcolor{\secondarycolor}{#1}}
-\kern0pt\raisebox{-\shadowVoffset}{\textcolor{\secondarycolor}{#1}}%
-}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+% Color para las letras del título
+\definecolor{casinegro}{RGB}{71,71,71}
 
 \begin{document}
-% para el sello de agua
-\backgroundsetup{
-	scale=1, %escala de la imagen, es recomendable que sea del mismo tamaño que el pdf
-	color=black, %fondo a usar para transparencia
-	opacity=1, %nivel de transparencia
-	angle=0, %en caso de querer una rotación
-	contents={%
-		\includegraphics[width=\paperwidth,height=\paperheight]{Figuras_manual/para_fondo_manual2.pdf}
-	}%
-}
-%***********para portada
+\sloppy 
+
+\newgeometry{left=3cm,bottom=0cm,top=1cm,right=3cm}
 
 \begin{titlepage}
-\newgeometry{left=3cm,bottom=0.1cm}
-\begin{center}
-\vspace*{30mm}
 
-\setlength\shadowHoffset{1pt}
-\setlength\shadowVoffset{1pt}
+\begin{figure} [H]
+  \includegraphics[width=.2\textwidth]{Logo/bg_gob_logo.png}
+\end{figure}
 
-\HUGE\textbf{\shadowfy{Manual de usuario Plataformas Uso de Suelo Agrícola y Caracterización de Regantes
-}}
+\fontsize{15}{0} \selectfont{\textbf{\textcolor{casinegro}{``PLANIFICACIÓN DE LA INVERSIÓN EN REVESTIMIENTOS HÍDRICOS"}}} \vspace*{.1in}\\ % el inicio de comillas simples es ` y de doble es de ``.
+\fontsize{15}{0} \selectfont{\textcolor{casinegro}{FIC-R 2016}}\\
+\rule{10cm}{.05cm}
+\vspace*{.1in}
+\hspace*{.2in}
 
-\vspace{70mm}
+\fontsize{14}{0} \selectfont{\textcolor{casinegro}{Universidad de La Serena}} \vspace*{.1in}\\
+\fontsize{14}{0} \selectfont{\textbf{\textcolor{casinegro}{Región de Coquimbo}}}
 
-\large\textbf{\shadowfy{“Programa de Difusión Tecnológica en uso eficiente de los recursos hídricos y la optimización de las inversiones público - privadas en obras de riego extra e intrapredial en el área de influencia de la Junta de Vigilancia del río Choapa y sus Afluentes”
-}}
+\vspace*{.1in}
 
-\vspace{2mm}
+\begin{figure}[H]
+  \centering
+\begin{subfigure}[c]{.2\textwidth}
+  \includegraphics[width=\textwidth]{Logo/GOB_RGB.png}
+\end{subfigure}
+\hfill
+\begin{subfigure}[c]{.23\textwidth}
+  \includegraphics[width=\textwidth]{Logo/uls.png} 
+\end{subfigure}
+\end{figure}
+\vspace*{4in}
 
-\large\textbf{\shadowfy{Proyecto financiado con aportes CORFO 2017
-}}
+\begin{figure}[H]
+  \centering
+\begin{subfigure}{.74\textwidth}
+   \fontsize{14}{0} \selectfont{\textcolor{casinegro}{Abril 2018}} \\
+   {\definecolor{rulecolor}{named}{casinegro}\rule[-3mm]{10cm}{.05cm}}
+\end{subfigure}
+\hfill
+\begin{subfigure}{.25\textwidth}
+\hfill
+  \includegraphics[width=\textwidth]{Logo/lgore.pdf} 
+\end{subfigure}
+\end{figure}
 
-\vspace{2mm}
 
-
-
-\vfill
-
-
-
-
-
-\vspace{13.5mm}
-
-\end{center}
-\clearpage
-\restoregeometry
 \end{titlepage}
 
-\newpage
-
-% para el sello de agua
-\backgroundsetup{
-	scale=0.8, %escala de la imagen, es recomendable que sea del mismo tamaño que el pdf
-	color=black, %fondo a usar para transparencia
-	opacity=0., %nivel de transparencia
-	angle=0, %en caso de querer una rotación
-	contents={%
-		\includegraphics[width=\paperwidth,height=\paperheight]{Figuras_manual/fondo_prommra.pdf}
-	}%
-}
+\restoregeometry
 
 
-%\maketitle
-%\begin{figure}[H]
-%\caption{}
-%\centering
-%\includegraphics[scale=0.5]{Figuras_manual/visor_estilo.png}
-%\end{figure}
+\begin{table}[!htb]
+\centering \vspace*{2.5in}
+\begin{tabular}{|l|l|l|l|}
+    \hline
+    \multicolumn{3}{|c|}{\multirow{2}{8cm}{\centering \textbf{INFORME DE AVANCE TÉCNICO} \\
+    \textbf{FIC REGIONAL} }} & \textbf{Fecha de emisión:}\\
+    \cline{4-4}
+    \multicolumn{3}{|c|}{\multirow{2}{8cm}} &  Abril 2018\\
+    \hline
+    \textbf{Fecha de inicio:}  &\textbf{Fecha de término:} &\textbf{N° de informe:} &\textbf{Duración:}\\
+     20/Diciembre/2017 & 20/Octubre/2019 & 1 & 22 meses\\
+    \hline
+    \textbf{Nombre del proyecto:} & \multicolumn{3}{|l|}{\textbf{Planificación de la Inversión en Recursos Hídricos}}\\
+    \hline
+    \multirow{4}{4cm}{\textbf{Financiamiento:}} & \textbf{Monto total del proyecto:} & \multicolumn{2}{c|}{\centering M\$ 222.188}\\
+    \cline{2-4}
+    & \multirow{2}{4cm}{\textbf{Aporte FIC-R:}} & \multicolumn{2}{c|}{\textbf{Año 1:} M\$ 90.040}\\
+    \cline{3-4}
+    & & \multicolumn{2}{c|}{\textbf{Año 2:} M\$ 109.928}\\
+    \cline{2-4}
+    & \textbf{Aporte institución:} & \multicolumn{2}{c|}{\centering M\$ 22.220}\\
+    \hline
+    \textbf{Institución ejecutora:} & \multicolumn{3}{|l|}{\centering Universidad de La Serena}\\
+    \hline
+    \textbf{Responsable del proyecto:} & \multicolumn{3}{|l|}{\centering Dr. Pablo Álvarez Latorre}\\
+    \hline
+    \textbf{Cargo:} & \multicolumn{3}{|l|}{\centering Director del proyecto}\\
+    \hline
+    \textbf{E-mail:} & \multicolumn{3}{|l|}{\centering pabloa@userena.cl}\\
+    \hline
+    \textbf{Fono:} & \multicolumn{3}{|l|}{\centering 51-2554913}\\
+    \hline
 
+\end{tabular}
 
-%PORTADA
-\newpage
+\end{table}
+
+\clearpage
+
 \tableofcontents
 
-\newpage
+\clearpage
 
-\backgroundsetup{
-	scale=0.8, %escala de la imagen, es recomendable que sea del mismo tamaño que el pdf
-	color=black, %fondo a usar para transparencia
-	opacity=0.1, %nivel de transparencia
-	angle=0, %en caso de querer una rotación
-	contents={%
-		\includegraphics[width=\paperwidth,height=\paperheight]{Figuras_manual/fondo_prommra.pdf}
-	}%
-}
-\section{Presentacion}
+\section{Resumen del Proyecto}
 
-
-
-Contar con la información geoespacializada del uso de suelo agrícola, permite disponer de la distribución de los cultivos que componen el territorio. Con esta información se puede estimar la demanda del recurso hídrico por estos cultivos, siendo un aporte importante para la gestión del recurso.\bigskip\setlength{\parindent}{0pt}
-
-La caracterización de los diferentes usuarios que componen la organización permite conocer como se componen productivamente las diferentes explotaciones de cada uno y las condiciones en que se encuentran, permitiendo hacer un diagnostico del área de interés.\bigskip\setlength{\parindent}{0pt}
-
-Las plataformas de visualización y operación del uso de suelo agrícola y caracterización de regantes del área de influencia del PDT-Choapa, está realizada bajo el servicio de CARTO, el cual posee las características de ser un servicio libre y gratuito hasta cierto tamaño de almacenamiento de información. Esta plataforma permite visualizar y hacer consultas online de manera simple e interactiva mediantes complementos gráficos (widgets).  \bigskip\setlength{\parindent}{0pt}
-
-A continuación se presenta la operación para las plataformas de uso de suelo y caracteri-\\zación de regantes realizada bajo el Programa de Difusión Tecnológica en uso eficiente de los recursos hídricos y la optimización de las inversiones público - privadas en obras de riego extra e intrapredial en el área de influencia de la Junta de Vigilancia del río Choapa y  sus Afluentes.
-\newpage
-
-\section{Plataforma uso de suelo agrícola}
-
-
-La información presentada corresponde a la levantada en terreno en las diferentes campañas de catastros realizados en el año 2017, más información obtenida por medio de teledetección. 
-La información visualizada se presenta clasificada en los siguientes grupos de cultivos:
-
+La iniciativa denominada ``Planificación de la Inversión en Revestimientos Hídricos", se adjudicó un financiamiento FIC de \$ 199.968.000, lo que sumado a los aportes de la contraparte totalizan \$ 220.188.000. Ejecutándose desde Diciembre de 2017 a Octubre de 2019, por un período de 22 meses.\\
+\\
+El proyecto tiene por finalidad planificar el mejoramiento de la eficiencia de conducción hídrica, a través de la transferencia de conocimientos y herramientas a las Organizaciones de Usuarios de Aguas (OUA's) para apoyar la gestión de recursos hídricos. El impacto directo o propósito es incrementar la oferta neta, por medio de la priorización de las inversiones público-privadas basados en parámetros técnico-social.\\
+\\
+El área en la cual se desarrolla esta iniciativa corresponde a la cuenca del río Choapa, abarcando toda el área de influencia de la Junta de Vigilancia del río Chalinga y sus Afluentes, la Junta de Vigilancia del río Illapel y sus Afluentes, y la Junta de Vigilancia del río Choapa y sus Afluentes. Por lo mismo, las instituciones asociadas al proyecto son la Junta de Vigilancia del río Chalinga y sus Afluentes, la Junta de Vigilancia del río Illapel y sus afluentes, y la Junta de Vigilancia del río Choapa y sus Afluentes, además como beneficiarios indirectos la Fundación Minera Los Pelambres e instituciones públicas como la Dirección de Obras Hidráulicas y la Comisión Nacional de Riego.\\
+\\
+Los resultados esperados de este proyecto son:
 \begin{itemize}
-
-\item[-]Sin cultivos: Superficie no cultivada.
-\item[-]Caduco: Superficie cultivada con frutales caducos como: Vides, Nogales, Damascos etc,
-\item[-]Persistente: Superficie cultivada con frutales persitentes como: Paltos, cítricos, etc.
-\item[-]Pradera: Superficie cultivada con pasturas como: alfalfa.
-\item[-]Cultivos ciclo corto: Superficie con cultivos como: hortalizas, cultivos anuales, cereales, etc.
-\item[-]Huerto casero: Superficie sin cultivo principal.
-\item[-]Bajo plástico: Superficie con cultivos de ciclo corto bajo cubierta (invernaderos). \bigskip\setlength{\parindent}{0pt}
+\item Protocolo técnico-social de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica.
+\item Plan de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica para la red de distribución de la Junta de Vigilancia Río Chalinga y sus Afluentes.
+\item Plan de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica para la red de distribución de la Junta de Vigilancia Río Illapel y sus Afluentes.
+\item Plan de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica para la red de distribución en la Junta de Vigilancia Río Choapa y sus Afluentes.
+\item Programa de capacitación en gestión hídrica.
+\item Sistema virtual de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica para las cuencas del río Choapa.
+\item Protocolo técnico-social de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica.
 \end{itemize}
 
-\subsection{Componentes Plataforma Uso Suelo Agrícola}
-\label{2.1}
+El mérito innovador del proyecto se visualiza en establecer bases para la gestión integrada de los recursos hídricos de la cuenca, a través de un ordenamiento de la inversión en mejoramiento de eficiencia de conducción, por medio de la modelación dinámica del sistema hídrico.\\
+\\
+El equipo de trabajo de este proyecto está constituido por profesionales del Laboratorio de Prospección, Monitoreo y Modelación de Recursos Agrícolas y Ambientales (PROMMRA) perteneciente al Departamento de Agronomía de la Universidad de La Serena, liderado por el Dr. Pablo Álvarez Latorre.\\
+\clearpage
 
-La plataforma de uso de suelo consta de 3 componentes, en la figura \ref{1} se presentan.
+\section{Resumen del período a informar}
 
-\begin{enumerate}
-\item Leyenda: Indica el grupo de cultivo identificado y el color de representación en el mapa.
-\item Visor: Visualiza los polígonos correspondiente a zonas con cultivos o zonas que fueron cultivadas.
-\item	Complementos (widgets): Entrega información con respecto al uso de suelo agrícola (superficies) y la distribución por unidades homogéneas del territorio. Permite interactuar activando o desactivando las opciones de análisis y mediante erl área visualizada, modificando la información presente en cada widget en función de la extensión de la vista.
-
-\end{enumerate}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{Figuras_manual/componentesvisor12.png}
-\caption{Componentes plataforma}
-\label{1}
-\end{figure}
-
-\subsubsection{Leyenda}
-Indica a que corresponde cada unidad presente en el territorio con el color correspondiente al grupo de cultivo definido (ver figura \ref{2}).
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{Figuras_manual/Leyenda_2.pdf}
-\caption{Leyenda grupo de cultivo}
-\label{2}
-\end{figure}
-
+El proyecto FIC-R 2016 - Planificación de la Inversión en Revestimientos Hídrico - código BIP XXXX, comenzó con su ejecución el 20 de Diciembre de 2017. En este informe se presenta el avance de ejecución de la componente 1, que abarca el período entre el 20 de Diciembre de 2017 y el 20 de Abril de 2018.\\
+\\
+Según carta Gantt del proyecto, se ejecutaron las siguientes actividades:
 \begin{itemize}
-\item[-]Sin cultivos: Corresponde a superficie que no se encuentra con cultivos.
-\item[-]Caduco: Corresponde al grupo de frutales caducos como: vides, nogales, durazneros, damascos, entre otros.
-\item[-]Persistente: Corresponde a frutales persistentes como: paltos, cítricos (naranjos, mandarinos, entre otros).
-\item[-]Pradera: Corresponde principalmente a pasturas (alfalfa o pasturas mixtas) bajo riego.
-\item[-]Cultivos ciclo corto: Correspondes a cultivos hortícolas, cultivos anuales, cereales, al aire libre. 
-\item[-]Huerto casero: Corresponde a la superficie sin un cultivo principal.
-\item[-]Bajo plástico: Corresponde a cultivos de ciclo corto bajo cubiertas (invernaderos).
+\item Diagnóstico técnico-social del Protocolo de Priorización de Inversiones en Mejoramiento de la Eficiencia de Conducción Hídrica: Se realizó una revisión y diagnóstico del protocolo diseñado en el proyecto SIMCA - ELQUI, en función de los componentes técnicos y sociales, generando una propuesta de fortalecimiento.
+\item Definición parámetros y generación del protocolo de las variables superficie bajo riego y potencial: Se definió los parámetros a incorporar en esta variable, además de generar el protocolo que permite incorporar estos criterios técnicos de superficie bajo riego ($ha$) y potencial ($ha$) asociada al área de influencia de cada canal, al protocolo 
+\item Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico: Se definió los parámetros que permitan incorporar la variable modelamiento hidrológico, además de generar el protocolo que permita considerar los efectos dinámicos del mejoramiento en la eficiencia de conducción en las cuencas.
+\item Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica.
 \end{itemize}
 
-\subsubsection{Visor}
-
-En este se visualiza cada polígono analizado mediante la utilización de la aplicación CARTO utilizando el mapa base de Google Earth, el cual representa una superficie cultivada o que haya sido cultivada. Cada polígono está coloreado en función de la clase que lo representa, las cuales están informadas en la leyenda .
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{Figuras_manual/visor.pdf}
-\caption{Visor de grupos de cultivos en el territorio.}
-\end{figure}
-
-El visor cuenta con una ventana desplegable ( figura \ref{4}), al darle clic se despliega la información correspondiente al polígono en particular, según lo logrado identificar, indicando: 
+Además se ha comenzado con el desarrollo de las actividades de la componente 2. Plan de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica para la red de distribución de la Junta de Vigilancia del río Chalinga y sus afluentes.
 
 \begin{itemize}
-\item[-]\textbf{Tipo}: Grupo de cultivo a cual corresponde, pudiendo ser: sin cultivo, caduco, persistente, pradera, cultivo de ciclo corto, huerto casero y bajo plástico.
-\item[-]\textbf{Especie}: Especie de cultivo.
-\item[-]\textbf{Variedad}: Variedad de la especie correspondiente.
-\item[-]\textbf{Sobre hilera (m)}: Marco de plantación indicando la sobre hilera, distancia en metros.
-\item[-]\textbf{Entre hilera (m)}: Marco de plantación indicando la entre hilera, distancia en metros.
-\item[-]\textbf{Método de riego}: Indica que método de riego posee.
-\item[-]\textbf{Plantación}: Año de plantación o siembra del cultivo.
+\item SIG Red de distribución y conducción hídrica de Junta de Vigilancia Río Chalinga y sus afluentes.
+\item Transferencia de capacidades en la aplicación del protocolo técnico-social de la inversión en mejoramiento de la eficiencia de conducción hídrica.
 \end{itemize}
 
+\clearpage
+\section{Actividades programadas y ejecutadas}
+
+\subsection{Carta Gantt}
+
+\clearpage
+\subsection{Detalle de actividades realizadas}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|p{3cm}|p{2cm}|p{3cm}|p{2.5cm}|p{2.5cm}|p{2cm}|}
+    \hline
+    \textbf{Componente} & \textbf{N° Actividad} & \textbf{Actividades Programadas} & \textbf{Actividades Ejecutadas} & \textbf{Discrepancias} & \textbf{\% de avance físico}\\
+    \hline
+    \multirow {4}{3cm}{1. Protocolo técnico-social de Priorización de la Inversión en Mejoramiento de la Eficiencia de Conducción Hídrica} & 1 & 		Diagnóstico técnico-social del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica &  Ejecutada (E)  & No & 100\%\\
+    \cline{2-6}
+    & 2 & Definición parámetros y generación del protocolo de las variables superficie bajo riego y potencial & Ejecutada (E) & No & 100\%\\
+    \cline{2-6}
+    & 3 & Definición de parámetros y generación del protocolo para la variable modelamiento hidrológico & Ejecutada (E)  & No & 100\%\\
+    \cline{2-6}
+    & 4 & Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica & Ejecutada (E)  & No & 100\%\\
+    \hline
+    \multirow {4}{3cm}{2. Plan de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica para la red de distribución de la Junta de Vigilancia del río Chalinga y sus afluentes} & 		1 & 		SIG Red de distribución y conducción hídrica de Junta de Vigilancia Río Chalinga y sus afluentes & En Ejecución (EE)      		& No & 20\%\\
+    \cline{2-6}
+    & 5 & Transferencia de capacidades en la aplicación del protocolo técnico-social de la inversión en mejoramiento de la eficiencia de conducción hídrica & En Ejecución (EE)      		& No & 15\%\\
+    \hline
+   
+\end{tabular}
+\end{table}
+
+\clearpage
+\section{Cuadro de antecedentes financieros}
+
+\clearpage
+\section{Gráfico curva de avance físico v/s programado}
+
+\clearpage
+\section{Metodología}
+
+\subsection{Componenete 2 actividad  2.1 SIG Red de distribucion y conducción hídrica de Junta de Vigilancia Río Chalinga y sus afluentes}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+    \hline
+    \multicolumn{2}{|l|}{Fecha de Inicio} & 20-12-2017 & \multicolumn{2}{l|}{Fecha de Término} & 20-04-2017\\
+    \hline
+    \multicolumn{6}{|c|}{Presupuesto (M\$)}\\
+    \hline
+    Total & xxxxx & FIC-R & XXXXXX & ULS & XXXXXX\\
+    \hline
+    \multicolumn{4}{|l|}{Porcentaje de Avance} & \multicolumn{2}{c|}{100\%}\\
+    \hline
+\end{tabular}
+\end{table}
+
+Se georreferenciaron  los canales en conjunto con el gavinete para el levantamiento de datos en terreno   se recopilo la información según las instituciones pertinente (DGA, CNR y la JVRCHA) de  los canales  que se han carcaterizado son: El Canal Haunque que tiene una longitud de 7,19 km y que se constituye de 81 regantes, El Canal Chalinga o Cancha Brava que tiene una longitud de  4,4 km y se constituye de 68 regantes, y  El  Canal Arboleda Grande que tiene una longitud de 5,9 km y que se constituye de 153 regantes según información de la JVRCHA, con un total de rrecorido que es de 17,39 km y  se planificaron las campañas de terreno, para capturar los elementos utilizando un GPS diferencial modelo ProXT marca trimble.
+
+\subsection{Componente 2 actividad  2.3 Evaluación Superficie bajo y superficie potencial de las zonas de riego de la Junta de Vigilancia Río Chalinga y sus afluentes}
+
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+    \hline
+    \multicolumn{2}{|l|}{Fecha de Inicio} & 20-12-2017 & \multicolumn{2}{l|}{Fecha de Término} & 20-04-2017\\
+    \hline
+    \multicolumn{6}{|c|}{Presupuesto (M\$)}\\
+    \hline
+    Total & xxxxx & FIC-R & XXXXXX & ULS & XXXXXX\\
+    \hline
+    \multicolumn{4}{|l|}{Porcentaje de Avance} & \multicolumn{2}{c|}{100\%}\\
+    \hline
+\end{tabular}
+\end{table}
+ 
+ Se valido la superficie trabajada en gabinete basados en  las superficie de uso de suelo agricola de promus y el trasado de  canales de la CNR. Bajo estos parametro se presesnta la superficie por grupo de cultivo por canal:
+ 
+\begin{landscape}
+	\begin{longtable}{|p{2.5cm}|p{1.5cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1.7cm}|p{1cm}|p{1.5cm}|p{1cm}|p{1cm}|p{1cm}|p{1.5cm}|}
+	\caption{Superficie cultiva}
+	\hline	
+	\textbf{Canales}  & \textbf{Caduco} ($ha$) & \textbf{\%} & \textbf{Ciclo corto} ($ha$) & \textbf{\%} & \textbf{Huerto casero} ($ha$) & \textbf{\%} & \textbf{Persistente} ($ha$) & \textbf{\%} & \textbf{Pradera} ($ha$) & \textbf{\%} & \textbf{Sin cultivo} ($ha$) & \textbf{\%} & \textbf{Total general} ($ha$) \\ 
+	\hline
+	\endfirsthead
+	\caption{Superficie cultivada \emph{(continuación)}}\\
+	\hline	
+	\textbf{Canales}  & \textbf{Caduco} & \textbf{\%} & \textbf{Ciclo corto} & \textbf{\%} & \textbf{Huerto casero} & \textbf{\%} & \textbf{Persistente} & \textbf{\%} & \textbf{Pradera} & \textbf{\%} & \textbf{Sin cultivo} & \textbf{\%} & \textbf{Total general} \\ 
+	\hline
+	\endhead
+	\hline
+	\endfoot
+	\endlastfood 
+	\textbf{Rio Chalinga 1 Seccion}  & 57,99           & 15,899      & 7,91                 & 2,169       &                        & 0,000       & 41                   & 11,241      & 19,8             & 5,429       & 238,03               & 65,262      & 364,73                 \\ \hline 
+	\hline
+	Batuco de Chalinga               & 20,56           & 21,299      & 2,23                 & 2,310       &                        & 0,000       & 14,84                & 15,373      & 5,65             & 5,853       & 53,25                & 55,164      & 96,53                  \\ \hline
+	Destiladera                      &                 & 0,000       & 3,48                 & 9,464       &                        & 0,000       & 0,64                 & 1,741       & 4,44             & 12,075      & 28,21                & 76,720      & 36,77                  \\ \hline
+	Maravillal o La Vi±a             & 0,77            & 5,776       & 0,26                 & 1,950       &                        & 0,000       & 0,96                 & 7,202       & 0,96             & 7,202       & 10,38                & 77,869      & 13,33                  \\ \hline
+	Molino de Zapallar               & 11              & 31,100      &                      & 0,000       &                        & 0,000       &                      & 0,000       & 0,19             & 0,537       & 24,18                & 68,363      & 35,37                  \\ \hline
+	Palquial o Molino de San Agustin & 21,07           & 12,809      & 1,03                 & 0,626       &                        & 0,000       & 24,56                & 14,930      & 7,52             & 4,571       & 110,32               & 67,064      & 164,5                  \\ \hline
+	Toma Las Pozas                   &                 & 0,000       &                      & 0,000       &                        & 0,000       &                      & 0,000       & 0,58             & 100,000     &                      & 0,000       & 0,58                   \\ \hline
+	Toma Ranque                      & 3,64            & 48,340      & 0,36                 & 4,781       &                        & 0,000       &                      & 0,000       & 0,46             & 6,109       & 3,07                 & 40,770      & 7,53                   \\ \hline
+	Valentino y Canelo               & 0,95            & 9,387       & 0,55                 & 5,435       &                        & 0,000       &                      & 0,000       &                  & 0,000       & 8,62                 & 85,178      & 10,12                  \\ \pagebreak
+	\textbf{Rio Chalinga 2 Seccion}  & 63,27           & 15,183      & 10,84                & 2,601       & 0,57                   & 0,137       & 68,04                & 16,328      & 36,11            & 8,665       & 237,89               & 57,086      & 416,72                 \\ \hline
+	Alameda                          & 3,06            & 38,394      &                      & 0,000       &                        & 0,000       & 0,72                 & 9,034       & 0,29             & 3,639       & 3,9                  & 48,934      & 7,97                   \\ \hline
+	Arboleda Grande                  & 8,54            & 20,957      & 1,54                 & 3,779       & 0,36                   & 0,883       & 4,1                  & 10,061      & 7,05             & 17,301      & 19,16                & 47,018      & 40,75                  \\ \hline
+	Canelo                           &                 & 0,000       &                      & 0,000       &                        & 0,000       &                      & 0,000       & 0,12             & 100,000     &                      & 0,000       & 0,12                   \\ \hline
+	Chalinga o Cancha Brava          & 7,37            & 17,949      & 2,5                  & 6,089       & 0,17                   & 0,414       & 5,74                 & 13,980      & 2,08             & 5,066       & 23,2                 & 56,503      & 41,06                  \\ \hline
+	Chanar Chalinga                  &                 & 0,000       & 0,41                 & 3,498       &                        & 0,000       &                      & 0,000       &                  & 0,000       & 11,31                & 96,502      & 11,72                  \\ \hline
+	Chilcas                          & 9,32            & 14,574      & 2,66                 & 4,159       &                        & 0,000       & 8,53                 & 13,339      & 6,86             & 10,727      & 36,58                & 57,201      & 63,95                  \\ \hline
+	Cunlagua                         & 4,37            & 7,003       & 0,4                  & 0,641       & 0,04                   & 0,064       & 1,17                 & 1,875       & 3,92             & 6,282       & 52,5                 & 84,135      & 62,4                   \\ \hline
+	Huanque                          & 5,63            & 11,007      & 1,75                 & 3,421       &                        & 0,000       & 12,06                & 23,578      & 2,61             & 5,103       & 29,1                 & 56,891      & 51,15                  \\ \hline
+	Infiernillo Chalinga             & 1,01            & 33,893      &                      & 0,000       &                        & 0,000       & 1,97                 & 66,107      &                  & 0,000       &                      & 0,000       & 2,98                   \\ \hline
+	Sauco                            & 0,12            & 19,048      &                      & 0,000       &                        & 0,000       &                      & 0,000       &                  & 0,000       & 0,51                 & 80,952      & 0,63                   \\ \hline
+	Tebal                            & 2,33            & 2,690       & 0,84                 & 0,970       &                        & 0,000       & 23,13                & 26,700      & 7,57             & 8,738       & 52,76                	& 60,903      & 86,63                  \\ \hline
+	Tebal derivado del Medio         & 21,52           & 45,439      & 0,74                 & 1,563       &                        	& 0,000       & 10,62                & 22,424      & 5,61             & 11,845      & 8,87                 	& 18,729      & 47,36                 
+	\end{longtable}
+
+\end{landscape}
+
+
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{Figuras_manual/visor_popup.png}
-\caption{Identificación del polígono.}
-\label{4}
+\includegraphics[\textwidth]{imagenes/ARBOLEDA_GRANDE2.png}
+\caption{Uso de suelo agrícola canal Arboleda Grande}
 \end{figure}
-
-\subsubsection{Complementos}
-
-Al costado derecho de la pantalla, se despliegan ciertos complementos gráficos o widgets (figura \ref{5}), los cuales proporcionan información de la superficie agrícola, dando la posibilidad de ir mostrando la superficie por territorios de interés en este caso por localidades y comunidad de agua, al igual por grupo de cultivo, especie, superficie por sistema de riego y acciones por comunidad.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{Figuras_manual/widget_3.png}
-\caption{Complementos}
-\label{5}
+\includegraphics[\textwidth]{imagenes/CHALINGA O CANCHA BRAVA.png}
+\caption{Uso de suelo agrícola canal Chalinga o Cancha Brava}
 \end{figure}
-
-\subsection{Operación}
-\label{operasuel 2.2}
-
-Mediante los widget, la plataforma permite ir filtrando la visualización de los resultados. Esto se realiza seleccionando las opciones presentes para que se visualicen sólo las características seleccionadas. Para un análisis puntual se puede consultar ya sea por superficie cultivada, comunidad, localidad, tipo, especie, sistema de riego.\bigskip\setlength{\parindent}{0pt}
-
-A continuación se describe el procedimiento para hacer la consulta por una superficie que riega un canal en particular, para este caso canal Buzeta.\bigskip\setlength{\parindent}{0pt}
-
-
-
-Se debe dar clic en la opción de canal Buzeta en Comunidad (figura \ref{6}). Al realizar esto, solo se visualizaran los polígonos perteneciente a esta comunidad, la superficie total cambiará a la superficie perteneciente al canal y los resultados de superficie cultivada igual indicara la superficie con o sin cultivo correspondiente al canal. Las superficie de tipo de cultivo y especie igual serán las correspondientes al canal.\bigskip\setlength{\parindent}{0pt}
-
-Para visualizar la totalidad de los polígonos sin filtro de alguna opción, se debe dar clic en “ ALL ” en la opción donde se aplicó el filtro, así se visualizará y obtendrá la información total.\bigskip\setlength{\parindent}{0pt}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{Figuras_manual/visor_filtro.png}
-\caption{Visualización por filtro de comunidad.}
-\label{6}
+\includegraphics[\textwidth]{imagenes/HUANQUE.png}
+\caption{Uso de suelo agrícola Canal Huanque}
 \end{figure}
 
-El listado de los canales en la opción de Comunidad no aparecen los 33 canales incorporados en el programa, por lo cual para aplicar el filtro de un canal que no aparece en el listado, debe dar clic en \texttt{“ SEARCH IN 34 CATEGORIES ”} e ingresar el nombre del canal a consultar en este ejemplo ingresamos “ canal el boldo ” y dar aplicar\texttt{ “APPLY  ”} (figura \ref{7}). En el listado de la base de datos para los 33 canales se incluye como nombre de canal \texttt{“ Otro canal "} por el motivo que había superficie que no se podía atribuir por el trazado alguno de los 33 canales contemplados en el PDT ( cuadro \ref{cuadro canales})\bigskip\setlength{\parindent}{0pt}
 
-\begin{table}[H]
-\centering
-\caption{Listados canales}
-\label{cuadro canales}
-\begin{tabular}{|l|l|}
+
+  
+\subsubsection{Información requerida por el Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica.}
+
+La información necesaria para generar la priorización de las inversiones en mejoramiento de la eficiencia de conducción hídrica para una OUA's, se detalla en las siguientes variables identificadas:
+
+\begin{itemize}
+\item Comunidad de Aguas o Canal. Permite identificar de forma individual cada uno de los componentes de la red de distribución de la Organización de Usuarios de Aguas.
+\item Número de acciones o litros/segundo. La cantidad de acciones o $l/s$, permite determinar la importancia y/o representatividad del canal, tanto dentro de la zona de influencia, así como dentro de la organización a la que pertenece.
+\item Capacidad de porteo. Este criterio determina la capacidad máxima de conducción del canal. Además esta variable se relaciona fuertemente con las acciones del canal, lo cual nos permite estimar la importancia del mismo tanto en la zona donde se emplaza, así como dentro de la organización que lo agrupa.
+\item Número de beneficiarios. El número de beneficiarios hace referencia a la cantidad de usuarios del canal en estudio que se verán favorecidos con cualquier posible mejoramiento en obras de conducción del sistema de distribución de aguas. Hay que tener en consideración que el número de beneficiarios no está en directa relación con el nivel o superficie productiva. Además se debe recordar que dependiendo del tramo del canal, ya sea este matriz o conducción, se verán beneficiados un mayor o un menor número de usuarios, respectivamente.
+\item Superficie regada. Corresponde al área que el canal abastece con recursos hídricos, dicha superficie corresponde al área de riego bajo cota de canal. Esta variable permite definir la importancia del canal tanto dentro del sector donde se ubica, así como dentro de la cuenca donde está inmerso.
+\item Longitud total del canal ($km$). Hace referencia a la distancia involucrada desde cuando nace el canal (bocatoma) hasta donde finaliza o hace su última entrega. Es un factor importante al momento de determinar el nivel de priorización para la inversión pública privada, ya que su longitud esta en directa relación con el área o superficie a mejorar (revestir). De tal manera que si se introducen mejoras en su estructura de conducción, se permitirá realizar una mejor distribución y disminuirá los tiempos de entrega a cada uno de los regantes.
+\item Longitud total del canal en uso ($km$). Dice relación la longitud actual del canal que efectivamente se está utilizando y que no necesariamente corresponde a la longitud del trazado original del canal. Este factor es esencial para determinar la superficie afecta a mejoramiento del canal ($m^2$ a revestir).
+\item Longitud tramo matriz ($km$). Corresponde a la distancia entre la compuerta que da origen al canal y la primera entrega predial. Es imprescindible contar con esta información, ya que, permite estimar superficie de este tramo afecta a mejoramiento. Cabe recordar que cualquier mejora en este tramo, beneficia a la totalidad de los usuarios del canal.
+\item Longitud tramo conducción ($km$). Corresponde la distancia existente entre la primera y la última entrega predial. También puede ser expresada como la diferencia entre la longitud total del canal y la longitud del tramo matriz. Es necesario contar con dicha información debido a que permite estimar la superficie afecta a mejoramiento.
+\item Perdidas generales por conducción ($l/s$). El agua que se utiliza para el riego, llega a los cultivos después de recorrer un conjunto de canalizaciones desde la fuente de abastecimiento. Durante ese recorrido se producen pérdidas que hacen que la cantidad de agua que realmente llega hasta el predio sea muy inferior a la disponible en la iniciación del sistema de irrigación.
+\item Longitud de tramos afectos a mejoramiento. Los tramos afectos a mejoramiento son todos aquellos que no presentan revestimiento de tipo permanente, vale decir no están revestidos o presentan revestimiento con geomembrana, la cual para efectos de este estudio es considerada como temporal.
+\item Dimensiones de la sección afecta a revestimiento. Se relaciona a factores tales como ancho y alto de los tramos que se pretenden mejorar, con esta información se puede determinar un valor estimativo de $m^2$ de revestimiento necesarios para el mejoramiento.
+\item Área y longitud a revestir. Conocer el área y longitud de un canal, es de vital importancia al momento de generar una mejora en su sistema de conducción, ya que en función de estos dos parámetros se puede calcular el costo de inversión de la obra de mejoramiento.
+\item Volumen recuperado por temporada. A partir de las pérdidas por conducción detectadas ($l/s$) tanto a nivel general, así como por tramo se pueden determinar los volúmenes posibles a recuperar en caso de efectuar una mejora en el canal. Estos nuevos volúmenes serán expresados tanto en $m^3/temporada$, $m^3/ha$, etc.
+\item Volumen recuperado por temporada en función de longitud de mejoramiento. Este indicador dice relación a los $m^3$ que pueden ser recuperados por $m^2$ de mejoramiento. Para la estimación de dicho volumen se utilizaran los $m^3/temporada$ definidos anteriormente.
+\end{itemize}
+
+\subsubsection{Recopilación de información requerida por el Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}
+
+La recopilación de información requerida por el protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica, considera tanto fuentes primarias como secundarias. En primer lugar, se debe generar una revisión bibliográfica de la zona a evaluar, en conjunto con una recopilación de información de la OUA's, para recabar la mayor cantidad de información disponible. Posteriormente se realiza una caracterización y determinación de pérdidas, las que de forma general nos permitirán obtener una descripción de la infraestructura y pérdidas de la red hídrica perteneciente a la Organización de Usuarios de Aguas. La metodología para la obtención de la información requerida se detalla a continuación.
+
+\paragraph{Recopilación información de la zona a evaluar y de la Organización de Usuarios de Aguas:}
+Se realiza a través de una revisión bibliográfica, referida a estudios de recursos hídricos de la zona a evaluar. Además se recopila la información de la red de distribución (canales) que posee la OUA's, incluyendo información que pueda ser útil para la logística y operación en el levantamiento de datos de la caracterización y determinación de pérdidas.
+
+\begin{itemize}
+	\item Revisión bibliográfica
+	\begin{itemize}	
+		\item Fichas de registro de bocatomas, Dirección General de Aguas.
+		\item Canales de riego a nivel de matrices hasta 2do derivado, Comisión Nacional de Riego.
+		\item Estudios de recursos hídricos de la zona a evaluar.
+	\end{itemize}
+	\item Información OUA's
+	\begin{itemize}	
+		\item Diagrama unifilar
+		\item Ubicación geográfica bocatomas
+		\item Número de acciones totales
+		\item Número de acciones por comunidad de aguas
+		\item Dotaciones o desmarques
+		\item Capacidad de porteo por canal
+		\item Número de usuarios comunidad de aguas
+		\item Superficie regada por comunidad de aguas
+		\item Contacto celadores
+	\end{itemize}
+\end{itemize}	
+
+\paragraph{Caracterización de la red hídrica de la OUA's:}
+Se realiza desde la fuente de abastecimiento hasta el final del trazado del canal, ejecutándose solo a través del canal matriz, es decir no incluye derivados o ramales. Consta de un levantamiento y georeferenciación de los componentes de los canales, referidos a obras de arte e infraestructura, además de revestimientos y posibles observaciones. Esta información nos permitirá visualizar el recorrido y componentes del canal, para ser utilizados directamente como variables en el protocolo de priorización de inversiones en mejoramiento de la eficiencia hídrica y en el desarrollo de otras, además de la operación y ejecución de actividades posteriores. Los componentes que se deben caracterizar son los siguientes:
+
+\clearpage
+\begin{longtable}[H]{|p{3cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+\caption{Caracterización red hídrica}
 \hline
-Canal Aguas Claras de Chillepin & Canal Aguas Claras de Salamanca \\ \hline
-Canal Araya                     & Canal Barraco Chico             \\ \hline
-Canal Barraco Grande            & Canal Batuco                    \\ \hline
-Canal Breas o Molino de Llimpo  & Canal Buzeta                    \\ \hline
-Canal Camisas o Batito          & Canal Carachas                  \\ \hline
-Canal El Boldo                  & Canal El Jote                   \\ \hline
-Canal El Pardo                  & Canal El Pavo                   \\ \hline
-Canal El Quene                  & Canal El Sauco                  \\ \hline
-Canal Higueral                  & Canal Las Viudas                \\ \hline
-Canal Los Loros                 & Canal Molino de Choapa          \\ \hline
-Canal Molino de Los Ranchos     & Canal Molino de Peralillo       \\ \hline
-Canal Molino de Quelen          & Canal Molino de Tranquilla      \\ \hline
-Canal Pangue o Inquilino        & Canal Panguesillo Dos           \\ \hline
-Canal Panguesillo Uno           & Canal Pintacura Alto            \\ \hline
-Canal Pintacura Bajo            & Canal Poblacion                 \\ \hline
-Canal Rodadero                  & Canal Silvano                   \\ \hline
-Canal Tahuincano                & Otro Canal                      \\ \hline
-\end{tabular}
-\end{table}
+Caracterización & Componente & Atributo & Opción\\
+\hline
+\endfirsthead
+\caption{Caracterización red hídrica \emph{(continuación)}}\\
+\hline
+Caracterización & Componente & Atributo & Opción\\
+\hline
+\endhead
+\hline
+\endfoot
+\bottomrule
+\endlastfood    
+	\multirow {45}{3cm}{Bocatoma} & \multirow {6}{3.5cm}{Barrera desviación} & \multirow {6}{3.5cm}{Tipo de Obra} &  Barrera Frontal\\
+	\cline{4-4}
+	& & & Barrera Lateral\\
+	\cline{4-4}
+	& & & Pata de Cabra\\
+	\cline{4-4}
+    & & & Pretil Material Fluvial\\
+    \cline{4-4}
+    & & & Otro\\
+    \cline{3-4}
+    & & Dimensión & Ancho barrera\\
+    \cline{2-4}
+    & \multirow {17}{3.5cm}{Canal de aducción} & \multirow {3}{3.5cm}{Tipo de Punto} &  Inicial\\
+    \cline{4-4}
+    & & & Intermedio\\
+    \cline{4-4}
+    & & & Final\\
+    \cline{3-4}
+    & & \multirow {2}{3.5cm}{Tipo de Bocatoma} & Permanente\\
+    \cline{4-4}
+    & & & Temporal\\
+    \cline{3-4}
+    & & \multirow {3}{3.5cm}{Tipo de Fuente} & Gravitacional\\
+    \cline{4-4}
+    & & & Bombeo\\
+    \cline{4-4}
+    & & & Otro\\
+    \cline{3-4}
+    & & \multirow {2}{3.5cm}{Ribera} & Izquierda\\
+    \cline{4-4}
+    & & & Derecha\\
+    \cline{3-4}
+    & & \multirow {5}{3.5cm}{Material} & Mezcla suelo\\
+    \cline{4-4}
+    & & & Hormigón\\
+    \cline{4-4}
+    & & & Madera\\
+    \cline{4-4}
+    & & & Mampostería\\
+    \cline{4-4}
+    & & & Otro\\
+    \cline{2-4}
+    & \multirow {17}{3.5cm}{Compuerta de Carga} & \multirow {7}{3.5cm}{Fuente de Abastecimiento} &  Cauce Natural\\
+    \cline{4-4}
+    & & & Canal\\
+    \cline{4-4}
+    & & & Estero\\
+    \cline{4-4}
+    & & & Quebrada Permanente\\
+    \cline{4-4}
+    & & & Quebrada Eventual\\
+    \cline{4-4}
+    & & & Vertiente\\
+    \cline{4-4}
+    & & & Otro\\
+    \cline{3-4}
+    & & \multirow {3}{3.5cm}{Material} & Metálica\\
+    \cline{4-4}
+    & & & Madera\\
+    \cline{4-4}
+    & & & Otro\\
+    \cline{3-4}
+    & & \multirow {2}{3.5cm}{Sistema} & Con Mecanismo\\
+    \cline{4-4}
+    & & & Manual\\
+    \cline{3-4}
+    & & \multirow {4}{3.5cm}{Devolución} & No\\
+    \cline{4-4}
+    & & & Compuerta\\
+    \cline{4-4}
+    & & & Vertedero\\
+    \cline{4-4}
+    & & & Compuerta y Vertedero\\
+    \cline{3-4}
+    & & \multirow {3}{3.5cm}{Dimensiones Vertedero} & Ancho\\
+    \cline{4-4}
+    & & & Alto Compuerta\\
+    \cline{4-4}
+    & & & Ancho Compuerta\\
+    \cline{3-4}
+    & & \multirow {5}{3.5cm}{Dimensiones Sección} & Largo\\
+    \cline{4-4}
+    & & & Alto Inicial\\
+    \cline{4-4}
+    & & & Ancho Inicial\\
+    \cline{4-4}
+    & & & Alto Final\\
+    \cline{4-4}
+    & & & Ancho Final\\
+    \cline{2-4} \pagebreak  
+    & \multirow {17}{3.5cm}{Sección de Control} & \multirow {11}{3.5cm}{Tipo} &  Escurrimiento crítico\\
+    \cline{4-4}
+    & & & Regla limnimétrica\\
+    \cline{4-4}
+    & & & Estación Limnigráfica\\
+    \cline{4-4}
+    & & & Barrera con Reglilla\\
+    \cline{4-4}
+    & & & Sección Rectangular con Regla\\
+    \cline{4-4}
+    & & & Barrera Triangular\\
+    \cline{4-4}
+    & & & Barrera Triangular y Regla\\
+    \cline{4-4}
+    & & & Aforo de Garganta\\
+    \cline{4-4}
+    & & & Aforo Parshall\\
+    \cline{4-4}
+    & & & Sensor de Presión\\
+    \cline{4-4}
+    & & & Otro\\
+    \cline{3-4}
+    & & \multirow {3}{3.5cm}{Dimensiones Sección} & Ancho\\
+    \cline{4-4}
+    & & & Largo\\
+    \cline{4-4}
+    & & & Alto\\
+    \cline{3-4}
+    & & \multirow {3}{3.5cm}{Dimensiones Parshall} & Convergencia\\
+    \cline{4-4}
+    & & & Garganta\\
+    \cline{4-4}
+    & & & Divergencia\\    
+    \hline
+\end{longtable}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{Figuras_manual/buscar_canal.png}
-\caption{Buscar canal}
-\label{7}
-\end{figure}
 
-Se puede realizar más de un filtro dependiendo del número de widget que se posea. Por ejemplo, se podría realizar un análisis de la superficie cultivada por localidad y clase de cultivo. En este caso se aplica a la localidad de Quelen y tipo de cultivo frutales persistentes. Se visualiza solo los polígonos correspondientes a la localidad agrupada como Quelen y que cuyos polígonos sean del tipo frutal persistente. Una vez aplicado este filtro las superficies serán correspondiente al filtro seleccionado. En la opción de especies solo serán las especies del grupo frutal persistentes la información que aparezca, se indica una especie \texttt{ “ S.I "} la cual corresponde a Sin Información, por el motivo que solo se pudo obtener su grupo de cultivo mediante teledetección.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{Figuras_manual/visor_2filtro.png}
-\caption{Filtro de información por mas de una variable de consulta}
-\end{figure}
 
-\newpage
+detalla la infraestructura y revestimientos, mediante la georeferenciación  presentes para la conducción y distribución del recurso.La caracterización del cauce natural, se realiza por medio de la georeferenciación y descripción de bocatomas, trazado de canales de aducción y compuertas de carga perteneciente a la comunidad de aguas. Con los puntos de trazado, se puede determinar la longitud del canal de aducción y su recorrido.\\
+\\
+Posteriormente, en la caracterización del cauce artificial, se realiza la georeferenciación y descriptor de la infraestructura de conducción y distribución del recurso hídrico. Se capturan todas las obras de arte presentes en el recorrido del canal, desde la compuerta de carga hasta el final del recorrido, además se detalla el tipo de obra, material, finalidad, revestimientos, además de puntos críticos como filtraciones o alteraciones visibles, quebradas, etc.\\
+\\
+La caracterización de cauce natural y artificial se genera con el fin de proporcionar esta información a las OUA’s, como base de datos en formatos que permitan su visualización. Además con esta información se generan las variables que permitan realizar la determinación de pérdidas y posterior priorización de tramos y/o canales para el mejoramiento de la eficiencia de conducción hídrica.\\
 
-\section{Plataforma Caracterización de Regantes}
+\paragraph{Determinación de pérdidas}
 
-Esta plataforma opera con el mismo principio de la plataforma anterior, es hecha bajo el servicio de carto.com. Los componentes son los presentados en el punto (\ref{2.1}), sin embargo no se presenta leyenda para esta, solo presenta el visor y los complementos (widget) para análisis de la información.\bigskip\setlength{\parindent}{0pt}
 
-En la figura \ref{9} se presentan el visor (1) y al costado derecho los complementos (2).
+Con los insumos levantados en la caracterización, se procede a generar los tramos de aforo para la determinación de pérdidas. Estos tramos se dividen en matriz y distribución en primera instancia, para luego establecer los tramos por el cambios en el revestimiento presente, a través de aforos de los caudales de inicio y término de estos.
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{Figuras_manual/componentes_regantes2.png}
-\caption{Componentes Plataforma caracterización regantes}
-\label{9}
-\end{figure}
 
-\subsection{Componentes plataforma regantes}
 
-\subsubsection{Visor}
+\subsubsection{Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}
 
-En el visor se observa los polígonos que representan los roles de propiedad agrícola. Para realizar la plataforma de caracterización de regantes, se tomaron los roles que presentan agricultura. Para esto, con la capa de roles de propiedad 2012 obtenida del proyecto FIC-R 2012 ejecutado por el CIREN, fue intersectada con la capa de uso de suelo agrícola, con esto fueron seleccionados solo los roles con agricultura. Los roles aparecen etiquetados con su rol correspondiente, Al dar clic en algún polígono se desplegara una pestaña (figura \ref{10}) entregando la siguiente información:
+Las variables que contiene el protocolo de priorización aplicado en SIMCA – ELQUI, las cuales se seleccionaron estadísticamente a través de la correlación de PEARSON, mayor a 0,80, en relación a la variable pérdidas generales (l/s) de los tramos.
+
+\subsubsection{Diagnóstico del Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}
+
+
+
+\subsection{Componente 1. Actividad 1.2. Definición parámetros y generación de los protocolos de variable superficie bajo riego y potencial.}
+
+\subsection{Componente 1. Actividad 1.3. Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico.}
+
+
+\subsection{Componente 1. Actividad 1.4. Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica.}
+
+Se realizó una validación del protocolo fortalecido, la cual se realizó mediante consultas con las OUAS interferidas y el levantameinto de datos necesarios.
+
+
+\clearpage
+\section{Resultados e Hitos}
+
+\subsection{Componente 1. Actividad 1.1. Diagnóstico técnico-social del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica}
+
+En la actualidad, el uso de los recursos hídricos se proyecta a nivel de cuenca, a través de un manejo integrado y sustentable de los diferentes usuarios de aguas. Es por esto, que se busca incluir variables de tipo social, para fortalecer la toma de decisiones en la distribución de recursos para inversión público-privada, y así realizar mejoramientos de la eficiencia de conducción hídrica en sectores donde se promueva el crecimiento y desarrollo, además de no interceder en la disponibilidad de los recursos de otras zonas.\\
+
+La inclusión de parámetros sociales que permitan tener una mirada ,Desde el punto de vista técnico, se diagnosticó la falta de alguos criterios en los distintos niveles organizacionales
+
+Propuesta de fortalecimiento en consenso con las OUA'S
+
+\subsubsection{Propuesta de fortalecimiento}
+
+
+
+
+\paragraph{Antecedentes generales de la cuenca:}
+
+Se realiza a través de una revisión bibliográfica de fuentes secundarias, como estudios de organismos referidos a los recursos hídricos de la cuenca a intervenir, como ejemplo se presentan las siguientes fuentes:\\
+
 \begin{itemize}
-\item[-]\textbf{ID}: Es el identificador de cada polígono que representa una propiedad. 
-\item[-]\textbf{ROL}: Corresponde al rol de propiedad.
-\item[-]\textbf{SUPERFICIE ROL (HA)}: Corresponde a la superficie de cada polígono en hectáreas.
-\item[-]\textbf{LOCALIDAD}: Indica en que localidad se encuentra el polígono consultado.
-\item[-]\textbf{SUPERFICIE PARA AGRICULTURA}: Corresponde a la superficie total de que posee o ha tenido agricultura alguna vez, la base de esto es la capa de cuarteles utilizada en la plataforma de uso de suelo.
-\item[-]\textbf{\% EXPLOTADO AGRICULTURA}: Corresponde al porcentaje que representa “ SUPERFICIE PARA AGRICULTURA " con respecto a la superficie total de la propiedad “ SUPERFICIE ROL (HA) ".
-\item[-]\textbf{SUPERFICIE RIEGO TECNIFICADO}: Corresponde al porcentaje que representa la superficie con riego tecnificado (goteo y microaspersión) en la propiedad.
-\item[-]\textbf{SUPERFICIE RIEGO TRADICIONAL}: Corresponde al porcentaje que representa la superficie con riego tradicional (surco y tendido) en la propiedad.
-\item[-]\textbf{SUPERFICIE CULTIVO PERMANENTE}: Es la superficie con cultivos con demanda permanente de agua, correspondiente a frutales caducos y persistentes, esta representado en hectáreas.
-\item[-]\textbf{SUPERFICIE CULTIVO TEMPORAL}: Es la superficie con cultivos de demanda temporal de agua, clasificados como cultivos de ciclo corto, praderas, cultivos bajo plástico y huertos caseros, la superficie se expresa en hectáreas.
-\item[-]\textbf{OBRA DE ACUMULACIÓN}: Indica si la propiedad posee obra de acumulación hídrica destinada a riego. 
-\item[-]\textbf{N° OBRAS}: Indica el número de obras destinadas a riego en la propiedad.
-\item[-]\textbf{NÚMERO DE CANALES}: Indican el número de canales con que riega la propiedad. Cabe mencionar que fue determinado a partir del trazado de los canales en la capa de uso de suelo.
-\item[-]\textbf{CANAL 1}: Indica el nombre del canal que riega la propiedad.
-\item[-]\textbf{CANAL 2}: Indica el nombre del segundo canal que riega la propiedad si corresponde.
-\item[-]\textbf{CANAL 3}: Indica el nombre del tercer canal que riega la propiedad si corresponde.
-\item[-]\textbf{SUPERFICIE RIEGO GOTEO}: Indica la superficie que es regada por riego por goteo,expresada en hectáreas.
-\item[-]\textbf{SUPERFICIE RIEGO MICROASPERSIÓN}: Indica la superficie que es regada por microaspersión, expresada en hectáreas.
-\item[-]\textbf{SUPERFICIE RIEGO SURCO}:Indica la superficie que es regada por surco, expresada en hectáreas.
-\item[-]\textbf{SUPERFICIE RIEGO TENDIDO}:Indica la superficie que es regada por tendido, expresada en hectáreas.
-\item[-]\textbf{SUPERFICIE RIEGO SIN INFORMACIÓN}: Indica la superficie que no se tiene la información del sistema de riego con que riega la propiedad, expresada en hectáreas.
-\item[-]\textbf{SUPERFICIE RIEGO NO APLICA}: Indica la superficie a la cual por no presentar cultivo no se le atribuye sistema de riego, expresada en hectáreas.
+\item Fichas de registro de bocatomas, Dirección General de Aguas
+\item Canales de riego a nivel de matrices hasta 2do derivado, Comisión Nacional de Riego
+\item Estudios de recursos hídricos de la zona a evaluar
 \end{itemize}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{Figuras_manual/visorregantes.png}
-\caption{Visor plataforma caracterización regantes}
-\label{10}
-\end{figure}
+\paragraph{Antecedentes a nivel organizacional:}
 
-\subsubsection{Complementos}
-\label{complementos}
+Se realiza a través de reuniones y mesas de trabajo sostenidas con las organizaciones de usuarios de agua, donde se recoge información primaria la cual se detalla a continuación:\\
 
-Los complementos gráficos al costado derecho ( figura \ref{11}) al  igual que la plataforma de uso de suelo, entregaran información de diferentes items, permitiendo filtrar según el tópico de interés. La información presentada en los complementos es la siguiente:
+\begin{itemize}
+\item Diagrama unifilar
+\item Ubicación geográfica bocatomas
+\item Número de acciones totales
+\item Número de acciones por comunidad de aguas
+\item Dotaciones o desmarques
+\item Capacidad de porteo canal
+\item Número de usuarios comunidad de aguas
+\item Contacto celadores
+\end{itemize}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{Figuras_manual/widget_regantes.png}
-\caption{Complementos plataforma caracterización de regantes}
-\label{11}
-\end{figure}
+\paragraph{Levantamiento de información en terreno:}
 
- \begin{itemize}
- \item[-]\textbf{N° de roles}: Indica el número de roles (propiedades) que presentan agricultura o han sido explotado con agricultura.
- \item[-]\textbf{Localidad}: Indica por localidad la superficie en hectáreas utilizada para agricultura. Se presentan 16 localidades (cuadro \ref{cuadro 2}) para consultas. 
+\begin{itemize}
+\item Diagrama unifilar
+\item Ubicación geográfica bocatomas
+\item Número de acciones totales
+\item Número de acciones por comunidad de aguas
+\item Dotaciones o desmarques
+\item Capacidad de porteo canal
+\item Número de usuarios comunidad de aguas
+\item Contacto celadores
+\end{itemize}
+Se determinó que la información levantada en el protocolo a nivel de cuenca, no es suficente para incorporar variables de tipo social, ya que 
 
-\begin{table}[H]
-\centering
-\caption{Localidades bajo análisis}
-\label{cuadro 2}
-\begin{tabular}{@{}l@{}}
-\toprule
-\textbf{Localidades} \\ \midrule
-Chalinga             \\
-Chillepin            \\
-Choapa               \\
-Chuchini             \\
-Coiron               \\
-Cuncumen             \\
-Higuerilla           \\
-Limahuida            \\
-Llimpo               \\
-Quelen               \\
-Salamanca            \\
-Santa Rosa           \\
-Tahuinco             \\
-Tambo                \\
-Tebal                \\
-Tranquilla           \\ \bottomrule
-\end{tabular}
-\end{table}
- 
- Ejemplo, si deseamos filtrar la localidad de Choapa, solo se visualizara los roles presentes en esta localidad, por lo tanto la información de los demás items estarán sujeta al filtro aplicado.
- 
- 
- 
- \item[-]\textbf{Tamaño explotación}: Este widget categoriza los roles según su tamaño. Se agruparon los roles en 12 categorías distintas desde propiedades de una hectárea a mas de 300, las cuales son la suma de superficie que presenten cultivos o sin cultivos. En el cuadro \ref{cuadro3}  se presentan las categorías de tamaño de explotación
- 
-\begin{table}[H]
-\centering
-\caption{Tamaño de explotación}
-\label{cuadro3}
-\begin{tabular}{@{}c@{}}
-\toprule
-\textbf{Tamaño explotación} \\ \midrule
-< 1 ha                      \\
-1 a 5 ha                    \\
-5 a 10 ha                   \\
-10 a 15 ha                  \\
-15 a 20 ha                  \\
-20 a 25 ha                  \\
-25 a 30 ha                  \\
-30 a 50 ha                  \\
-50 a 100 ha                 \\
-100 a 200 ha                \\
-200 a 300 ha                \\
->300 ha                     \\ \bottomrule
-\end{tabular}
-\end{table}
- 
- \item[-]\textbf{N° de canales por rol}: Indica el número de roles que es regado por por 1, 2 o 3 canales.
- \item[-]\textbf{Canal 1}: Indica la superficie que es regada por cada canal,
- \item[-]\textbf{Canal 2}: Indica la superficie regada por un segundo canal, si corresponde.
- \item[-]\textbf{Canal 3}: Indica la superficie regada por un tercer canal, si corresponde.
- \item[-]\textbf{Porcentaje explotado}: Muestra en una gráfica de histograma la concentración de roles según el porcentaje explotado, este fue calculado por la superficie de cada cuartel de la capa de uso suelo con respecto a la superficie total de la propiedad calculado del polígono de la capa de roles.  
- 
- \item[-]\textbf{Superficie cultivos permanentes}: Indica la cantidad de superficie frutal (caducos y persistentes) en hectáreas.
- \item[-]\textbf{Rol cultivos permanentes (ha)}: Indica por medio de gráfica de histograma el número de roles que presentan una determinada superficie de cultivos de demanda hídrica permanente en hectáreas.
- \item[-]\textbf{Superficie cultivos temporales}: Indica la cantidad de superficie cultivos de demanda hídrica temporal (cultivos de ciclo corto, praderas, huertos caseros, bajo plástico) en hectáreas.
- \item[-]\textbf{Roles cultivos temporales (ha)}: Indica por medio de gráfica de histograma el número de roles que presentan una determinada superficie de cultivos de demanda hídrica permanente en hectáreas.
- \item[-]\textbf{Superficie sin cultivo}: Indica la cantidad de superficie sin cultivo en hectáreas.
- \item[-]\textbf{Roles sin cultivos (ha)}: Indica por medio de gráfica de histograma el número de roles que presentan una determinada superficie sin cultivo.
- \item[-]\textbf{Obras de acumulación}: Indica el número de roles que poseen obras de acumulación hídrica para riego, se indica los roles \texttt{“ Sin información "},\texttt{ “ NO "} no poseen obra, \texttt{“ SI "} posee obra,\texttt{“ NO RESPONDE "} y \texttt{“ COMUNITARIO "}. 
-\item[-]\textbf{Goteo}: Indica la superficie que es regada con riego por goteo.
-\item[-]\textbf{Roles con riego por goteo (ha)}: Indica el número de roles según superficies (ha) de riego por goteo. 
-\item[-]\textbf{Microaspersión}: Indica la superficie que es regada con riego por microaspersión.
-\item[-]\textbf{Roles con riego por microaspersión (ha)}: Indica el número de roles según superficies (ha) de riego por microaspersión. 
-\item[-]\textbf{Surco}: Indica la superficie que es regada con riego por surco.
-\item[-]\textbf{Roles con riego por surco (ha)}: Indica el número de roles según superficies de riego por surco.
-\item[-]\textbf{Tendido}: Indica la superficie que es regada con riego por tendido.
-\item[-]\textbf{Roles con riego por tendido (ha)}: Indica el número de roles según superficies (ha) de riego por tendido.
-\item[-]\textbf{No aplica}:Indica la superficie la cual por no poseer cultivos se atribuye sistema de riego.
-\item[-]\textbf{Sin información}: Indica la superficie que no se tiene información del sistema de riego con que se riega.
-\item[-]\textbf{Tecnología riego}:Es una caracterización basado en la tecnología utilizado con respecto al riego en la propiedad, clasificados en 4 categorías. 
+poder realizar la modelación hídrica en la zona de estudio, ya que se requieren parámetros agroclimáticos y registros de estaciones fluviométricas presentes en la zona. En cuanto a los antecedentes de la organizaciones de usuarios de aguas, se determinó que es base suficiente para la recopilación de antecedentes en este nivel.\\
+\\
+Para tener un mayor conocimento del trazado del canal y sus singularidades, además de obtener una idea general de la superficie y cultivos irrigados, se estableció recopilar antecedentes a nivel de comunidades de aguas, de forma directa a través de la entrevista con un representante, por lo que se generaron los siguientes parámetros:
 
-\begin{table}[H]
-\centering
-\caption{Tecnología en riego}
-\label{4}
-\begin{tabular}{|l|l|}
-\hline
-\textbf{Nivel}                  & \multicolumn{1}{c|}{\textbf{Definición}}                                                                                                                                \\ \hline
-\textbf{Alto}                   & \begin{tabular}[c]{@{}l@{}}La propiedad posee el 50\% o más de su superficie con riego tecnológico y \\ cuenta con obras de almacenamiento hídrico propio.\end{tabular} \\ \hline
-\multirow{3}{*}{\textbf{Medio}} & \begin{tabular}[c]{@{}l@{}}La propiedad posee el 50\% de su superficie con riego tecnológico y obra \\ de inversión comunitaria.\end{tabular}                           \\ \cline{2-2} 
-                                & \begin{tabular}[c]{@{}l@{}}La propiedad posee solo el 50\% de su superficie con riego tecnificado sin \\ presentar obra de acumulación.\end{tabular}                    \\ \cline{2-2} 
-                                & \begin{tabular}[c]{@{}l@{}}La propiedad posee menos del 50\% de su superficie con tecnología y cuenta \\ con obra de acumulación propia.\end{tabular}                   \\ \hline
-\multirow{2}{*}{\textbf{Bajo}}  & \begin{tabular}[c]{@{}l@{}}Posee solo obra de acumulación propia o comunitaria sin reunión riego \\  tecnificado.\end{tabular}                                          \\ \cline{2-2} 
-                                & Posee menos del 50\% de la superficie con riego tecnificado.                                                                                                            \\ \hline
-\textbf{Nulo}                   & No posee obra de acumulación y riego tecnificado.                                                                                                                       \\ \hline
-\end{tabular}
-\end{table}
+\begin{itemize}
+\item Número de acciones
+\item Número de usuarios
+\item Longitud canal (km)
+\item Número de entregas
+\item Número de ramales
+\item Capacidad de porteo canal
+\item Manejo operacional (secciones)
+\item Tipos y porcentajes de revestimientos
+\item Superficie regada por há
+\item Principales cultivos
+\item Sistemas de riego empleados (\%)
+\item Descarga final al río
+\end{itemize}
 
- \end{itemize}
+\subsection{Componente 1. Actividad 1.2. Definición parámetros y generación de los protocolos de variable superficie bajo riego y potencial.}
 
-\subsection{Operación}
+\subsection{Componente 1. Actividad 1.3. Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico.}
 
-Como se menciono en la sección de la plataforma de uso de suelo, mediante los widgets permitirán ir entregando información que se va visualizando, al igual que al dar clic en cada polígono se desplegara una pestaña con la información especifica para el objeto consultado.
 
-Los widget pueden ser dinámicos o no, para el primero los datos se van ajustando con respecto al visor, dependiendo del zoom serán los datos informados. Para los que no son dinámicos la información se presenta fija independiente de los niveles de zoom que se haga al visor, solo cambian al aplicar algún filtro.\setlength{\parindent}{0pt}
-
-Los widgets fueron asignados dinámicos o no, según fuese mejor la operatividad de la plataforma, ya que tener todos los widgets dinámicos se esta sujeto al visor.  
+\subsection{Componente 1. Actividad 1.4. Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica.}
 
 
 
 
-\subsubsection{Complementos No dinámicos}
 
-Estos complementos gráficos (widgets) permiten ir filtrando la visualización de los resultados, por lo cual dando clic a las opciones presentes en los complementos muestra solo los resultados de la opción elegida.\bigskip\setlength{\parindent}{0pt}
-
-Ejemplo al seleccionar alguna localidad en este caso Choapa, la información de los demás widget se ajustara al filtro aplicado (figura \ref{13}).
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{Figuras_manual/filtro_localidades.png}
-\caption{Filtro localidad}
-\label{13}
-\end{figure}
-
-\subsubsection{Complementos dinámicos}
-
-Para estos widgets, la información se presenta de manera dinámica, esto quiere decir que la información va cambiando sujeto a donde se enfoca el visor, por lo cual al ir haciendo zoom (acercamiento) la información se ira ajustando a solo  lo visualizado.\bigskip\setlength{\parindent}{0pt}
-
-En las figuras \ref{14} y \ref{15}, se muestra como cambian los datos mostrados por el widget “ Tamaño explotación ", se encuentran filtrado por la localidad, pero al cambiar el visor, se observa que los tamaños de explotaciones cambian. Al analizar la superficie menor a 1 hectárea (<1 HA), en la figura \ref{14} son 153 roles que presentan esa condición. Al hacer el acercamiento ( figura \ref{15}) se observa que los roles que son menor a 1 hectárea son solo 35.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{Figuras_manual/tam_explot111.png}
-\caption{Visualización sin acercamiento}
-\label{14}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{Figuras_manual/tam_explot2.png}
-\caption{Visualización con acercamiento}
-\label{15}
-\end{figure}
-
-Los widget que presentan esta condición de dinámicos con respecto al visor son: tamaño explotación, Porcentaje explotado,  Roles cultivos permanentes (ha), Roles cultivos temporales (ha), Roles sin cultivos (ha), Roles con riego por goteo (ha), Roles con riego por microaspersión (ha), Roles con riego por surco (ha) y Roles con riego por tendido (ha).
-
-Para los demás widget los datos irán cambiando cuando se vayan aplicando filtro en algunos de estos como se muestra en la figura \ref{13}. 
-
-
-\subsubsection{Complementos de histogramas}
-
-Estos widgets entregan la información en un gráfica de histogramas, son complementos dinámicos, los cuales mediante columnas informan la cantidad de roles que presentan cierto valor indicado en la abscisa de la gráfica, que puede ser para esta plataforma porcentaje o superficie. \bigskip\setlength{\parindent}{0pt}
-
-En la figura \ref{histo12}, se muestra el widget de histograma, para este ejemplo se muestra “ Porcentaje explotado" donde las columnas verdes (1) indica la cantidad de roles que posee un porcentaje explotado indicado en la eje de la abscisa (2). La gráfica muestra la cantidad de roles seleccionados (3) en el histograma.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1.2]{Figuras_manual/widget_histograma.png}
-\caption{Widget de histograma}
-\label{histo12}
-\end{figure}
-
-Este tipo de complemento permite hacer filtro de los elementos que se desean visualizar. Ejemplo: se 
-requiere visualizar solo los roles que presentan el porcentaje explotado mayor al 50\%. Para esto con el mouse se fija en la gráfica los porcentaje que se desean visualizar (figura \ref{16}) . Al realizar esto, en el visor sólo se presentarán los roles que se ajusten a esta condición, en el circulo de color azul indica que fueron seleccionados alrededor de 1.600 roles que cumple esta condición. Al hacer esta selección se puede hacer un zoom (circulo de color rojo), para ver el histograma con la condición seleccionada.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1.2]{Figuras_manual/selec_rol_histo2.png}
-\caption{Selección de roles con porcentaje explotado mayor a 50\%}
-\label{16}
-\end{figure}
-
-En la figura \ref{17}, se observa el visor (2) con los roles seleccionados que presentan porcentaje explotado mayor al 50\%. En la sección de los complementos se observa al histograma con el zoom aplicado a la selección mayor del 50\%. Se puede volver a seleccionar en este segundo gráfico los roles que presenten cierto porcentaje explotado. Para que se vuelvan a visualizar todos los roles nuevamente solo se debe dar clic en \texttt{ “CLEAR "}.
-
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{Figuras_manual/filtro_histo.png}
-\caption{Zoom histograma}
-\label{17}
-\end{figure}
-
-\subsection{Consideraciones}
-\begin{enumerate}
-
-\item En la sección de los complementos donde se presenta la información, no siempre aparece la totalidad de la información que están en el análisis por el motivo que son componentes, así por ejemplo, en el widget de localidad, canal 1, canal 2 y tamaño explotación no aparecen todos los resultados, por lo cual para buscar y seleccionar alguna localidad, canal, rango de tamaño de explotación que no aparezca en el visor, se debe dirigir a \texttt  {“ SEARCH IN (número según corresponda) CATEGORIES "} ( figura \ref{search}) escribir alguna de las opciones listadas en los complementos expuestos en el punto \ref{complementos}  y dar “ APPLY ". 
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.8]{Figuras_manual/search.png}
-\caption{Buscar categoría}
-\label{search}
-\end{figure}
-
-\item Para dar una visión mas rápida a los resultados presentes en el visor, se puede categorizar los diferentes widget de análisis aplicando un estilo de color para los valores. En los widgets disponible, en la parte superior derecha estará un icono para generar un estilo automático ( figura \ref{aplicarestilo}).
-
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=1]{Figuras_manual/aplicar_color.png}
-\caption{Aplicar estilo automático.}
-\label{aplicarestilo}
-\end{figure}
-
-Al aplicar este estilo, se visualizará en este caso los roles que sean regados por 1, 2 o 3 canales de colores diferentes, como se ve en la figura \ref{estilocolor}.
-
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{Figuras_manual/visor_estilo.png}
-\caption{Estilo aplicado}
-\label{estilocolor}
-\end{figure}
-
-
-
-\end{enumerate}
-\end{document}  
+\end{document}
