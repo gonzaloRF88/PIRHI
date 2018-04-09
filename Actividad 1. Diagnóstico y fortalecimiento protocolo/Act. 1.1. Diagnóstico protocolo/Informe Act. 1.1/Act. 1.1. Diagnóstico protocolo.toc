@@ -1,0 +1,29 @@
+\contentsline {section}{\numberline {1}Resumen del Proyecto}{3}{section.1}
+\contentsline {section}{\numberline {2}Resumen del período a informar}{4}{section.2}
+\contentsline {section}{\numberline {3}Actividades programadas y ejecutadas}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Carta Gantt}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Detalle de actividades realizadas}{6}{subsection.3.2}
+\contentsline {section}{\numberline {4}Cuadro de antecedentes financieros}{7}{section.4}
+\contentsline {section}{\numberline {5}Gráfico curva de avance físico v/s programado}{8}{section.5}
+\contentsline {section}{\numberline {6}Metodología}{9}{section.6}
+\contentsline {subsection}{\numberline {6.1}Componente 1. Actividad 1.1. Diagnóstico técnico-social del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica}{9}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Información requerida por el Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica.}{9}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Recopilación de información requerida por el Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}{10}{subsubsection.6.1.2}
+\contentsline {paragraph}{\numberline {6.1.2.1}Recopilación información de la zona a evaluar y de la Organización de Usuarios de Aguas:}{11}{paragraph.6.1.2.1}
+\contentsline {paragraph}{\numberline {6.1.2.2}Caracterización de la red hídrica de la OUA's:}{11}{paragraph.6.1.2.2}
+\contentsline {paragraph}{\numberline {6.1.2.3}Determinación de pérdidas}{12}{paragraph.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.3}Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}{12}{subsubsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.4}Diagnóstico del Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}{12}{subsubsection.6.1.4}
+\contentsline {subsection}{\numberline {6.2}Componente 1. Actividad 1.2. Definición parámetros y generación de los protocolos de variable superficie bajo riego y potencial.}{12}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Componente 1. Actividad 1.3. Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico.}{12}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Componente 1. Actividad 1.4. Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica.}{12}{subsection.6.4}
+\contentsline {section}{\numberline {7}Resultados e Hitos}{13}{section.7}
+\contentsline {subsection}{\numberline {7.1}Componente 1. Actividad 1.1. Diagnóstico técnico-social del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica}{13}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Propuesta de fortalecimiento}{13}{subsubsection.7.1.1}
+\contentsline {paragraph}{\numberline {7.1.1.1}Antecedentes generales de la cuenca:}{13}{paragraph.7.1.1.1}
+\contentsline {paragraph}{\numberline {7.1.1.2}Antecedentes a nivel organizacional:}{13}{paragraph.7.1.1.2}
+\contentsline {paragraph}{\numberline {7.1.1.3}Levantamiento de información en terreno:}{13}{paragraph.7.1.1.3}
+\contentsline {subsection}{\numberline {7.2}Componente 1. Actividad 1.2. Definición parámetros y generación de los protocolos de variable superficie bajo riego y potencial.}{14}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Componente 1. Actividad 1.3. Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico.}{14}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Componente 1. Actividad 1.4. Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica.}{14}{subsection.7.4}
+\contentsline {subsubsection}{\numberline {7.4.1}Componente 1. Actividad 1.4.1. Validación S.I.G. red de distribución y bocatomas para desarrollo de protocolo}{14}{subsubsection.7.4.1}

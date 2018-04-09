@@ -215,7 +215,7 @@
 \begin{figure}[H]
   \centering
 \begin{subfigure}{.74\textwidth}
-   \fontsize{14}{0} \selectfont{\textcolor{casinegro}{Marzo 2018}} \\
+   \fontsize{14}{0} \selectfont{\textcolor{casinegro}{Abril 2018}} \\
    {\definecolor{rulecolor}{named}{casinegro}\rule[-3mm]{10cm}{.05cm}}
 \end{subfigure}
 \hfill
@@ -270,15 +270,19 @@
 
 \clearpage
 
+\tableofcontents
+
+\clearpage
+
 \section{Resumen del Proyecto}
 
 La iniciativa denominada ``Planificación de la Inversión en Revestimientos Hídricos", se adjudicó un financiamiento FIC de \$ 199.968.000, lo que sumado a los aportes de la contraparte totalizan \$ 220.188.000. Ejecutándose desde Diciembre de 2017 a Octubre de 2019, por un período de 22 meses.\\
 \\
-El proyecto tiene por finalidad planificar el mejoramiento de la eficiencia de conducción hídrica, a través de la transferencia de conocimientos y herramientas a las Organizaciones de Usuarios de Aguas para apoyar la gestión de recursos hídricos. El impacto directo o propósito es incrementar la oferta neta, por medio de la priorización de las inversiones público-privadas basados en parámetros técnico-social.\\
+El proyecto tiene por finalidad planificar el mejoramiento de la eficiencia de conducción hídrica, a través de la transferencia de conocimientos y herramientas a las Organizaciones de Usuarios de Aguas (OUA's) para apoyar la gestión de recursos hídricos. El impacto directo o propósito es incrementar la oferta neta, por medio de la priorización de las inversiones público-privadas basados en parámetros técnico-social.\\
 \\
-El área en la cual se desarrolla esta iniciativa corresponde a la cuenca del río Choapa, abarcando toda el área de influencia de la Junta de Vigilancia del río Chalinga y sus Afluentes, Junta de Vigilancia del río Illapel y sus Afluentes, y la Junta de Vigilancia del río Choapa y sus Afluentes. Por lo mismo, las instituciones asociadas al proyecto fueron la Junta de Vigilancia río Elqui y sus afluentes, Junta de Vigilancia río Illapel y Junta de Vigilancia Estero Derecho. Por lo mismo, las instituciones asociadas al pryectos son la Junta de Vigilancia del río Chalinga y sus Afluentes, la Junta de Vigilancia del río Illapel y sus afluentes, y la Junta de Vigilancia del río Choapa y sus Afluentes, además como beneficiario indirecto la Fundación Minera Los Pelambres.\\
+El área en la cual se desarrolla esta iniciativa corresponde a la cuenca del río Choapa, abarcando toda el área de influencia de la Junta de Vigilancia del río Chalinga y sus Afluentes, la Junta de Vigilancia del río Illapel y sus Afluentes, y la Junta de Vigilancia del río Choapa y sus Afluentes. Por lo mismo, las instituciones asociadas al proyecto son la Junta de Vigilancia del río Chalinga y sus Afluentes, la Junta de Vigilancia del río Illapel y sus afluentes, y la Junta de Vigilancia del río Choapa y sus Afluentes, además como beneficiarios indirectos la Fundación Minera Los Pelambres e instituciones públicas como la Dirección de Obras Hidráulicas y la Comisión Nacional de Riego.\\
 \\
-Los resultados esperados de este proyecto son:\\
+Los resultados esperados de este proyecto son:
 \begin{itemize}
 \item Protocolo técnico-social de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica.
 \item Plan de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica para la red de distribución de la Junta de Vigilancia Río Chalinga y sus Afluentes.
@@ -294,86 +298,407 @@ El mérito innovador del proyecto se visualiza en establecer bases para la gesti
 El equipo de trabajo de este proyecto está constituido por profesionales del Laboratorio de Prospección, Monitoreo y Modelación de Recursos Agrícolas y Ambientales (PROMMRA) perteneciente al Departamento de Agronomía de la Universidad de La Serena, liderado por el Dr. Pablo Álvarez Latorre.\\
 \clearpage
 
-\section{Actividades realizadas}
+\section{Resumen del período a informar}
 
-%\begin{table}[!htb]
-%\centering
-%\begin{tabular}{|c{2cm}|c{2cm}|c{2cm}|c{2cm}|c{2cm}|c{2cm}|}
- %   \hline
-  %  \textbf{Componente} & \textbf{N° Actividad} & \textbf{Actividades programadas} & \textbf{Discrepancias} & \textbf{\% de avance físico}
-   % \multirow {4}{2cm}{1. Protocolo técnico-social de Priorización de la Inversión en Mejorameinto de la Eficiencia de Conducción Hídrica.} & 		1 & 		Diagnóstico técnico-social del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica & Ejecutada (E)      		& No & 100\%\\
-%    \cline{2-6}
- %   & 1 & Diagnóstico técnico-sociañ del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica & Ejecutada (E)      	& No & 100\%\\
- %   \cline{2-6}
-  %  & 1 & Diagnóstico técnico-sociañ del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica & Ejecutada (E)      	& No & 100\%\\
- %   \cline{2-6}
-  %  & 1 & Diagnóstico técnico-sociañ del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica & Ejecutada (E)      	& No & 100\%\\
- %   \cline{2-6}
-  %  & 1 & Diagnóstico técnico-sociañ del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica & Ejecutada (E)      	& No & 100\%\\
-%    \cline{2-6}
- %   & 1 & Diagnóstico técnico-sociañ del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica & Ejecutada (E)      	& No & 100\%\\
-  %  \cline{2-6}
-      
-%    \multicolumn{3}{|c|}{\multirow{2}{8cm}{\centering \textbf{INFORME DE AVANCE TÉCNICO} \\
-%    \textbf{FIC REGIONAL} }} & \textbf{Fecha de emisión:}\\
-%    \cline{4-4}
-%    \multicolumn{3}{|c|}{\multirow{2}{8cm}} &  Abril 2018\\
-%    \hline
-%    \textbf{Fecha de inicio:}  &\textbf{Fecha de término:} &\textbf{N° de informe:} &\textbf{Duración:}\\
-%     20/Diciembre/2017 & 20/Octubre/2019 & 1 & 22 meses\\
-%    \hline
-%    \textbf{Nombre del proyecto:} & \multicolumn{3}{|l|}{\textbf{Planificación de la Inversión en Recursos Hídricos}}\\
-%    \hline
-%    \multirow{4}{4cm}{\textbf{Financiamiento:}} & \textbf{Monto total del proyecto:} & \multicolumn{2}{c|}{\centering M\$ 222.188}\\
-%    \cline{2-4}
-%    & \multirow{2}{4cm}{\textbf{Aporte FIC-R:}} & \multicolumn{2}{c|}{\textbf{Año 1:} M\$ 90.040}\\
-%    \cline{3-4}
-%    & & \multicolumn{2}{c|}{\textbf{Año 2:} M\$ 109.928}\\
-%    \cline{2-4}
-%    & \textbf{Aporte institución:} & \multicolumn{2}{c|}{\centering M\$ 22.220}\\
-%    \hline
-%    \textbf{Institución ejecutora:} & \multicolumn{3}{|l|}{\centering Universidad de La Serena}\\
-%    \hline
-%    \textbf{Responsable del proyecto:} & \multicolumn{3}{|l|}{\centering Dr. Pablo Álvarez Latorre}\\
-%    \hline
-%    \textbf{Cargo:} & \multicolumn{3}{|l|}{\centering Director del proyecto}\\
-%    \hline
-%    \textbf{E-mail:} & \multicolumn{3}{|l|}{\centering pabloa@userena.cl}\\
-%    \hline
-%    \textbf{Fono:} & \multicolumn{3}{|l|}{\centering 51-2554913}\\
-%    \hline
-%
-%\end{tabular}
-%
-%\end{table}
+El proyecto FIC-R 2016 - Planificación de la Inversión en Revestimientos Hídrico - código BIP XXXX, comenzó con su ejecución el 20 de Diciembre de 2017. En este informe se presenta el avance de ejecución de la componente 1, que abarca el período entre el 20 de Diciembre de 2017 y el 20 de Abril de 2018.\\
+\\
+Según carta Gantt del proyecto, se ejecutaron las siguientes actividades:
+\begin{itemize}
+\item Diagnóstico técnico-social del Protocolo de Priorización de Inversiones en Mejoramiento de la Eficiencia de Conducción Hídrica: Se realizó una revisión y diagnóstico del protocolo diseñado en el proyecto SIMCA - ELQUI, en función de los componentes técnicos y sociales, generando una propuesta de fortalecimiento.
+\item Definición parámetros y generación del protocolo de las variables superficie bajo riego y potencial: Se definió los parámetros a incorporar en esta variable, además de generar el protocolo que permite incorporar estos criterios técnicos de superficie bajo riego ($ha$) y potencial ($ha$) asociada al área de influencia de cada canal, al protocolo 
+\item Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico: Se definió los parámetros que permitan incorporar la variable modelamiento hidrológico, además de generar el protocolo que permita considerar los efectos dinámicos del mejoramiento en la eficiencia de conducción en las cuencas.
+\item Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica.
+\end{itemize}
+
+Además se ha comenzado con el desarrollo de las actividades de la componente 2. Plan de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica para la red de distribución de la Junta de Vigilancia del río Chalinga y sus afluentes.
+
+\begin{itemize}
+\item SIG Red de distribución y conducción hídrica de Junta de Vigilancia Río Chalinga y sus afluentes.
+\item Transferencia de capacidades en la aplicación del protocolo técnico-social de la inversión en mejoramiento de la eficiencia de conducción hídrica.
+\end{itemize}
 
 \clearpage
-\section{Carta Gantt}
+\section{Actividades programadas y ejecutadas}
 
+\subsection{Carta Gantt}
 
+\clearpage
+\subsection{Detalle de actividades realizadas}
+
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|p{3cm}|p{2cm}|p{3cm}|p{2.5cm}|p{2.5cm}|p{2cm}|}
+    \hline
+    \textbf{Componente} & \textbf{N° Actividad} & \textbf{Actividades Programadas} & \textbf{Actividades Ejecutadas} & \textbf{Discrepancias} & \textbf{\% de avance físico}\\
+    \hline
+    \multirow {4}{3cm}{1. Protocolo técnico-social de Priorización de la Inversión en Mejoramiento de la Eficiencia de Conducción Hídrica} & 1 & 		Diagnóstico técnico-social del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica &  Ejecutada (E)  & No & 100\%\\
+    \cline{2-6}
+    & 2 & Definición parámetros y generación del protocolo de las variables superficie bajo riego y potencial & Ejecutada (E) & No & 100\%\\
+    \cline{2-6}
+    & 3 & Definición de parámetros y generación del protocolo para la variable modelamiento hidrológico & Ejecutada (E)  & No & 100\%\\
+    \cline{2-6}
+    & 4 & Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica & Ejecutada (E)  & No & 100\%\\
+    \hline
+    \multirow {4}{3cm}{2. Plan de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica para la red de distribución de la Junta de Vigilancia del río Chalinga y sus afluentes} & 		1 & 		SIG Red de distribución y conducción hídrica de Junta de Vigilancia Río Chalinga y sus afluentes & En Ejecución (EE)      		& No & 20\%\\
+    \cline{2-6}
+    & 5 & Transferencia de capacidades en la aplicación del protocolo técnico-social de la inversión en mejoramiento de la eficiencia de conducción hídrica & En Ejecución (EE)      		& No & 15\%\\
+    \hline
+   
+\end{tabular}
+\end{table}
+
+\clearpage
+\section{Cuadro de antecedentes financieros}
+
+\clearpage
+\section{Gráfico curva de avance físico v/s programado}
 
 \clearpage
 \section{Metodología}
 
 \subsection{Componente 1. Actividad 1.1. Diagnóstico técnico-social del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica}
 
-%incluir tabla
+\begin{table}[!htb]
+\centering
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+    \hline
+    \multicolumn{2}{|l|}{Fecha de Inicio} & 20-12-2017 & \multicolumn{2}{l|}{Fecha de Término} & 20-04-2017\\
+    \hline
+    \multicolumn{6}{|c|}{Presupuesto (M\$)}\\
+    \hline
+    Total & xxxxx & FIC-R & XXXXXX & ULS & XXXXXX\\
+    \hline
+    \multicolumn{4}{|l|}{Porcentaje de Avance} & \multicolumn{2}{c|}{100\%}\\
+    \hline
+\end{tabular}
+\end{table}
 
-La priorización de la inversión público-privada en mejoramiento de la eficiencia de conducción hídrica, es primordial para resguardar el buen uso de los recursos disponibles, especialmente en una región donde el agua es un elemento vital para su desarrollo.
+Se estableció una mesa técnica, compuesta por los profesionales de las diferentes áreas del equipo para la revisión y diagnóstico del protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica, generado por el proyecto FIC-R 2013, \textit{``Diseño y puesta en marcha de un sistema de monitoreo de caudales y de un protocolo de determinación de pérdidas de agua, para la priorización de las inversiones público-privadas (SIMCA – ELQUI)"}, cuyo objetivo es unificar, estandarizar y normalizar los criterios, procedimientos y decisiones ligadas al mejoramiento de canales pertenecientes a una organización de regantes. Esta actividad nos permitirá generar una propuesta de fortalecimiento, a través de la incorporación de mayor cantidad información, nuevas metodologías de recopilación de antecedentes y nuevas metodologías de priorización.
 
-El proyecto FIC-R 2013 denominado \textit{``Diseño y puesta en marcha de un sistema de monitoreo de caudales y de un protocolo de determinación de pérdidas de agua, para la priorización de las inversiones público-privadas (SIMCA – ELQUI)"}, generó un protocolo de priorización de la inversión en la cuenca del río Elqui, para mejoramiento en la infraestructura de revestimiento de canales. El objetivo de este protocolo es unificar, estandarizar y normalizar los criterios, procedimientos y decisiones ligadas al mejoramiento de canales pertenecientes a una organización de regantes, basado en la variable técnica de pérdidas generales (l/s) por tramo y/o canal.
+\subsubsection{Información requerida por el Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica.}
 
-En la actualidad, el uso de los recursos hídricos se proyecta a nivel de cuenca, a través de un manejo integrado y sustentable de los diferentes usuarios de aguas. Es por esto, que se busca incluir variables de tipo social, para fortalecer la toma de decisiones en la distribución de recursos para inversión público-privada, y así realizar mejoramientos de la eficiencia de conducción hídrica en sectores donde se promueva el crecimiento y desarrollo, además de no interceder en la disponibilidad de los recursos de otras zonas.
+La información necesaria para generar la priorización de las inversiones en mejoramiento de la eficiencia de conducción hídrica para una OUA's, se detalla en las siguientes variables identificadas:
 
-Se realizó una revisión y diagnóstico del protocolo creado en SIMCA – ELQUI, con el fin de generar una propuesta de fortalecimiento que incluya las variables del ámbito social.
+\begin{itemize}
+\item Comunidad de Aguas o Canal. Permite identificar de forma individual cada uno de los componentes de la red de distribución de la Organización de Usuarios de Aguas.
+\item Número de acciones o litros/segundo. La cantidad de acciones o $l/s$, permite determinar la importancia y/o representatividad del canal, tanto dentro de la zona de influencia, así como dentro de la organización a la que pertenece.
+\item Capacidad de porteo. Este criterio determina la capacidad máxima de conducción del canal. Además esta variable se relaciona fuertemente con las acciones del canal, lo cual nos permite estimar la importancia del mismo tanto en la zona donde se emplaza, así como dentro de la organización que lo agrupa.
+\item Número de beneficiarios. El número de beneficiarios hace referencia a la cantidad de usuarios del canal en estudio que se verán favorecidos con cualquier posible mejoramiento en obras de conducción del sistema de distribución de aguas. Hay que tener en consideración que el número de beneficiarios no está en directa relación con el nivel o superficie productiva. Además se debe recordar que dependiendo del tramo del canal, ya sea este matriz o conducción, se verán beneficiados un mayor o un menor número de usuarios, respectivamente.
+\item Superficie regada. Corresponde al área que el canal abastece con recursos hídricos, dicha superficie corresponde al área de riego bajo cota de canal. Esta variable permite definir la importancia del canal tanto dentro del sector donde se ubica, así como dentro de la cuenca donde está inmerso.
+\item Longitud total del canal ($km$). Hace referencia a la distancia involucrada desde cuando nace el canal (bocatoma) hasta donde finaliza o hace su última entrega. Es un factor importante al momento de determinar el nivel de priorización para la inversión pública privada, ya que su longitud esta en directa relación con el área o superficie a mejorar (revestir). De tal manera que si se introducen mejoras en su estructura de conducción, se permitirá realizar una mejor distribución y disminuirá los tiempos de entrega a cada uno de los regantes.
+\item Longitud total del canal en uso ($km$). Dice relación la longitud actual del canal que efectivamente se está utilizando y que no necesariamente corresponde a la longitud del trazado original del canal. Este factor es esencial para determinar la superficie afecta a mejoramiento del canal ($m^2$ a revestir).
+\item Longitud tramo matriz ($km$). Corresponde a la distancia entre la compuerta que da origen al canal y la primera entrega predial. Es imprescindible contar con esta información, ya que, permite estimar superficie de este tramo afecta a mejoramiento. Cabe recordar que cualquier mejora en este tramo, beneficia a la totalidad de los usuarios del canal.
+\item Longitud tramo conducción ($km$). Corresponde la distancia existente entre la primera y la última entrega predial. También puede ser expresada como la diferencia entre la longitud total del canal y la longitud del tramo matriz. Es necesario contar con dicha información debido a que permite estimar la superficie afecta a mejoramiento.
+\item Perdidas generales por conducción ($l/s$). El agua que se utiliza para el riego, llega a los cultivos después de recorrer un conjunto de canalizaciones desde la fuente de abastecimiento. Durante ese recorrido se producen pérdidas que hacen que la cantidad de agua que realmente llega hasta el predio sea muy inferior a la disponible en la iniciación del sistema de irrigación.
+\item Longitud de tramos afectos a mejoramiento. Los tramos afectos a mejoramiento son todos aquellos que no presentan revestimiento de tipo permanente, vale decir no están revestidos o presentan revestimiento con geomembrana, la cual para efectos de este estudio es considerada como temporal.
+\item Dimensiones de la sección afecta a revestimiento. Se relaciona a factores tales como ancho y alto de los tramos que se pretenden mejorar, con esta información se puede determinar un valor estimativo de $m^2$ de revestimiento necesarios para el mejoramiento.
+\item Área y longitud a revestir. Conocer el área y longitud de un canal, es de vital importancia al momento de generar una mejora en su sistema de conducción, ya que en función de estos dos parámetros se puede calcular el costo de inversión de la obra de mejoramiento.
+\item Volumen recuperado por temporada. A partir de las pérdidas por conducción detectadas ($l/s$) tanto a nivel general, así como por tramo se pueden determinar los volúmenes posibles a recuperar en caso de efectuar una mejora en el canal. Estos nuevos volúmenes serán expresados tanto en $m^3/temporada$, $m^3/ha$, etc.
+\item Volumen recuperado por temporada en función de longitud de mejoramiento. Este indicador dice relación a los $m^3$ que pueden ser recuperados por $m^2$ de mejoramiento. Para la estimación de dicho volumen se utilizaran los $m^3/temporada$ definidos anteriormente.
+\end{itemize}
 
-\subsubsection{Recopilación de antecedentes generales}
+\subsubsection{Recopilación de información requerida por el Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}
 
-Se establecieron diferentes instancias para la revisión y diagnóstico del protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica. Se estableció una mesa técnica compuesta por los profesionales de las diferentes áreas del equipo, con el fin de identificar la información utilizada, metodología de recopilación y procesamiento de esta. Los resultados de esta revisión se presentan a continuación:
+La recopilación de información requerida por el protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica, considera tanto fuentes primarias como secundarias. En primer lugar, se debe generar una revisión bibliográfica de la zona a evaluar, en conjunto con una recopilación de información de la OUA's, para recabar la mayor cantidad de información disponible. Posteriormente se realiza una caracterización y determinación de pérdidas, las que de forma general nos permitirán obtener una descripción de la infraestructura y pérdidas de la red hídrica perteneciente a la Organización de Usuarios de Aguas. La metodología para la obtención de la información requerida se detalla a continuación.
 
-\paragraph{Recopilación antecedentes generales cuenca:}
+\paragraph{Recopilación información de la zona a evaluar y de la Organización de Usuarios de Aguas:}
+Se realiza a través de una revisión bibliográfica, referida a estudios de recursos hídricos de la zona a evaluar. Además se recopila la información de la red de distribución (canales) que posee la OUA's, incluyendo información que pueda ser útil para la logística y operación en el levantamiento de datos de la caracterización y determinación de pérdidas.
 
-Se realiza a través de una revisión bibliográfica de fuentes secundarias, como estudios de organismos referidos a los recursos hídricos de la cuenca a intervenir, como ejemplo se presentan las siguientes fuentes:
+\begin{itemize}
+	\item Revisión bibliográfica
+	\begin{itemize}	
+		\item Fichas de registro de bocatomas, Dirección General de Aguas.
+		\item Canales de riego a nivel de matrices hasta 2do derivado, Comisión Nacional de Riego.
+		\item Estudios de recursos hídricos de la zona a evaluar.
+	\end{itemize}
+	\item Información OUA's
+	\begin{itemize}	
+		\item Diagrama unifilar
+		\item Ubicación geográfica bocatomas
+		\item Número de acciones totales
+		\item Número de acciones por comunidad de aguas
+		\item Dotaciones o desmarques
+		\item Capacidad de porteo por canal
+		\item Número de usuarios comunidad de aguas
+		\item Superficie regada por comunidad de aguas
+		\item Contacto celadores
+	\end{itemize}
+\end{itemize}	
+
+\paragraph{Caracterización de la red hídrica de la OUA's:}
+Se realiza desde la fuente de abastecimiento hasta el final del trazado del canal, ejecutándose solo a través del canal matriz, es decir no incluye derivados o ramales. Consta de un levantamiento y georeferenciación de los componentes de los canales, referidos a obras de arte e infraestructura, además de revestimientos y posibles observaciones. Esta información nos permitirá visualizar el recorrido y componentes del canal, para ser utilizados directamente como variables en el protocolo de priorización de inversiones en mejoramiento de la eficiencia hídrica y en el desarrollo de otras, además de la operación y ejecución de actividades posteriores. Los componentes que se deben caracterizar son los siguientes:
+
+\clearpage
+%\begin{longtable}{|p{3cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+	%\caption{Caracterización red hídrica}
+	%\hline
+	%\textbf{Caracterización} & \textbf{Componente} & \textbf{Atributo} & \textbf{Opción}\\
+	%\hline
+	%\endfirsthead
+	%\caption{Caracterización red hídrica \emph{(continuación)}}\\
+	%\hline
+	%\textbf{Caracterización} & \textbf{Componente} & \textbf{Atributo} & \textbf{Opción}\\
+	%\hline
+	%\endhead
+	%\hline
+	%\endfoot
+	%\endlastfood    
+	%\multirow {45}{3cm}{Bocatoma} & \multirow {6}{3.5cm}{Barrera desviación} & \multirow {6}{3.5cm}{Tipo de Obra} &  Barrera Frontal\\
+	%\cline{4-4}
+	%& & & Barrera Lateral\\
+	%\cline{4-4}
+	%& & & Pata de Cabra\\
+	%\cline{4-4}
+    %& & & Pretil Material Fluvial\\
+    %\cline{4-4}
+    %& & & Otro\\
+    %\cline{3-4}
+    %& & Dimensión & Ancho barrera\\
+  %  \cline{2-4}
+   % & \multirow {17}{3.5cm}{Canal de aducción} & \multirow {3}{3.5cm}{Tipo de Punto} &  Inicial\\
+    %\cline{4-4}
+    %& & & Intermedio\\
+  %  \cline{4-4}
+   % & & & Final\\
+    %\cline{3-4}
+    %& & \multirow {2}{3.5cm}{Tipo de Bocatoma} & Permanente\\
+    %\cline{4-4}
+    %& & & Temporal\\
+    %\cline{3-4}
+    %& & \multirow {3}{3.5cm}{Tipo de Fuente} & Gravitacional\\
+    %\cline{4-4}
+    %& & & Bombeo\\
+    %\cline{4-4}
+   % & & & Otro\\
+    %\cline{3-4}
+   % & & \multirow {2}{3.5cm}{Ribera} & Izquierda\\
+    %\cline{4-4}
+    %& & & Derecha\\
+    %\cline{3-4}
+    %& & \multirow {5}{3.5cm}{Material} & Mezcla suelo\\
+    %\cline{4-4}
+    %& & & Hormigón\\
+    %\cline{4-4}
+    %& & & Madera\\
+    %\cline{4-4}
+    %& & & Mampostería\\
+   % \cline{4-4}
+   % & & & Otro\\
+   % \cline{2-4}
+    %& \multirow {17}{3.5cm}{Compuerta de Carga} & \multirow {7}{3.5cm}{Fuente de Abastecimiento} &  Cauce Natural\\
+  %  \cline{4-4}
+    %& & & Canal\\
+  %  \cline{4-4}
+  %  & & & Estero\\
+  %  \cline{4-4}
+  %  & & & Quebrada Permanente\\
+  %  \cline{4-4}
+  %  & & & Quebrada Eventual\\
+  %  \cline{4-4}
+ %   & & & Vertiente\\
+   % \cline{4-4}
+   % & & & Otro\\
+   % \cline{3-4}
+   % & & \multirow {3}{3.5cm}{Material} & Metálica\\
+   % \cline{4-4}
+   % & & & Madera\\
+  %  \cline{4-4}
+   % & & & Otro\\
+  %  \cline{3-4}
+  %  & & \multirow {2}{3.5cm}{Sistema} & Con Mecanismo\\
+   % \cline{4-4}
+  %  & & & Manual\\
+  %  \cline{3-4}
+  %  & & \multirow {4}{3.5cm}{Devolución} & No\\
+ %   \cline{4-4}
+   % & & & Compuerta\\
+   % \cline{4-4}
+   % & & & Vertedero\\
+  %  \cline{4-4}
+   % & & & Compuerta y Vertedero\\
+    %\cline{3-4}
+    %& & \multirow {3}{3.5cm}{Dimensiones Vertedero} & Ancho\\
+    %\cline{4-4}
+    %& & & Alto Compuerta\\
+    %\cline{4-4}
+    %& & & Ancho Compuerta\\
+    %\cline{3-4}
+    %& & \multirow {5}{3.5cm}{Dimensiones Sección} & Largo\\
+    %\cline{4-4}
+    %& & & Alto Inicial\\
+   % \cline{4-4}
+    %& & & Ancho Inicial\\
+    %\cline{4-4}
+    %& & & Alto Final\\
+    %\cline{4-4}
+    %& & & Ancho Final\\
+   % \cline{2-4} \pagebreak  
+    %& \multirow {17}{3.5cm}{Sección de Control} & \multirow {11}{3.5cm}{Tipo} &  Escurrimiento crítico\\
+    %\cline{4-4}
+    %& & & Regla limnimétrica\\
+   % \cline{4-4}
+    %& & & Estación Limnigráfica\\
+  %  \cline{4-4}
+    %& & & Barrera con Reglilla\\
+   % \cline{4-4}
+    %& & & Sección Rectangular con Regla\\
+   % \cline{4-4}
+    %& & & Barrera Triangular\\
+   % \cline{4-4}
+    %& & & Barrera Triangular y Regla\\
+ %   \cline{4-4}
+   % & & & Aforo de Garganta\\
+  %  \cline{4-4}
+  %  & & & Aforo Parshall\\
+  %  \cline{4-4}
+    %& & & Sensor de Presión\\
+  %  \cline{4-4}
+   % & & & Otro\\
+   % \cline{3-4}
+    %& & \multirow {3}{3.5cm}{Dimensiones Sección} & Ancho\\
+    %\cline{4-4}
+    %& & & Largo\\
+    %\cline{4-4}
+    %& & & Alto\\
+    %\cline{3-4}
+    %& & \multirow {3}{3.5cm}{Dimensiones Parshall} & Convergencia\\
+    %\cline{4-4}
+  %  & & & Garganta\\
+   % \cline{4-4}
+    %& & & Divergencia\\ 
+ %   \hline   
+  %  \multirow {34}{3cm}{Canal} & \multirow {34}{3.5cm}{Canal} & \multirow {3}{3.5cm}{Tipo de Punto} &  Inicial\\
+%	\cline{4-4}
+%	& & & Intermedio\\
+%	\cline{4-4}
+	%& & & Final\\
+  %  \cline{3-4}
+ %   & & \multirow {9}{3.5cm}{Forma} & Indefinida\\
+ %   \cline{4-4}
+ %   & & & Rectangular\\
+%    \cline{4-4}
+  %  & & & Trapezoidal\\
+   % \cline{4-4}
+    %& & & Túnel\\
+    %\cline{4-4}
+    %& & & Circular\\
+    %\cline{4-4}
+    %& & & Embovedado\\
+    %\cline{4-4}
+    %& & & Parabólico\\
+    %\cline{4-4}
+    %& & & Triangular\\
+    %\cline{4-4}
+    %& & & Semi-circular\\
+    %\cline{3-4}
+	%& & \multirow {4}{3.5cm}{Revestimiento} & Sin revestimiento\\
+    %\cline{4-4}
+    %& & & 1/3 caras revestidas\\
+    %\cline{4-4}
+    %& & & 2/3 caras revestidas\\
+   % \cline{4-4}
+   % & & & 3/3 caras revestidas\\
+    %\cline{3-4}  
+    %& & \multirow {20}{3.5cm}{Material} & Mezcla Suelo\\
+   % \cline{4-4}
+ %   & & & Hormigón\\
+   % \cline{4-4}
+    %& & & Loseta\\
+    %\cline{4-4}
+    %& & & Geomembrana\\
+    %\cline{4-4}
+    %& & & Tubo HDPE\\
+    %\cline{4-4}
+   % & & & Geomembrana asfáltica\\
+  %  \cline{4-4}
+   % & & & Hormigón Roca\\
+   % \cline{4-4}
+  %  & & & Mampostería\\
+  %  \cline{4-4}
+   % & & & Suelo arcilloso\\
+    %\cline{4-4}
+   % & & & Suelo arenoso\\
+    %\cline{4-4}
+  %  & & & Suelo limoso\\
+  %  \cline{4-4}
+ %   & & & Suelo franco\\
+%    \cline{4-4}
+  %  & & & Suelo muy pedregoso\\
+  %  \cline{4-4}
+  %  & & & Suelo con mucha vegetación\\
+  %  \cline{4-4}
+  %  & & & Grava\\
+  %  \cline{4-4}
+   % & & & Roca\\
+  %  \cline{4-4}
+%    & & & Lecho de río\\
+ %   \cline{4-4}
+ %   & & & PVC\\
+ %   \cline{4-4}
+   % & & & Tubo metálico\\
+ %   \cline{4-4}
+ %   & & & Otro\\
+  %  \cline{3-4}\\    
+    
+ 
+    
+    
+%    \hline
+%\end{longtable}
+
+
+
+
+detalla la infraestructura y revestimientos, mediante la georeferenciación  presentes para la conducción y distribución del recurso.La caracterización del cauce natural, se realiza por medio de la georeferenciación y descripción de bocatomas, trazado de canales de aducción y compuertas de carga perteneciente a la comunidad de aguas. Con los puntos de trazado, se puede determinar la longitud del canal de aducción y su recorrido.\\
+\\
+Posteriormente, en la caracterización del cauce artificial, se realiza la georeferenciación y descriptor de la infraestructura de conducción y distribución del recurso hídrico. Se capturan todas las obras de arte presentes en el recorrido del canal, desde la compuerta de carga hasta el final del recorrido, además se detalla el tipo de obra, material, finalidad, revestimientos, además de puntos críticos como filtraciones o alteraciones visibles, quebradas, etc.\\
+\\
+La caracterización de cauce natural y artificial se genera con el fin de proporcionar esta información a las OUA’s, como base de datos en formatos que permitan su visualización. Además con esta información se generan las variables que permitan realizar la determinación de pérdidas y posterior priorización de tramos y/o canales para el mejoramiento de la eficiencia de conducción hídrica.\\
+
+\paragraph{Determinación de pérdidas}
+
+
+Con los insumos levantados en la caracterización, se procede a generar los tramos de aforo para la determinación de pérdidas. Estos tramos se dividen en matriz y distribución en primera instancia, para luego establecer los tramos por el cambios en el revestimiento presente, a través de aforos de los caudales de inicio y término de estos.
+
+
+
+\subsubsection{Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}
+
+Las variables que contiene el protocolo de priorización aplicado en SIMCA – ELQUI, las cuales se seleccionaron estadísticamente a través de la correlación de PEARSON, mayor a 0,80, en relación a la variable pérdidas generales (l/s) de los tramos.
+
+\subsubsection{Diagnóstico del Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}
+
+
+
+\subsection{Componente 1. Actividad 1.2. Definición parámetros y generación de los protocolos de variable superficie bajo riego y potencial.}
+
+\subsection{Componente 1. Actividad 1.3. Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico.}
+
+
+\subsection{Componente 1. Actividad 1.4. Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica.}
+
+Se realizó una validación del protocolo fortalecido, la cual se realizó mediante consultas con las OUAS interferidas y el levantameinto de datos necesarios.
+
+
+\clearpage
+\section{Resultados e Hitos}
+
+\subsection{Componente 1. Actividad 1.1. Diagnóstico técnico-social del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica}
+
+En la actualidad, el uso de los recursos hídricos se proyecta a nivel de cuenca, a través de un manejo integrado y sustentable de los diferentes usuarios de aguas. Es por esto, que se busca incluir variables de tipo social, para fortalecer la toma de decisiones en la distribución de recursos para inversión público-privada, y así realizar mejoramientos de la eficiencia de conducción hídrica en sectores donde se promueva el crecimiento y desarrollo, además de no interceder en la disponibilidad de los recursos de otras zonas.\\
+
+La inclusión de parámetros sociales que permitan tener una mirada ,Desde el punto de vista técnico, se diagnosticó la falta de alguos criterios en los distintos niveles organizacionales
+
+Propuesta de fortalecimiento en consenso con las OUA'S
+
+\subsubsection{Propuesta de fortalecimiento}
+
+
+
+
+\paragraph{Antecedentes generales de la cuenca:}
+
+Se realiza a través de una revisión bibliográfica de fuentes secundarias, como estudios de organismos referidos a los recursos hídricos de la cuenca a intervenir, como ejemplo se presentan las siguientes fuentes:\\
 
 \begin{itemize}
 \item Fichas de registro de bocatomas, Dirección General de Aguas
@@ -381,9 +706,9 @@ Se realiza a través de una revisión bibliográfica de fuentes secundarias, com
 \item Estudios de recursos hídricos de la zona a evaluar
 \end{itemize}
 
-\paragraph{Recopilación de antecedentes a nivel organizacional:}
+\paragraph{Antecedentes a nivel organizacional:}
 
-Se realiza a través de reuniones y mesas de trabajo sostenidas con las organizaciones de usuarios de agua, donde se recoge información primaria la cual se detalla a continuación: 
+Se realiza a través de reuniones y mesas de trabajo sostenidas con las organizaciones de usuarios de agua, donde se recoge información primaria la cual se detalla a continuación:\\
 
 \begin{itemize}
 \item Diagrama unifilar
@@ -396,29 +721,123 @@ Se realiza a través de reuniones y mesas de trabajo sostenidas con las organiza
 \item Contacto celadores
 \end{itemize}
 
-\subsubsection{Levantamiento de datos en terreno, cauce natural y artificial (canal).}
+\paragraph{Levantamiento de información en terreno:}
 
-La caracterización del cauce natural, se realiza por medio de la georreferenciación y descripción de bocatomas, trazado de canales de aducción y compuertas de carga perteneciente a la comunidad de aguas. Con los puntos de trazado, se puede determinar la longitud del canal de aducción y su recorrido.
+\begin{itemize}
+\item Diagrama unifilar
+\item Ubicación geográfica bocatomas
+\item Número de acciones totales
+\item Número de acciones por comunidad de aguas
+\item Dotaciones o desmarques
+\item Capacidad de porteo canal
+\item Número de usuarios comunidad de aguas
+\item Contacto celadores
+\end{itemize}
+Se determinó que la información levantada en el protocolo a nivel de cuenca, no es suficente para incorporar variables de tipo social, ya que 
 
-Posteriormente, en la caracterización del cauce artificial, se realiza la georreferenciación y descrpción de la infraestructura de conducción y distribución del recurso hídrico. Se capturan todas las obras de arte presentes en el recorrido del canal, desde la compuerta de carga hasta el final del recorrido, además se detalla el tipo de obra, material, finalidad, revestimeintos, además de puntos críticos como filtraciones o alteraciones visibles, quebradas, etc.
+poder realizar la modelación hídrica en la zona de estudio, ya que se requieren parámetros agroclimáticos y registros de estaciones fluviométricas presentes en la zona. En cuanto a los antecedentes de la organizaciones de usuarios de aguas, se determinó que es base suficiente para la recopilación de antecedentes en este nivel.\\
+\\
+Para tener un mayor conocimento del trazado del canal y sus singularidades, además de obtener una idea general de la superficie y cultivos irrigados, se estableció recopilar antecedentes a nivel de comunidades de aguas, de forma directa a través de la entrevista con un representante, por lo que se generaron los siguientes parámetros:
 
-La caracterización de cauce natural y artificial se genera con el fin de proporcionar esta información a las OUA’s, como base de datos en formatos que permitan su visualización. Además con esta información se generan las variables que permitan realizar la determinación de pérdidas y posterior priorización de tramos y/o canales para el mejoramiento de la eficiencia de conducción hídrica.
+\begin{itemize}
+\item Número de acciones
+\item Número de usuarios
+\item Longitud canal (km)
+\item Número de entregas
+\item Número de ramales
+\item Capacidad de porteo canal
+\item Manejo operacional (secciones)
+\item Tipos y porcentajes de revestimientos
+\item Superficie regada por há
+\item Principales cultivos
+\item Sistemas de riego empleados (\%)
+\item Descarga final al río
+\end{itemize}
 
-\subsection{Determinación de pérdidas}
+\subsection{Componente 1. Actividad 1.2. Definición parámetros y generación de los protocolos de variable superficie bajo riego y potencial.}
 
-Con los insumos levantados en la caracterización, se procede a generar los tramos de aforo para la determinación de pérdidas. Estos tramos se dividen en matriz y distribución en primera instancia, para luego establecer los tramos por el cambios en el revestimiento presente, a través de aforos de los caudales de inicio y término de estos.
-
-
+\subsection{Componente 1. Actividad 1.3. Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico.}
 
 
+\subsection{Componente 1. Actividad 1.4. Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica.}
 
+\subsubsection{Componente 1. Actividad 1.4.1. Validación S.I.G. red de distribución y bocatomas para desarrollo de protocolo}
 
+La generación del Sistema de Información Geográfica de la red de distribución contemplado desde la obra de toma del recurso hídrico (bocatoma), tiene por finalidad ser una base de datos geoespacial, que permita visualizar y gestionar la información para las OUA´s, proporcionar información base para el desarrollo de las variables en el desarrollo del protocolo de priorización de la inversión y  entregar información para la variable de modelamiento hidrológico. Con la caracterización y posterior realización del S.I.G, este provee la información atribuidas a las longitudes que entran como variables.
+ 
+ \begin{itemize}
+ \item  Longitud Total de canal
+ \item  Longitud Total de canal en uso
+ \item Longitud tramo matriz
+ \item Longitud tramo conducción
+ \item Longitud de tramos afectos a mejoramiento
+ 
+ \end{itemize}
 
-\subsection{Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}
+Junto con las longitudes el S.I.G, cual trae consigo información de la caracterización realizada desde terreno, permitirá definir los tramos para evaluación de pérdidas por conducción, proporcionar las dimensiones de la sección afecta a revestimiento, validar o ajustar el trazado del canal que en primera instancia se obtuvo de la capa de la CNR, así rectificar las superficies que riega cada canal, las cuales fueron asignadas basadas en la capa CNR. 
 
-Las variables que contiene el protocolo de priorización aplicado en SIMCA – ELQUI, las cuales se seleccionaron estadísticamente a través de la correlación de PEARSON, mayor a 0,80, en relación a la variable pérdidas generales (l/s) de los tramos.
+En una primera campaña de terreno se realizaron por completo la georreferenciación de 3 canales correspondiente al área de la Junta de Vigilancia del Río Chalinga y sus Afluentes, con los cuales fue validado lo que respecta al S.I.G. para la generación del protocolo de priorización. La validación se llevo a cabo en 3 canales de la segunda sección del río Chalinga, la cual posee la mayor longitud en la red de canales con 41,62 km (según capa canales CNR), por la operatividad y disponibilidad de personal de las comunidades de agua que conforman el área de Chalinga, se realizo la validación en los canales Arboleda Grande, Chalinga o Cancha Brava y Huanque, los cuales representan un 12,5\%, 8,8\% y 16,7\% de la longitud total de la red de la segunda sección del río respectivamente según los datos obtenidos de CNR.
 
-\clearpage
-\section{Resultados}
+Mediante GPS diferencial y el diccionario incorporado a estos, se logro georreferenciar y describir cada uno de las obras a levantar en el recorrido de los canales. A modo de resumen se presenta la información recabada en las bocatoma de estos canales.
+
+\begin{table}[H]
+\caption{Descripción Bocatomas}
+\label{my-label}
+\begin{tabular}{l|c|c|c|}
+\cline{2-4}
+                                                                                              & \multicolumn{3}{c|}{\textbf{Canales}                                                          } \\ \hline
+\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Componente \\ Bocatoma\end{tabular}}} & \textbf{Arboleda Grande} & \textbf{Chalinga o Cancha Brava} & \textbf{Huanque}         \\ \hline
+\multicolumn{1}{|l|}{\textbf{Obra desviación}}                                               & Barrera lateral          & Compuerta hoja metalica          & Barrera lateral          \\
+\multicolumn{1}{|l|}{\textbf{Canal aducción}}                                                 & 867,45 m                 & 568,18 m                         & 184,73 m                 \\
+\multicolumn{1}{|l|}{\textbf{Compuerta Carga}}                                                & Compuerta manual & Compuerta manual         & Compuerta manual \\
+\multicolumn{1}{|l|}{\textbf{Sección Control}}                                                & Aforador Parshall        & Aforador Parshall                & Aforador Parshall        \\ \hline
+\end{tabular}
+\end{table}
+
+En la red de distribución se pudo obtener las diferentes longitudes y tipos de revestimientos, estructuras de distribución y puntos críticos que se presentaron en los canales evaluados, con el fin de generar los tramos para la evaluaciones de pérdidas.
+
+Esta información se obtuvo a través del recorrido de cada uno de los canales apoyados con las capas de canales de canales matrices hasta 2do derivado de la CNR y en conjunto de una persona perteneciente a la comunidad de aguas de cada canal. Capturando las coordenadas de inicio, intermedio y fin de tipos de revestimientos, se obtuvo la longitud de estos, incorporando a cada uno de estos puntos las dimensiones de las secciones posiblemente a revestir.  
+
+Para la definición de las diferentes longitudes que se utilizara en el protocolo, se valida el procedimiento e información a levantar para definir estos parámetros. Por lo cual tomando las coordenadas, revestimiento (numero de paredes del canal revestida), tipo de revestimiento (permanente o temporal) y material de revestimiento en cada cambio de revestimiento permite dar cumplimiento para la definición de estas longitudes.
+
+La captura y descripción de las obras de distribución en los canales permitirán primero definir el tramo de conducción (matriz) el cual corresponde al trazado entre la compuerta de carga y la primera entrega y el tramo de distribución. Junto a los diferentes cambios de revestimientos que se presenten en el recorrido del canal y algunos puntos críticos definirán los tramos que se someterán a la evaluación de pérdidas. 
+
+A continuación se presenta un resumen de longitudes que presentan los 3 canales validados.
+
+\begin{table}[H]
+\centering
+\caption{Longitudes por canal}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lc|c|c|c|c}
+\cline{3-5}
+                                               & \multicolumn{1}{l|}{}        & \multicolumn{3}{c|}{\textbf{Revestimientos (km)}}                    & \multicolumn{1}{l}{}                             \\ \hline
+\multicolumn{1}{|l|}{\textbf{Canal}}           & \textbf{Canal aducción (km)} & \textbf{Sin revestimiento} & \textbf{Permanente} & \textbf{Temporal} & \multicolumn{1}{c|}{\textbf{Total General (km)}} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Arboleda Grande}} & 0.87                         & 1.45                       & 2.89                & 0.70              & \multicolumn{1}{c|}{5.90}                        \\ \hline
+\multicolumn{1}{|l|}{\textbf{Cancha Brava}}    & 0.57                         & 0.19                       & 1.53                & 2.11              & \multicolumn{1}{c|}{4.41}                        \\ \hline
+\multicolumn{1}{|l|}{\textbf{Huanque}}         & 0.18                         & 0.84                       & 4.53                & 1.63              & \multicolumn{1}{c|}{7.19}                        \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+Para las estructuras de distribución mediante la captura de sus coordenadas y caracterización del tipo, se obtiene el requerimiento que permitirá definir tramo matriz y puntos de entrega tomándose en cuenta para la evaluación de pérdidas. 
+
+En la validación se obtiene que los canales presentan los siguientes estructuras de distribución.
+
+\begin{table}[H]
+\centering
+\caption{Estructuras de distribución}
+\label{my-label}
+\begin{tabular}{l|c|c|c|c}
+\cline{2-4}
+                                                       & \multicolumn{3}{c|}{\textbf{Estructura distribución}} & \multicolumn{1}{l}{}                        \\ \hline
+\multicolumn{1}{|l|}{\textbf{Canal}}                   & \textbf{Entrega}  & \textbf{Gestión} & \textbf{Ramal} & \multicolumn{1}{c|}{\textbf{Total general}} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Arboleda Grande}}         & 88                & 32               & 7              & \multicolumn{1}{c|}{127}                    \\ \hline
+\multicolumn{1}{|l|}{\textbf{Chalinga o Cancha Brava}} & 69                & 52               & 5              & \multicolumn{1}{c|}{126}                    \\ \hline
+\multicolumn{1}{|l|}{\textbf{Huanque}}                 & 102               & 57               & 3              & \multicolumn{1}{c|}{162}                    \\ \hline
+\end{tabular}
+\end{table}
+  Dentro de las estructuras de distribución se agrega la función de ramal, la cual no se consideraba para el protocolo del proyecto SIMCA-Elqui, esta función busca conocer donde nacen los derivados y estimar superficie irrigada por el ramal.
+
 
 \end{document}
