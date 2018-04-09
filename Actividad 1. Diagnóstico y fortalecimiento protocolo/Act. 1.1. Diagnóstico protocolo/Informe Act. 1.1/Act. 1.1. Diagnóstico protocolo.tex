@@ -761,8 +761,85 @@ Para tener un mayor conocimento del trazado del canal y sus singularidades, adem
 
 \subsection{Componente 1. Actividad 1.4. Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica.}
 
+\subsubsection{Componente 1. Actividad 1.4.1. Validación S.I.G. red de distribución y bocatomas para desarrollo de protocolo}
 
+La generación del Sistema de Información Geográfica de la red de distribución contemplado desde la obra de toma del recurso hídrico (bocatoma), tiene por finalidad ser una base de datos geoespacial, que permita visualizar y gestionar la información para las OUA´s, proporcionar información base para el desarrollo de las variables en el desarrollo del protocolo de priorización de la inversión, generación de tramos para evaluación de pérdidas y  entregar información para la variable de modelación hidrológica. Con la caracterización y posterior realización del S.I.G, el cual provee la información atribuidas a las longitudes que entran como variables.
+ 
+ \begin{itemize}
+ \item  Longitud Total de canal
+ \item  Longitud Total de canal en uso
+ \item Longitud tramo matriz
+ \item Longitud tramo conducción
+ \item Longitud de tramos afectos a mejoramiento
+ 
+ \end{itemize}
 
+Junto con las longitudes el S.I.G, cual trae consigo información de la caracterización realizada desde terreno, permitirá definir los tramos para evaluación de pérdidas por conducción, proporcionar las dimensiones de la sección afecta a revestimiento, validar o ajustar el trazado del canal que en primera instancia se obtuvo de la capa de la CNR, así rectificar las superficies que riega cada canal, las cuales fueron asignadas basadas en la capa CNR. 
 
+En una primera campaña de terreno se realizaron por completo la georreferenciación de 3 canales correspondiente al área de la Junta de Vigilancia del Río Chalinga y sus Afluentes, con los cuales fue validado lo que respecta al S.I.G. para la generación del protocolo de priorización. La validación se llevo a cabo en 3 canales de la segunda sección del río Chalinga, la cual posee la mayor longitud en la red de canales con 41,62 km (según capa canales CNR), por la operatividad y disponibilidad de personal de las comunidades de agua que conforman el área de Chalinga, se realizo la validación en los canales Arboleda Grande, Chalinga o Cancha Brava y Huanque, los cuales representan un 12,5\%, 8,8\% y 16,7\% de la longitud total de la red de la segunda sección del río respectivamente según los datos obtenidos de CNR.
+
+Mediante GPS diferencial y el diccionario incorporado a estos, se logro georreferenciar y describir cada uno de las obras a levantar en el recorrido de los canales. A modo de resumen se presenta la información recabada en las bocatoma de estos canales.
+
+\begin{table}[H]
+\caption{Descripción Bocatomas}
+\label{my-label}
+\begin{tabular}{l|c|c|c|}
+\cline{2-4}
+                                                                                              & \multicolumn{3}{c|}{\textbf{Canales}                                                          } \\ \hline
+\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Componente \\ Bocatoma\end{tabular}}} & \textbf{Arboleda Grande} & \textbf{Chalinga o Cancha Brava} & \textbf{Huanque}         \\ \hline
+\multicolumn{1}{|l|}{\textbf{Obra desviación}}                                               & Barrera lateral          & Compuerta hoja metalica          & Barrera lateral          \\
+\multicolumn{1}{|l|}{\textbf{Canal aducción}}                                                 & 867,45 m                 & 568,18 m                         & 184,73 m                 \\
+\multicolumn{1}{|l|}{\textbf{Compuerta Carga}}                                                & Compuerta manual & Compuerta manual         & Compuerta manual \\
+\multicolumn{1}{|l|}{\textbf{Sección Control}}                                                & Aforador Parshall        & Aforador Parshall                & Aforador Parshall        \\ \hline
+\end{tabular}
+\end{table}
+
+En la red de distribución se pudo obtener las diferentes longitudes y tipos de revestimientos, estructuras de distribución y puntos críticos que se presentaron en los canales evaluados, con el fin de generar los tramos para la evaluaciones de pérdidas.
+
+Esta información se obtuvo a través del recorrido de cada uno de los canales apoyados con las capas de canales de canales matrices hasta 2do derivado de la CNR y en conjunto de una persona perteneciente a la comunidad de aguas de cada canal. Capturando las coordenadas de inicio, intermedio y fin de tipos de revestimientos, se obtuvo la longitud de estos, incorporando a cada uno de estos puntos las dimensiones de las secciones posiblemente a revestir.  
+
+Para la definición de las diferentes longitudes que se utilizara en el protocolo, se valida el procedimiento e información a levantar para definir estos parámetros. Por lo cual tomando las coordenadas, revestimiento (numero de paredes del canal revestida), tipo de revestimiento (permanente o temporal) y material de revestimiento en cada cambio de revestimiento permite dar cumplimiento para la definición de estas longitudes.
+
+La captura y descripción de las obras de distribución en los canales permitirán primero definir el tramo de conducción (matriz) el cual corresponde al trazado entre la compuerta de carga y la primera entrega y el tramo de distribución en cada canal. Junto a los diferentes cambios de revestimientos que se presenten en el recorrido del canal y algunos puntos críticos definirán los tramos que se someterán a la evaluación de pérdidas. 
+
+A continuación se presenta un resumen de longitudes que presentan los 3 canales validados.
+
+\begin{table}[H]
+\centering
+\caption{Longitudes por canal}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lc|c|c|c|c}
+\cline{3-5}
+                                               & \multicolumn{1}{l|}{}        & \multicolumn{3}{c|}{\textbf{Revestimientos (km)}}                    & \multicolumn{1}{l}{}                             \\ \hline
+\multicolumn{1}{|l|}{\textbf{Canal}}           & \textbf{Canal aducción (km)} & \textbf{Sin revestimiento} & \textbf{Permanente} & \textbf{Temporal} & \multicolumn{1}{c|}{\textbf{Total General (km)}} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Arboleda Grande}} & 0.87                         & 1.45                       & 2.89                & 0.70              & \multicolumn{1}{c|}{5.90}                        \\ \hline
+\multicolumn{1}{|l|}{\textbf{Cancha Brava}}    & 0.57                         & 0.19                       & 1.53                & 2.11              & \multicolumn{1}{c|}{4.41}                        \\ \hline
+\multicolumn{1}{|l|}{\textbf{Huanque}}         & 0.18                         & 0.84                       & 4.53                & 1.63              & \multicolumn{1}{c|}{7.19}                        \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+Para las estructuras de distribución mediante la captura de sus coordenadas y caracterización del tipo de obra, se obtiene el requerimiento que permitirá definir tramo matriz y puntos de entrega tomándose en cuenta para la evaluación de pérdidas. 
+
+En la validación se obtiene que los canales presentan los siguientes estructuras de distribución.
+
+\begin{table}[H]
+\centering
+\caption{Estructuras de distribución}
+\label{my-label}
+\begin{tabular}{l|c|c|c|c}
+\cline{2-4}
+                                                       & \multicolumn{3}{c|}{\textbf{Estructura distribución}} & \multicolumn{1}{l}{}                        \\ \hline
+\multicolumn{1}{|l|}{\textbf{Canal}}                   & \textbf{Entrega}  & \textbf{Gestión} & \textbf{Ramal} & \multicolumn{1}{c|}{\textbf{Total general}} \\ \hline
+\multicolumn{1}{|l|}{\textbf{Arboleda Grande}}         & 88                & 32               & 7              & \multicolumn{1}{c|}{127}                    \\ \hline
+\multicolumn{1}{|l|}{\textbf{Chalinga o Cancha Brava}} & 69                & 52               & 5              & \multicolumn{1}{c|}{126}                    \\ \hline
+\multicolumn{1}{|l|}{\textbf{Huanque}}                 & 102               & 57               & 3              & \multicolumn{1}{c|}{162}                    \\ \hline
+\end{tabular}
+\end{table}
+
+  Dentro de las estructuras de distribución se agrega la función de ramal, la cual no se consideraba para el protocolo del proyecto SIMCA-Elqui, esta función busca conocer donde nacen los derivados y estimar superficie irrigada por el ramal.
+
+En el recorrido de canal se obtuvieron coordenadas de inicio, fin y puntuales de algunos puntos críticos que se presenten en el canal, como filtraciones, quebradas, desbordes, entre otros, que puedan afectan la conducción y distribución normal del recurso, por lo cual dependiendo del tipo de observación y longitud de este hito se definirá si es necesario realizar un subtramo adicional para evaluación de pérdidas los cuales son definidos por los cambios de revestimientos.
 
 \end{document}
