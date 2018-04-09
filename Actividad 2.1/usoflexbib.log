@@ -1,0 +1,107 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.12)  13 JUL 2014 09:37
+entering extended mode
+**usoflexbib.tex
+(E:\Latex-portable\documentos\flexbib\usoflexbib.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(E:\Latex-portable\miktex-portable\tex\latex\base\report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(E:\Latex-portable\miktex-portable\tex\latex\base\size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(E:\Latex-portable\miktex-portable\tex\generic\babel\babel.sty
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(E:\Latex-portable\miktex-portable\tex\latex\00miktex\bblopts.cfg
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+(E:\Latex-portable\miktex-portable\tex\generic\babel\spanish.ldf
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
+
+(E:\Latex-portable\miktex-portable\tex\generic\babel\babel.def
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\es@datefmt=\count89
+\es@quottoks=\toks14
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+))
+(E:\Latex-portable\documentos\flexbib\flexbib.sty
+Package: flexbib 2005/06/24 v. 1.0
+
+(E:\Latex-portable\documentos\flexbib\spanishbst.tex)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 445.
+\c@NAT@ctr=\count91
+
+(E:\Latex-portable\documentos\flexbib\usoflexbib.bbl))
+(E:\Latex-portable\documentos\flexbib\usoflexbib.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+
+(E:\Latex-portable\documentos\flexbib\usoflexbib.bbl [1
+
+{E:/Latex-portable/miktex-portable/pdftex/config/pdftex.map}]) [2
+
+]
+(E:\Latex-portable\documentos\flexbib\usoflexbib.aux) ) 
+Here is how much of TeX's memory you used:
+ 1196 strings out of 493921
+ 14216 string characters out of 3144900
+ 67790 words of memory out of 3000000
+ 4546 multiletter control sequences out of 15000+200000
+ 5798 words of font info for 21 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 24i,4n,28p,232b,187s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/Latex-portable/mikte
+x-portable/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/Latex-portable/miktex-
+portable/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><E:/Latex-portable/miktex-p
+ortable/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Latex-portable/miktex-port
+able/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on usoflexbib.pdf (2 pages, 53260 bytes).
+PDF statistics:
+ 25 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
