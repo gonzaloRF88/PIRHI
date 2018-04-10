@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6500 64-bit) (preloaded format=xelatex 2017.12.26)  15 MAR 2018 10:13
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6500 64-bit) (preloaded format=xelatex 2017.12.26)  10 APR 2018 11:35
 entering extended mode
 **"./Act. 1.1. Diagnóstico protocolo.tex"
 ("Act. 1.1. Diagnóstico protocolo.tex"
@@ -1235,7 +1235,14 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \colbreak@box=\box93
 \mc@col@check@num=\count321
 )
-("Act. 1.1. Diagnóstico protocolo.aux")
+("Act. 1.1. Diagnóstico protocolo.aux"
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
 \openout1 = `"Act. 1.1. Diagnóstico protocolo.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 181.
@@ -1255,8 +1262,7 @@ LaTeX Font Info:    ... okay on input line 181.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 181.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 181.
 
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 181.
@@ -1332,9 +1338,6 @@ LaTeX Info: Redefining \nameref on input line 181.
 ("Act. 1.1. Diagnóstico protocolo.out") ("Act. 1.1. Diagnóstico protocolo.out")
 \@outlinefile=\write4
 \openout4 = `"Act. 1.1. Diagnóstico protocolo.out"'.
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -1435,34 +1438,478 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 File: Logo/uls.png Graphic file (type bmp)
 <Logo/uls.png>
+File: Logo/lgore.pdf Graphic file (type pdf)
+<use Logo/lgore.pdf>
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
+[]
+ []
+
+[1
 
 
-LaTeX Warning: File `Logo/lgore.pdf' not found on input line 224.
+]
+Overfull \vbox (1.25336pt too high) detected at line 239
+ []
 
-! Unable to load picture or PDF file 'Logo/lgore.pdf'.
-<to be read again> 
-                   }
-l.224 ...raphics[width=\textwidth]{Logo/lgore.pdf}
-                                                  
-The requested image couldn't be read because
-it was not a recognized image format.
+[1
 
-
-! Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.224 ...raphics[width=\textwidth]{Logo/lgore.pdf}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+] ("Act. 1.1. Diagnóstico protocolo.toc"
+Underfull \hbox (badness 1596) in paragraph at lines 9--9
+ [][] [][]\TU/CenturyGothic(0)/m/n/10 Componente 1. Actividad 1.1. Diagnóstico 
+técnico-social del Protocolo de 
+ []
 
 
-! Package graphics Error: Division by 0.
+Underfull \hbox (badness 1596) in paragraph at lines 21--21
+ [][] [][]\TU/CenturyGothic(0)/m/n/10 Componente 1. Actividad 1.1. Diagnóstico 
+técnico-social del Protocolo de 
+ []
 
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...      
+)
+\tf@toc=\write5
+\openout5 = `"Act. 1.1. Diagnóstico protocolo.toc"'.
+
+ [2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 279--286
+
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 279--286
+\TU/CenturyGothic(0)/m/n/10 El proyecto tiene por finalidad planificar el mejor
+amiento de la eficiencia de conducción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--286
+
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 279--286
+\TU/CenturyGothic(0)/m/n/10 El área en la cual se desarrolla esta iniciativa co
+rresponde a la cuenca del río Choapa,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--286
+
+ []
+
+
+Underfull \hbox (badness 2495) in paragraph at lines 292--293
+[]\TU/CenturyGothic(0)/m/n/10 Sistema virtual de priorización de la inversión e
+n mejoramiento de la eficiencia de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--299
+
+ []
+
+
+Underfull \hbox (badness 1590) in paragraph at lines 296--299
+\TU/CenturyGothic(0)/m/n/10 El equipo de trabajo de este proyecto está constitu
+ido por profesionales del Laboratorio
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--299
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 303--306
+
+ []
+
+[4
+
+] [5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 332--332
+[]|\TU/CenturyGothic(0)/bx/n/10 N°
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--332
+[]|\TU/CenturyGothic(0)/bx/n/10 Actividades
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--332
+[]|\TU/CenturyGothic(0)/bx/n/10 Actividades
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
+[]|\TU/CenturyGothic(0)/bx/n/10 % de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
+\TU/CenturyGothic(0)/bx/n/10 avance
+ []
+
+
+Overfull \vbox (48.0pt too high) detected at line 334
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+[]|\TU/CenturyGothic(0)/m/n/10 Diagnóstico
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\TU/CenturyGothic(0)/m/n/10 técnico-social
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\TU/CenturyGothic(0)/m/n/10 Priorización de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\TU/CenturyGothic(0)/m/n/10 Inversiones en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\TU/CenturyGothic(0)/m/n/10 Mejoramiento
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 334--334
+\TU/CenturyGothic(0)/m/n/10 de la eficiencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
+\TU/CenturyGothic(0)/m/n/10 de Conducción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
+[]|\TU/CenturyGothic(0)/m/n/10 Definición
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
+\TU/CenturyGothic(0)/m/n/10 parámetros y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
+\TU/CenturyGothic(0)/m/n/10 generación del
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
+\TU/CenturyGothic(0)/m/n/10 protocolo de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
+\TU/CenturyGothic(0)/m/n/10 las variables
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
+\TU/CenturyGothic(0)/m/n/10 superficie bajo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+[]|\TU/CenturyGothic(0)/m/n/10 Definición de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+\TU/CenturyGothic(0)/m/n/10 parámetros y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+\TU/CenturyGothic(0)/m/n/10 generación
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+\TU/CenturyGothic(0)/m/n/10 del protocolo
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 338--338
+\TU/CenturyGothic(0)/m/n/10 para la variable
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+\TU/CenturyGothic(0)/m/n/10 modelamiento
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+[]|\TU/CenturyGothic(0)/m/n/10 Validación
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+\TU/CenturyGothic(0)/m/n/10 del protocolo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+\TU/CenturyGothic(0)/m/n/10 técnico-social
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+\TU/CenturyGothic(0)/m/n/10 de inversión en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+\TU/CenturyGothic(0)/m/n/10 mejoramiento
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 340--340
+\TU/CenturyGothic(0)/m/n/10 de la eficiencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+\TU/CenturyGothic(0)/m/n/10 en conducción
+ []
+
+
+Overfull \vbox (108.0pt too high) detected at line 342
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+[]|\TU/CenturyGothic(0)/m/n/10 SIG Red de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+\TU/CenturyGothic(0)/m/n/10 distribución y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+\TU/CenturyGothic(0)/m/n/10 conducción
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 342--342
+\TU/CenturyGothic(0)/m/n/10 hídrica de Junta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+\TU/CenturyGothic(0)/m/n/10 Chalinga y sus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+[]|\TU/CenturyGothic(0)/m/n/10 En Ejecución
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 344--344
+[]|\TU/CenturyGothic(0)/m/n/10 Transferencia de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
+\TU/CenturyGothic(0)/m/n/10 capacidades
+ []
+
+
+Underfull \hbox (badness 1184) in paragraph at lines 344--344
+\TU/CenturyGothic(0)/m/n/10 en la aplicación
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
+\TU/CenturyGothic(0)/m/n/10 del protocolo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
+\TU/CenturyGothic(0)/m/n/10 técnico-social
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
+\TU/CenturyGothic(0)/m/n/10 de la inversión
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 344--344
+\TU/CenturyGothic(0)/m/n/10 de la eficiencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
+\TU/CenturyGothic(0)/m/n/10 de conducción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
+[]|\TU/CenturyGothic(0)/m/n/10 En Ejecución
+ []
+
+
+Overfull \hbox (31.83623pt too wide) in paragraph at lines 330--348
+ [][] 
+ []
+
+[6
+
+] [7
+
+] [8
+
+]
+Underfull \hbox (badness 1609) in paragraph at lines 386--387
+\TU/CenturyGothic(0)/m/n/10 en obras de conducción del sistema de distribución 
+de aguas. Hay que tener en
+ []
+
+[9
+
+] [10]
+Underfull \hbox (badness 3396) in paragraph at lines 429--430
+[] []|\TU/CenturyGothic(0)/bx/n/10 6.1.2.2 Caracterización de la red hídrica de
+ la OUA’s:[] \TU/CenturyGothic(0)/m/n/10 Se realiza desde la fuente de
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
+[]|\TU/CenturyGothic(0)/m/n/10 Quebrada
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
+[]|\TU/CenturyGothic(0)/m/n/10 Compuerta y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
+[]|\TU/CenturyGothic(0)/m/n/10 Estación
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
+[]|\TU/CenturyGothic(0)/m/n/10 Sección
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
+\TU/CenturyGothic(0)/m/n/10 Rectangular con
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 554--555
+[]|\TU/CenturyGothic(0)/m/n/10 Barrera Triangular y
+ []
+
+[12
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 618--619
+[]|\TU/CenturyGothic(0)/m/n/10 Geomembrana
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 632--633
+[]|\TU/CenturyGothic(0)/m/n/10 Suelo muy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
+[]|\TU/CenturyGothic(0)/m/n/10 Suelo con mucha
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 658--663
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--663
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--663
+
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 667--668
+[] []|\TU/CenturyGothic(0)/bx/n/10 6.1.2.3 Determinación de pérdidas[] \TU/Cent
+uryGothic(0)/m/n/10 Con los insumos levantados en la caracterización, se
+ []
+
+[14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 694--695
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--708
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 717--718
+
+ []
+
+[16
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 744--747
+
+ []
+
+[17]
+Underfull \hbox (badness 1824) in paragraph at lines 783--784
+\TU/CenturyGothic(0)/m/n/10 desde terreno, permitirá definir los tramos para ev
+aluación de pérdidas por conducción,
+ []
+
+[18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 851.
+ [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 851.
+ ("Act. 1.1. Diagnóstico protocolo.aux")
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 851.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 851.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 28671 strings out of 427839
+ 504648 string characters out of 3152537
+ 679064 words of memory out of 3000000
+ 32337 multiletter control sequences out of 15000+200000
+ 543129 words of font info for 57 fonts, out of 3000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 59i,16n,94p,10476b,520s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Act. 1.1. Diagnóstico protocolo.pdf (20 pages).
