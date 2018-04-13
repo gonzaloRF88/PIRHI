@@ -100,7 +100,7 @@
 \renewcommand{\appendixname}{Anexos}
 \renewcommand{\appendixtocname}{Anexos}
 \renewcommand{\appendixpagename}{Anexos}
-
+\renewcommand{\thefootnote}{\fnsymbol{footnote}} % numeración por símbolos
 
 \titleformat*{\section}{\normalsize\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
@@ -166,6 +166,7 @@
 \usepackage[normalem]{ulem}
 \usepackage[none]{hyphenat}
 \usepackage{multicol}
+\usepackage{tabularx}
 
 % Regla con color
 \makeatletter
@@ -777,6 +778,7 @@ La generación del Sistema de Información Geográfica de la red de distribució
  \item Longitud tramo matriz
  \item Longitud tramo conducción
  \item Longitud de tramos afectos a mejoramiento
+ \item Dimensiones de la sección afecta a revestimiento
  
  \end{itemize}
 
@@ -847,5 +849,38 @@ En la validación se obtiene que los canales presentan los siguientes estructura
 Dentro de las estructuras de distribución se agrega la función de ramal, la cual no se consideraba para el protocolo del proyecto SIMCA-Elqui, esta función busca conocer donde nacen los derivados y estimar superficie irrigada por el ramal, ajustando la asignación de la superficie a los canales si se encuentra mas de un canal cercano en el territorio.
 
 En el recorrido de canal se obtuvieron coordenadas de inicio, fin y puntuales de algunos puntos críticos que se presenten en el canal, como filtraciones, quebradas, desbordes, entre otros, que puedan afectar la conducción y distribución normal del recurso, por lo cual dependiendo del tipo de observación y longitud de este hito se definirá si es necesario realizar un subtramo adicional para evaluación de pérdidas los cuales son definidos por los cambios de revestimientos.
+
+Los resultados obtenidos de la validación para variables que contemple el protocolo de priorización con lo que respecta a S.I.G de canales se presentan a continuación: 
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{longtable}{|l|ccc|}
+\caption{Resultados variables longitudes y dimensiones}\\
+\hline
+\multicolumn{1}{|c|}{\textbf{Variables}}                 & \multicolumn{1}{l}{\textbf{Arboleda Grande}} & \multicolumn{1}{l}{\textbf{Chalinga o Cancha Brava}} & \multicolumn{1}{l|}{\textbf{Huanque}} \\ \hline
+\textbf{Longitud total}                                  & 5.902                                        & 4.406                                                & 7.190                                 \\
+\textbf{Longitud total de canal en uso}                  & 5.902                                        & 4.406                                                & 7.190                                 \\
+\textbf{Longitud tramo matriz}                           & 0.046                                        & 0.045                                                & 0.071                                 \\
+\textbf{Longitud Tramo conducción}                       & 4.989                                        & 3.792                                                & 6.934                                 \\
+\textbf{Longitud de tramos afectos a mejoramiento}       & 2.149                                        & 2.306                                                & 2.472                                 \\
+\textbf{Dimensiones a revestir  (ancho; alto) en metros} & 0,6; 0,5\footnote{Tomados de tramos regulares revestidos rectangulares}                                    & 0,9; 0,7\footnote{Promedio entre tramo revestido rectangular 1 m ancho 0,7 alto y tramo geomembrana 1 m ancho y 0.7 alto}                                          & 0,5; 0,4\footnote{Tomados de sección rectangular revestida en hormigón }                           \\ 
+\hline
+\end{longtable}%
+
+
+
+
+
+\subsubsection{Componente 1. Actividad 1.4.2. Validación variable superficie bajo riego y potencial.}
+
+Previo al levantamiento de información desde terreno, se generó información base del trazado de canales (CNR) y polígonos que representan uso de suelo agrícola del territorio (PROMUS), cada uno de estos polígonos fue identificado  con un ID y asignado a un canal, según el trazado de este.
+
+Desde terreno se fue validando desde con personas correspondiente a cada canal, los polígonos que irriga cada canal, junto con eso en el recorrido de caracterización del canal se fueron levantando estas entidades y verificando si corresponde el polígono al canal asignado y uso del suelo de cada polígono. En esta labor se fue identificando zonas que están cultivadas y que no se presentaba en la capa de uso de suelo.
+
+
+
+
+
+
 
 \end{document}

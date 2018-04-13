@@ -100,7 +100,7 @@
 \renewcommand{\appendixname}{Anexos}
 \renewcommand{\appendixtocname}{Anexos}
 \renewcommand{\appendixpagename}{Anexos}
-
+\renewcommand{\thefootnote}{\fnsymbol{footnote}} % numeración por símbolos
 
 \titleformat*{\section}{\normalsize\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
@@ -166,6 +166,7 @@
 \usepackage[normalem]{ulem}
 \usepackage[none]{hyphenat}
 \usepackage{multicol}
+\usepackage{tabularx}
 
 % Regla con color
 \makeatletter
@@ -777,12 +778,13 @@ La generación del Sistema de Información Geográfica de la red de distribució
  \item Longitud tramo matriz
  \item Longitud tramo conducción
  \item Longitud de tramos afectos a mejoramiento
+ \item Dimensiones de la sección afecta a revestimiento
  
  \end{itemize}
 
 Junto con las longitudes el S.I.G, cual trae consigo información de la caracterización realizada desde terreno, permitirá definir los tramos para evaluación de pérdidas por conducción, proporcionar las dimensiones de la sección afecta a revestimiento, validar o ajustar el trazado del canal que en primera instancia se obtuvo de la capa de la CNR, así rectificar las superficies que riega cada canal, las cuales fueron asignadas basadas en la capa CNR. 
 
-En una primera campaña de terreno se realizaron por completo la georreferenciación de 3 canales correspondiente al área de la Junta de Vigilancia del Río Chalinga y sus Afluentes, con los cuales fue validado lo que respecta al S.I.G. para la generación del protocolo de priorización. La validación se llevo a cabo en 3 canales de la segunda sección del río Chalinga, la cual posee la mayor longitud en la red de canales con 41,62 km (según capa canales CNR), por la operatividad y disponibilidad de personal de las comunidades de agua que conforman el área de Chalinga, se realizo la validación en los canales Arboleda Grande, Chalinga o Cancha Brava y Huanque, los cuales representan un 12,5\%, 8,8\% y 16,7\% de la longitud total de la red de la segunda sección del río respectivamente según los datos obtenidos de CNR.
+En una primera campaña de terreno se realizaron por completo la georreferenciación de 3 canales correspondiente al área de la Junta de Vigilancia del Río Chalinga y sus Afluentes, con los cuales fue validado lo que respecta al S.I.G. para la generación del protocolo de priorización, la metodología como llegar a obtener las diferentes longitudes no cambia en los presentado en SIMCA-Elqui. La validación se llevo a cabo en 3 canales de la segunda sección del río Chalinga, la cual posee la mayor longitud en la red de canales con 41,62 km (según capa canales CNR), por la operatividad y disponibilidad de personal de las comunidades de agua que conforman el área de Chalinga, se realizo la validación en los canales Arboleda Grande, Chalinga o Cancha Brava y Huanque, los cuales representan un 12,5\%, 8,8\% y 16,7\% de la longitud total de la red de la segunda sección del río respectivamente según los datos obtenidos de CNR.
 
 Mediante GPS diferencial y el diccionario incorporado a estos, se logro georreferenciar y describir cada uno de las obras a levantar en el recorrido de los canales. A modo de resumen se presenta la información recabada en las bocatoma de estos canales.
 
@@ -802,9 +804,9 @@ Mediante GPS diferencial y el diccionario incorporado a estos, se logro georrefe
 
 En la red de distribución se pudo obtener las diferentes longitudes y tipos de revestimientos, estructuras de distribución y puntos críticos que se presentaron en los canales evaluados, con el fin de generar los tramos para la evaluaciones de pérdidas.
 
-Esta información se obtuvo a través del recorrido de cada uno de los canales apoyados con las capas de canales de canales matrices hasta 2do derivado de la CNR y en conjunto de una persona perteneciente a la comunidad de aguas de cada canal. Capturando las coordenadas de inicio, intermedio y fin de tipos de revestimientos, se obtuvo la longitud de estos, incorporando a cada uno de estos puntos las dimensiones de las secciones posiblemente a revestir.  
+Esta información se obtuvo a través del recorrido de cada uno de los canales apoyados con las capas de canales de canales matrices hasta 2do derivado de la CNR y con el apoyo de un representante de la comunidad de aguas. Capturando las coordenadas de inicio, intermedio y fin de tipos de revestimientos, se obtuvo la longitud de estos, incorporando a cada uno de estos puntos las dimensiones de las secciones posiblemente a revestir.  
 
-Para la definición de las diferentes longitudes que se utilizara en el protocolo, se valida el procedimiento e información a levantar para definir estos parámetros. Por lo cual tomando las coordenadas, revestimiento (numero de paredes del canal revestida), tipo de revestimiento (permanente o temporal) y material de revestimiento en cada cambio de revestimiento permite dar cumplimiento para la definición de estas longitudes.
+Para la definición de las diferentes longitudes que se utilizara en el protocolo, se valida el procedimiento e información a levantar para definir estos parámetros. Por lo cual tomando las coordenadas, revestimiento (número de paredes del canal revestida), tipo de revestimiento (permanente o temporal) y material de revestimiento en cada cambio de revestimiento permite dar cumplimiento para la definición de estas longitudes.
 
 La captura y descripción de las obras de distribución en los canales permitirán primero definir el tramo de conducción (matriz) el cual corresponde al trazado entre la compuerta de carga y la primera entrega y el tramo de distribución en cada canal. Junto a los diferentes cambios de revestimientos que se presenten en el recorrido del canal y algunos puntos críticos definirán los tramos que se someterán a la evaluación de pérdidas. 
 
@@ -839,13 +841,57 @@ En la validación se obtiene que los canales presentan los siguientes estructura
                                                        & \multicolumn{3}{c|}{\textbf{Estructura distribución}} & \multicolumn{1}{l}{}                        \\ \hline
 \multicolumn{1}{|l|}{\textbf{Canal}}                   & \textbf{Entrega}  & \textbf{Gestión} & \textbf{Ramal} & \multicolumn{1}{c|}{\textbf{Total general}} \\ \hline
 \multicolumn{1}{|l|}{\textbf{Arboleda Grande}}         & 88                & 32               & 7              & \multicolumn{1}{c|}{127}                    \\ \hline
-\multicolumn{1}{|l|}{\textbf{Chalinga o Cancha Brava}} & 69                & 52               & 5              & \multicolumn{1}{c|}{126}                    \\ \hline
-\multicolumn{1}{|l|}{\textbf{Huanque}}                 & 102               & 57               & 3              & \multicolumn{1}{c|}{162}                    \\ \hline
+\multicolumn{1}{|l|}{\textbf{Chalinga o Cancha Brava}} & 68                & 53               & 5              & \multicolumn{1}{c|}{126}                    \\ \hline
+\multicolumn{1}{|l|}{\textbf{Huanque}}                 & 100               & 56               & 3              & \multicolumn{1}{c|}{159}                    \\ \hline
 \end{tabular}
 \end{table}
 
-  Dentro de las estructuras de distribución se agrega la función de ramal, la cual no se consideraba para el protocolo del proyecto SIMCA-Elqui, esta función busca conocer donde nacen los derivados y estimar superficie irrigada por el ramal.
+Dentro de las estructuras de distribución se agrega la función de ramal, la cual no se consideraba para el protocolo del proyecto SIMCA-Elqui, esta función busca conocer donde nacen los derivados y estimar superficie irrigada por el ramal, ajustando la asignación de la superficie a los canales si se encuentra mas de un canal cercano en el territorio.
 
-En el recorrido de canal se obtuvieron coordenadas de inicio, fin y puntuales de algunos puntos críticos que se presenten en el canal, como filtraciones, quebradas, desbordes, entre otros, que puedan afectan la conducción y distribución normal del recurso, por lo cual dependiendo del tipo de observación y longitud de este hito se definirá si es necesario realizar un subtramo adicional para evaluación de pérdidas los cuales son definidos por los cambios de revestimientos.
+En el recorrido de canal se obtuvieron coordenadas de inicio, fin y puntuales de algunos puntos críticos que se presenten en el canal, como filtraciones, quebradas, desbordes, entre otros, que puedan afectar la conducción y distribución normal del recurso, por lo cual dependiendo del tipo de observación y longitud de este hito se definirá si es necesario realizar un subtramo adicional para evaluación de pérdidas los cuales son definidos por los cambios de revestimientos.
+
+Los resultados obtenidos de la validación para variables que contemple el protocolo de priorización con lo que respecta a S.I.G de canales se presentan a continuación: 
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+%\begin{longtable}{|l|ccc|}
+%\caption{Resultados variables longitudes y dimensiones}\\
+%\hline
+%\multicolumn{1}{|c|}{\textbf{Variables}}                 & \multicolumn{1}{l}{\textbf{Arboleda Grande}} & \multicolumn{1}{l}{\textbf{Chalinga o Cancha Brava}} & \multicolumn{1}{l|}{\textbf{Huanque}} \\ \hline
+%\textbf{Longitud total}                                  & 5.902                                        & 4.406                                                & 7.190                                 \\
+%\textbf{Longitud total de canal en uso}                  & 5.902                                        & 4.406                                                & 7.190                                 \\
+%\textbf{Longitud tramo matriz}                           & 0.046                                        & 0.045                                                & 0.071                                 \\
+%\textbf{Longitud Tramo conducción}                       & 4.989                                        & 3.792                                                & 6.934                                 \\
+%\textbf{Longitud de tramos afectos a mejoramiento}       & 2.149                                        & 2.306                                                & 2.472                                 \\
+%\textbf{Dimensiones a revestir  (ancho; alto) en metros} & 0,6; 0,5\footnote{Tomados de tramos regulares revestidos rectangulares}                                    & 0,9; 0,7\footnote{Promedio entre tramo revestido rectangular 1 m ancho 0,7 alto y tramo geomembrana 1 m ancho y 0.7 alto}                                          & 0,5; 0,4\footnote{Tomados de sección rectangular revestida en hormigón }                           \\ 
+%\hline
+%\end{longtable}%
+
+\begin{table}
+
+\begin{tabularx}{\textwidth}{|l|ccc|}
+%\caption{Resultados variables longitudes y dimensiones}\\
+\hline
+\multicolumn{1}{|c|}{\textbf{Variables}}                 & \multicolumn{1}{l}{\textbf{Arboleda Grande}} & \multicolumn{1}{l}{\textbf{Chalinga o Cancha Brava}} & \multicolumn{1}{l|}{\textbf{Huanque}} \\ \hline
+\textbf{Longitud total}                                  & 5.902                                        & 4.406                                                & 7.190                                 \\
+\textbf{Longitud total de canal en uso}                  & 5.902                                        & 4.406                                                & 7.190                                 \\
+\textbf{Longitud tramo matriz}                           & 0.046                                        & 0.045                                                & 0.071                                 \\
+\textbf{Longitud Tramo conducción}                       & 4.989                                        & 3.792                                                & 6.934                                 \\
+\textbf{Longitud de tramos afectos a mejoramiento}       & 2.149                                        & 2.306                                                & 2.472                                 \\
+\textbf{Dimensiones a revestir  (ancho; alto) en metros} & 0,6; 0,5\footnote{Tomados de tramos regulares revestidos rectangulares}                                    & 0,9; 0,7\footnote{Promedio entre tramo revestido rectangular 1 m ancho 0,7 alto y tramo geomembrana 1 m ancho y 0.7 alto}                                          & 0,5; 0,4\footnote{Tomados de sección rectangular revestida en hormigón }                           \\ 
+\hline
+\end{tabularx}
+\end{table}
+\subsubsection{Componente 1. Actividad 1.4.2. Validación variable superficie bajo riego y potencial.}
+
+Previo al levantamiento de información desde terreno, se generó información base del trazado de canales (CNR) y polígonos que representan uso de suelo agrícola del territorio (PROMUS), cada uno de estos polígonos fue identificado  con un ID y asignado a un canal, según el trazado de este.
+
+Desde terreno se fue validando desde con personas correspondiente a cada canal, los polígonos que irriga cada canal, junto con eso en el recorrido de caracterización del canal se fueron levantando estas entidades y verificando si corresponde el polígono al canal asignado y uso del suelo de cada polígono. En esta labor se fue identificando zonas que están cultivadas y que no se presentaba en la capa de uso de suelo.
+
+
+
+
+
+
 
 \end{document}
