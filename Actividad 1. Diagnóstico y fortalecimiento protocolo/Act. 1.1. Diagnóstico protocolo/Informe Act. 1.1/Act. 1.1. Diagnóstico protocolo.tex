@@ -167,6 +167,8 @@
 \usepackage[none]{hyphenat}
 \usepackage{multicol}
 \usepackage{tabularx}
+\usepackage{rotating}
+\usepackage{colortbl}
 
 % Regla con color
 \makeatletter
@@ -323,11 +325,60 @@ Además se ha comenzado con el desarrollo de las actividades de la componente 2.
 
 \subsection{Carta Gantt}
 
+\begin{table}[!htb]
+\centering
+\resizebox{17cm}{!} {
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    \multirow{2}{2cm}{\textbf{RESULTADOS}} & \multicolumn{12}{|c|}{\textbf{Año 1}} & \multicolumn{10}{|c|}{\textbf{Año 2}}\\
+    \cline{2-23}
+    & m1 & m2 & m3 & m4 & m5 & m6 & m7 & m8 & m9 & m10 & m11 & m12 & m13 & m14 & m15 & m16 & m17 & m18 & m19 & m20 & m21 & m22\\ \hline
+    \textbf{Componente 1} & \multicolumn{22}{|l|}{}\\ \hline
+    Actividad 1.1 & \cellcolor{yellow}X & \cellcolor{yellow}X & \cellcolor{yellow}X &\cellcolor{yellow}X & & & & & & & & & & & & & & & & & & \\ \hline
+    Actividad 1.2 & & & \cellcolor{yellow}X & \cellcolor{yellow}X & \cellcolor{yellow}X & & & & & & & & & & & & & & & & & \\ \hline
+    Actividad 1.3 & & & \cellcolor{yellow}X & \cellcolor{yellow}X & \cellcolor{yellow}X & & & & & & & & & & & & & & & & & \\ \hline
+    Actividad 1.4 & & & & \cellcolor{yellow}X & \cellcolor{yellow}X & & & & & & & & & & & & & & & & & \\ \hline
+    \textbf{Componente 2} & \multicolumn{22}{|l|}{}\\ \hline
+    Actividad 2.1 & & & & \cellcolor{yellow}X & \cellcolor{yellow}X & X & X & X & X & X & & & & & & & & & & & & \\ \hline
+    Actividad 2.2 & & & & & \cellcolor{yellow}X & X & X & X & X & X & & & & & & & & & & & & \\ \hline
+    Actividad 2.3 & & & & & & & & X & X & X & & & & & & & & & & & & \\ \hline
+    Actividad 2.4 & & & & & & & & X & X & X & & & & & & & & & & & & \\ \hline
+    Actividad 2.5 & & & & \cellcolor{yellow}X & \cellcolor{yellow}X & X & X & X & X & X & & & & & & & & & & & & \\ \hline
+    Actividad 2.6 & & & & & & & & & X & X & & & & & & & & & & & & \\ \hline
+    \textbf{Componente 3} & \multicolumn{22}{|l|}{}\\ \hline
+    Actividad 3.1 & & & & & & & & & X & X & X & X & X & X & X & & & & & & & \\ \hline
+    Actividad 3.2 & & & & & & & & & & X & X & X & X & X & X & & & & & & & \\ \hline
+    Actividad 3.3 & & & & & & & & & & & & & X & X & X & & & & & & & \\ \hline
+    Actividad 3.4 & & & & & & & & & & & & & X & X & X & & & & & & & \\ \hline
+    Actividad 3.5 & & & & & & & & & X & X & X & X & X & X & X & & & & & & & \\ \hline
+    Actividad 3.6 & & & & & & & & & & & & & & X & X & & & & & & & \\ \hline
+    \textbf{Componente 4} & \multicolumn{22}{|l|}{}\\ \hline
+    Actividad 4.1 & & & & & & & & & & & & & & & X & X & X & X & X & X & X & X\\ \hline
+    Actividad 4.2 & & & & & & & & & & & & & & & & X & X & X & X & X & X & X\\ \hline
+    Actividad 4.3 & & & & & & & & & & & & & & & & & & & & X & X & X \\ \hline
+    Actividad 4.4 & & & & & & & & & & & & & & & & & & & & & X & X\\ \hline
+    Actividad 4.5 & & & & & & & & & & & & & & & X & X & X & X & X & X & X & X\\ \hline
+    Actividad 4.6 & & & & & & & & & & & & & & & & & & & & & X & X\\ \hline
+    \textbf{Componente 5} & \multicolumn{22}{|l|}{}\\ \hline
+    Actividad 5.1 & X & & & & & & & & & & & & & & & & & & & & & X\\ \hline
+    Actividad 5.2 & & & & & X & & & & & & & & & & & & & & & & & \\ \hline
+    Actividad 5.3 & & & & & & & & & & X & & & & & & & & & & & & \\ \hline
+    Actividad 5.4 & & & & & & & & & & & & & & X & & & & & & & & \\ \hline
+    Actividad 5.5 & & & & & & & & & & & & & & & & & & & X & & & \\ \hline
+    \textbf{Componente 6} & \multicolumn{22}{|l|}{}\\ \hline
+    Actividad 6.1 & & & & & & & & & & & & & & & X & X & X & X & & & & \\ \hline
+    Actividad 6.2 & & & & & & & & & & & & & & & & & X & X & X & X & & \\ \hline
+    Actividad 6.3 & & & & & & & & & & & & & & & & & & & & X & X & X\\ \hline
+\end{tabular}
+}
+\end{table}
+
 \clearpage
 \subsection{Detalle de actividades realizadas}
 
 \begin{table}[!htb]
 \centering
+\resizebox{16cm}{!} {
 \begin{tabular}{|p{3cm}|p{2cm}|p{3cm}|p{2.5cm}|p{2.5cm}|p{2cm}|}
     \hline
     \textbf{Componente} & \textbf{N° Actividad} & \textbf{Actividades Programadas} & \textbf{Actividades Ejecutadas} & \textbf{Discrepancias} & \textbf{\% de avance físico}\\
@@ -340,12 +391,13 @@ Además se ha comenzado con el desarrollo de las actividades de la componente 2.
     \cline{2-6}
     & 4 & Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica & Ejecutada (E)  & No & 100\%\\
     \hline
-    \multirow {4}{3cm}{2. Plan de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica para la red de distribución de la Junta de Vigilancia del río Chalinga y sus afluentes} & 		1 & 		SIG Red de distribución y conducción hídrica de Junta de Vigilancia Río Chalinga y sus afluentes & En Ejecución (EE)      		& No & 20\%\\
-    \cline{2-6}
+    \multirow {3}{3cm}{2. Plan de priorización de la inversión en mejoramiento de la eficiencia de conducción hídrica para la red de distribución de la Junta de Vigilancia del río Chalinga y sus afluentes} & 		1 & 		SIG Red de distribución y conducción hídrica de Junta de Vigilancia Río Chalinga y sus afluentes & En Ejecución (EE)      		& No & 30\%\\ \cline{2-6}
+    & 2 & Determinación de pérdidas canales Junta de Vigilancia Río Chalinga y sus Afluentes & En Ejecución (EE)      		& No & 15\%\\ \cline{2-6}
     & 5 & Transferencia de capacidades en la aplicación del protocolo técnico-social de la inversión en mejoramiento de la eficiencia de conducción hídrica & En Ejecución (EE)      		& No & 15\%\\
     \hline
    
 \end{tabular}
+}
 \end{table}
 
 \clearpage
@@ -374,11 +426,11 @@ Además se ha comenzado con el desarrollo de las actividades de la componente 2.
 \end{tabular}
 \end{table}
 
-Se estableció una mesa técnica, compuesta por los profesionales de las diferentes áreas del equipo para la revisión y diagnóstico del protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica, generado por el proyecto FIC-R 2013, \textit{``Diseño y puesta en marcha de un sistema de monitoreo de caudales y de un protocolo de determinación de pérdidas de agua, para la priorización de las inversiones público-privadas (SIMCA – ELQUI)"}, cuyo objetivo es unificar, estandarizar y normalizar los criterios, procedimientos y decisiones ligadas al mejoramiento de canales pertenecientes a una organización de regantes. Esta actividad nos permitirá generar una propuesta de fortalecimiento, a través de la incorporación de mayor cantidad información, nuevas metodologías de recopilación de antecedentes y nuevas metodologías de priorización.
+Se estableció una mesa técnica, compuesta por los profesionales de las diferentes áreas del equipo para la revisión y diagnóstico del protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica, generado por el proyecto FIC-R 2013, \textit{``Diseño y puesta en marcha de un sistema de monitoreo de caudales y de un protocolo de determinación de pérdidas de agua, para la priorización de las inversiones público-privadas (SIMCA – ELQUI)"}, el cual tenía por objetivo unificar, estandarizar y normalizar los criterios, procedimientos y decisiones ligadas al mejoramiento de canales pertenecientes a una organización de regantes. Esta actividad nos permitirá generar una propuesta de fortalecimiento, a través de la incorporación de mayor cantidad información, nuevas metodologías de recopilación de antecedentes y nuevas metodologías de priorización.
 
 \subsubsection{Información requerida por el Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica.}
 
-La información necesaria para generar la priorización de las inversiones en mejoramiento de la eficiencia de conducción hídrica para una OUA's, se detalla en las siguientes variables identificadas:
+Durante la revisión se identificó la información necesaria para el Protocolo de Priorización de Inversiones en mejoramiento de la eficiencia de conducción hídrica para generar el Plan de priorización de canales y/o tramos de la red de distribución de una Organización de Usuarios de Aguas, las que se detallan en las siguientes variables:
 
 \begin{itemize}
 \item Comunidad de Aguas o Canal. Permite identificar de forma individual cada uno de los componentes de la red de distribución de la Organización de Usuarios de Aguas.
@@ -398,11 +450,11 @@ La información necesaria para generar la priorización de las inversiones en me
 \item Volumen recuperado por temporada en función de longitud de mejoramiento. Este indicador dice relación a los $m^3$ que pueden ser recuperados por $m^2$ de mejoramiento. Para la estimación de dicho volumen se utilizaran los $m^3/temporada$ definidos anteriormente.
 \end{itemize}
 
-\subsubsection{Recopilación de información requerida por el Protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica}
 
 La recopilación de información requerida por el protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica, considera tanto fuentes primarias como secundarias. En primer lugar, se debe generar una revisión bibliográfica de la zona a evaluar, en conjunto con una recopilación de información de la OUA's, para recabar la mayor cantidad de información disponible. Posteriormente se realiza una caracterización y determinación de pérdidas, las que de forma general nos permitirán obtener una descripción de la infraestructura y pérdidas de la red hídrica perteneciente a la Organización de Usuarios de Aguas. La metodología para la obtención de la información requerida se detalla a continuación.
 
-\paragraph{Recopilación información de la zona a evaluar y de la Organización de Usuarios de Aguas:}
+\subsubsection{Recopilación información de la zona a evaluar y de la Organización de Usuarios de Aguas.}
+
 Se realiza a través de una revisión bibliográfica, referida a estudios de recursos hídricos de la zona a evaluar. Además se recopila la información de la red de distribución (canales) que posee la OUA's, incluyendo información que pueda ser útil para la logística y operación en el levantamiento de datos de la caracterización y determinación de pérdidas.
 
 \begin{itemize}
@@ -419,28 +471,44 @@ Se realiza a través de una revisión bibliográfica, referida a estudios de rec
 		\item Número de acciones totales
 		\item Número de acciones por comunidad de aguas
 		\item Dotaciones o desmarques
-		\item Capacidad de porteo por canal
+		\item Capacidad de porteo de cada canal
 		\item Número de usuarios comunidad de aguas
 		\item Superficie regada por comunidad de aguas
 		\item Contacto celadores
 	\end{itemize}
 \end{itemize}	
 
-\paragraph{Caracterización de la red hídrica de la OUA's:}
-Se realiza desde la fuente de abastecimiento hasta el final del trazado del canal, ejecutándose solo a través del canal matriz, es decir no incluye derivados o ramales. Consta de un levantamiento y georeferenciación de los componentes de los canales, referidos a obras de arte e infraestructura, además de revestimientos y posibles observaciones. Esta información nos permitirá visualizar el recorrido y componentes del canal, para ser utilizados directamente como variables en el protocolo de priorización de inversiones en mejoramiento de la eficiencia hídrica y en el desarrollo de otras, además de la operación y ejecución de actividades posteriores. Los componentes que se deben caracterizar son los siguientes:
+\subsubsection{Sistema de Información Geográfica (S.I.G.) de la red hídrica de una Organización de Usuarios de Aguas}
 
+La generación del Sistema de Información Geográfica de la red de distribución de aguas de los canales bajo el área de influencia de una OUA's, tiene como propósito, generar la georeferenciación y caracterización de los elementos que componen a cada comunidad de aguas que formará parte de la priorización.\\
+\\
+Se realiza desde la fuente de abastecimiento hasta el final del trazado del canal, ejecutándose solo a través del canal matriz, es decir, no incluye derivados o ramales. Consta de una caracterización y georeferenciación de los componentes de los canales, referidos a obras de arte e infraestructuras, además de revestimientos y posibles observaciones. Esta información nos permitirá visualizar el recorrido y componentes del canal, para ser utilizados directamente como variables en el protocolo de priorización de inversiones en mejoramiento de la eficiencia hídrica y en el desarrollo de otras, además de la operación y ejecución de actividades posteriores.\\
+\\
+El levantamiento de datos del canal comienza desde la bocatoma, la que tiene como principal objetivo captar y/o desviar parte o la totalidad del agua que escurre por un cauce hasta llegar a la compuerta de carga correspondiente a la comunidad de aguas, donde se levanto la información de los diferentes elementos que la componen, indicados a continuación:
+
+\begin{itemize}
+\item{\bfseries {Barrera de desviación}}: Corresponde a la estructura utilizada con el fin de desviar el agua desde la fuente (río, estero, quebrada, etc) hacia una posición en particular. Esta puede ser fabricada tanto por materiales fluviales, madera, plástico, como por hormigón o metal. Ésta barrera puede ser temporal o permanente, dependiendo del material y de la resistencia a las crecidas.
+\item{\bfseries {Canal de aducción}}: Canal por donde se deriva el caudal captado.
+\item{\bfseries {Compuerta de carga o punto de entrega}}: corresponde a la estructura de control en donde se entrega el recurso hídrico, este puede ser una compuerta, captación o marco partidor.
+\item{\bfseries {Sección de control}}: Zona en la cual se controla el caudal entregado, en otras palabras, sección de aforo. Este puede ser de diversos tipos, dentro de los más comunes está el aforador de escurrimiento crítico y la regla limnimétrica.
+\end{itemize}
+
+En la conducción del recurso hídrico desde la compuerta de carga, es necesario caracterizar las obras de arte con las cuales se distribuye las aguas. Esto se refiere a infraestructura de gestión y entregas, de las cuales debemos indicar su tipo y material, además de posibles observaciones como filtraciones. Además debemos georeferenciar inicio, término y material de los revestimientos presentes, ya que son las características de mayor relevancia al momento de evaluar las pérdidas en canales. \\
+\\
+El revestimiento de un canal tiene como objetivo disminuir o erradicar las pérdidas por conducción de agua, el cual puede ser parcial o total, para efectos prácticos se determinó que 1/3 revestido corresponde a una cara del canal revestida; 2/3 revestido, a dos caras del canal revestidas; y 100\% revestido, a las tres caras del canal revestidas. Por otro lado, el material del canal corresponde al componente del revestimiento en el caso que tenga algún grado de revestimiento o al material observado en las caras del canal sin revestir. Además se recolectan datos de observaciones como filtraciones o alteraciones visibles, quebradas, extracciones, etc., que generan un nivel de riesgo para la condución. Las características recolectadas se exponen a continuación:\\
+\\
 \clearpage
 \begin{longtable}{|p{3cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
-	\caption{Caracterización red hídrica}\\
+	\caption{S.I.G. red hídrica}\\
 	
 	\hline
-	\textbf{Caracterización} & \textbf{Componente} & \textbf{Atributo} & \textbf{Opción}\\
+	\textbf{S.I.G.} & \textbf{Componente} & \textbf{Atributo} & \textbf{Opción}\\
 	\hline
 	\endfirsthead
 	
-	\caption{Caracterización red hídrica \emph{(continuación)}}\\
+	\caption{S.I.G. red hídrica \emph{(continuación)}}\\
 	\hline
-	\textbf{Caracterización} & \textbf{Componente} & \textbf{Atributo} & \textbf{Opción}\\
+	\textbf{S.I.G.} & \textbf{Componente} & \textbf{Atributo} & \textbf{Opción}\\
 	\hline
 	\endhead
 	
@@ -450,222 +518,268 @@ Se realiza desde la fuente de abastecimiento hasta el final del trazado del cana
 	\hline
 	\endlastfoot    
 	
-	\multirow {45}{3cm}{Bocatoma} & \multirow {6}{3.5cm}{Barrera desviación} & \multirow {6}{3.5cm}{Tipo de Obra} &  Barrera Frontal\\
-	\cline{4-4}
-	& & & Barrera Lateral\\
-	\cline{4-4}
-	& & & Pata de Cabra\\
-	\cline{4-4}
-    & & & Pretil Material Fluvial\\
-    \cline{4-4}
-    & & & Otro\\
-    \cline{3-4}
-    & & Dimensión & Ancho barrera\\
-    \cline{2-4}
-    & \multirow {17}{3.5cm}{Canal de aducción} & \multirow {3}{3.5cm}{Tipo de Punto} &  Inicial\\
-    \cline{4-4}
-    & & & Intermedio\\
-    \cline{4-4}
-    & & & Final\\
-    \cline{3-4}
-    & & \multirow {2}{3.5cm}{Tipo de Bocatoma} & Permanente\\
-    \cline{4-4}
-    & & & Temporal\\
-    \cline{3-4}
-    & & \multirow {3}{3.5cm}{Tipo de Fuente} & Gravitacional\\
-    \cline{4-4}
-    & & & Bombeo\\
-    \cline{4-4}
-    & & & Otro\\
-    \cline{3-4}
-    & & \multirow {2}{3.5cm}{Ribera} & Izquierda\\
-    \cline{4-4}
-    & & & Derecha\\
-    \cline{3-4}
-    & & \multirow {5}{3.5cm}{Material} & Mezcla suelo\\
-    \cline{4-4}
-    & & & Hormigón\\
-    \cline{4-4}
-    & & & Madera\\
-    \cline{4-4}
-    & & & Mampostería\\
-    \cline{4-4}
-    & & & Otro\\
-    \cline{2-4}
-    & \multirow {17}{3.5cm}{Compuerta de Carga} & \multirow {7}{3.5cm}{Fuente de Abastecimiento} &  Cauce Natural\\
-    \cline{4-4}
-    & & & Canal\\
-    \cline{4-4}
-    & & & Estero\\
-    \cline{4-4}
-    & & & Quebrada Permanente\\
-    \cline{4-4}
-    & & & Quebrada Eventual\\
-    \cline{4-4}
-    & & & Vertiente\\
-    \cline{4-4}
-    & & & Otro\\
-    \cline{3-4}
-    & & \multirow {3}{3.5cm}{Material} & Metálica\\
-    \cline{4-4}
-    & & & Madera\\
-    \cline{4-4}
-    & & & Otro\\
-    \cline{3-4}
-    & & \multirow {2}{3.5cm}{Sistema} & Con Mecanismo\\
-    \cline{4-4}
-    & & & Manual\\
-    \cline{3-4}
-    & & \multirow {4}{3.5cm}{Devolución} & No\\
-    \cline{4-4}
-    & & & Compuerta\\
-    \cline{4-4}
-    & & & Vertedero\\
-    \cline{4-4}
-    & & & Compuerta y Vertedero\\
-    \cline{3-4}
-    & & \multirow {3}{3.5cm}{Dimensiones Vertedero} & Ancho\\
-    \cline{4-4}
-    & & & Alto Compuerta\\
-    \cline{4-4}
-    & & & Ancho Compuerta\\
-    \cline{3-4}
-    & & \multirow {5}{3.5cm}{Dimensiones Sección} & Largo\\
-    \cline{4-4}
-    & & & Alto Inicial\\
-    \cline{4-4}
-    & & & Ancho Inicial\\
-    \cline{4-4}
-    & & & Alto Final\\
-    \cline{4-4}
-    & & & Ancho Final\\
-    \cline{2-4} \pagebreak  
-    & \multirow {17}{3.5cm}{Sección de Control} & \multirow {11}{3.5cm}{Tipo} &  Escurrimiento crítico\\
-    \cline{4-4}
-    & & & Regla limnimétrica\\
-    \cline{4-4}
-    & & & Estación Limnigráfica\\
-    \cline{4-4}
-    & & & Barrera con Reglilla\\
-    \cline{4-4}
-    & & & Sección Rectangular con Regla\\
-    \cline{4-4}
-    & & & Barrera Triangular\\
-    \cline{4-4}
-    & & & Barrera Triangular y Regla\\
-    \cline{4-4}
-    & & & Aforo de Garganta\\
-    \cline{4-4}
-    & & & Aforo Parshall\\
-    \cline{4-4}
-    & & & Sensor de Presión\\
-    \cline{4-4}
-    & & & Otro\\
-    \cline{3-4}
-    & & \multirow {3}{3.5cm}{Dimensiones Sección} & Ancho\\
-    \cline{4-4}
-    & & & Largo\\
-    \cline{4-4}
-    & & & Alto\\
-    \cline{3-4}
-    & & \multirow {3}{3.5cm}{Dimensiones Parshall} & Convergencia\\
-    \cline{4-4}
-    & & & Garganta\\
-    \cline{4-4}
-    & & & Divergencia\\ 
-    \hline   
-    \multirow {34}{3cm}{Canal} & \multirow {34}{3.5cm}{Canal} & \multirow {3}{3.5cm}{Tipo de Punto} &  Inicial\\
-	\cline{4-4}
-	& & & Intermedio\\
-	\cline{4-4}
-	& & & Final\\
-    \cline{3-4}
-    & & \multirow {9}{3.5cm}{Forma} & Indefinida\\
-    \cline{4-4}
-    & & & Rectangular\\
-    \cline{4-4}
-    & & & Trapezoidal\\
-    \cline{4-4}
-    & & & Túnel\\
-    \cline{4-4}
-    & & & Circular\\
-    \cline{4-4}
-    & & & Embovedado\\
-    \cline{4-4}
-    & & & Parabólico\\
-    \cline{4-4}
-    & & & Triangular\\
-    \cline{4-4}
-    & & & Semi-circular\\
-    \cline{3-4}
-	& & \multirow {4}{3.5cm}{Revestimiento} & Sin revestimiento\\
-    \cline{4-4}
-    & & & 1/3 caras revestidas\\
-    \cline{4-4}
-    & & & 2/3 caras revestidas\\
-    \cline{4-4}
-    & & & 3/3 caras revestidas\\
-    \cline{3-4}  
-    & & \multirow {20}{3.5cm}{Material} & Mezcla Suelo\\
-    \cline{4-4}
-    & & & Hormigón\\
-    \cline{4-4}
-    & & & Loseta\\
-    \cline{4-4}
-    & & & Geomembrana\\
-    \cline{4-4}
-    & & & Tubo HDPE\\
-    \cline{4-4}
-    & & & Geomembrana asfáltica\\
-    \cline{4-4}
-    & & & Hormigón Roca\\
-    \cline{4-4}
-    & & & Mampostería\\
-    \cline{4-4}
-    & & & Suelo arcilloso\\
-    \cline{4-4}
-    & & & Suelo arenoso\\
-    \cline{4-4}
-    & & & Suelo limoso\\
-    \cline{4-4}
-    & & & Suelo franco\\
-    \cline{4-4}
-    & & & Suelo muy pedregoso\\
-    \cline{4-4}
-    & & & Suelo con mucha vegetación\\
-    \cline{4-4}
-    & & & Grava\\
-    \cline{4-4}
-    & & & Roca\\
-    \cline{4-4}
-    & & & Lecho de río\\
-    \cline{4-4}
-    & & & PVC\\
-    \cline{4-4}
-    & & & Tubo metálico\\
-    \cline{4-4}
-    & & & Otro\\
-    \cline{3-4}\\    
-    
- 
-    
-    
-    \hline
-\end{longtable}
+	\multirow {45}{3cm}{Bocatoma} & \multirow {6}{3.5cm}{Barrera desviación} & \multirow {6}{3.5cm}{Tipo de Obra} &  Barrera Frontal\\	\cline{4-4}
+	& & & Barrera Lateral\\	\cline{4-4}
+	& & & Pata de Cabra\\	\cline{4-4}
+    & & & Pretil Material Fluvial\\     \cline{4-4}
+    & & & Otro\\     \cline{3-4}
+    & & Dimensión & Ancho barrera\\    \cline{2-4}
+    & \multirow {17}{3.5cm}{Canal de aducción} & \multirow {3}{3.5cm}{Tipo de Punto} &  Inicial\\    \cline{4-4}
+    & & & Intermedio\\    \cline{4-4}
+    & & & Final\\    \cline{3-4}
+    & & \multirow {2}{3.5cm}{Tipo de Bocatoma} & Permanente\\    \cline{4-4}
+    & & & Temporal\\    \cline{3-4}
+    & & \multirow {3}{3.5cm}{Tipo de Fuente} & Gravitacional\\    \cline{4-4}
+    & & & Bombeo\\    \cline{4-4}
+    & & & Otro\\    \cline{3-4}
+    & & \multirow {2}{3.5cm}{Ribera} & Izquierda\\    \cline{4-4}
+    & & & Derecha\\    \cline{3-4}
+    & & \multirow {5}{3.5cm}{Material} & Mezcla suelo\\    \cline{4-4}
+    & & & Hormigón\\    \cline{4-4}
+    & & & Madera\\    \cline{4-4}
+    & & & Mampostería\\    \cline{4-4}
+    & & & Otro\\    \cline{2-4}
+    & \multirow {17}{3.5cm}{Compuerta de Carga} & \multirow {7}{3.5cm}{Fuente de Abastecimiento} &  Cauce Natural\\    \cline{4-4}
+    & & & Canal\\    \cline{4-4}
+    & & & Estero\\    \cline{4-4}
+    & & & Quebrada Permanente\\    \cline{4-4}
+    & & & Quebrada Eventual\\    \cline{4-4}
+    & & & Vertiente\\    \cline{4-4}
+    & & & Otro\\    \cline{3-4}
+    & & \multirow {3}{3.5cm}{Material} & Metálica\\    \cline{4-4}
+    & & & Madera\\    \cline{4-4}
+    & & & Otro\\    \cline{3-4}
+    & & \multirow {2}{3.5cm}{Sistema} & Con Mecanismo\\    \cline{4-4}
+    & & & Manual\\    \cline{3-4}
+    & & \multirow {4}{3.5cm}{Devolución} & No\\    \cline{4-4}
+    & & & Compuerta\\    \cline{4-4}
+    & & & Vertedero\\    \cline{4-4}
+    & & & Compuerta y Vertedero\\    \cline{3-4}
+    & & \multirow {3}{3.5cm}{Dimensiones Vertedero} & Ancho\\    \cline{4-4}
+    & & & Alto Compuerta\\    \cline{4-4}
+    & & & Ancho Compuerta\\    \cline{3-4}
+    & & \multirow {5}{3.5cm}{Dimensiones Sección} & Largo\\    \cline{4-4}
+    & & & Alto Inicial\\    \cline{4-4}
+    & & & Ancho Inicial\\    \cline{4-4}
+    & & & Alto Final\\    \cline{4-4}
+    & & & Ancho Final\\    \cline{2-4} \pagebreak
+    \multirow {17}{3cm}{Bocatoma} & \multirow {17}{3.5cm}{Sección de Control} & \multirow {11}{3.5cm}{Tipo} &  Escurrimiento crítico\\    \cline{4-4}
+    & & & Regla limnimétrica\\    \cline{4-4}
+    & & & Estación Limnigráfica\\    \cline{4-4}
+    & & & Barrera con Reglilla\\    \cline{4-4}
+    & & & Sección Rectangular con Regla\\    \cline{4-4}
+    & & & Barrera Triangular\\    \cline{4-4}
+    & & & Barrera Triangular y Regla\\    \cline{4-4}
+    & & & Aforo de Garganta\\    \cline{4-4}
+    & & & Aforo Parshall\\    \cline{4-4}
+    & & & Sensor de Presión\\    \cline{4-4}
+    & & & Otro\\    \cline{3-4}
+    & & \multirow {3}{3.5cm}{Dimensiones Sección} & Ancho\\    \cline{4-4}
+    & & & Largo\\    \cline{4-4}
+    & & & Alto\\    \cline{3-4}
+    & & \multirow {3}{3.5cm}{Dimensiones Parshall} & Convergencia\\    \cline{4-4}
+    & & & Garganta\\    \cline{4-4}
+    & & & Divergencia\\     \hline   
+    \multirow {29}{3cm}{Conducción y distribución} & \multirow {29}{3.5cm}{Conducción} & \multirow {3}{3.5cm}{Tipo de Punto} &  Inicial\\	\cline{4-4}
+	& & & Intermedio\\	\cline{4-4}
+	& & & Final\\    \cline{3-4}
+    & & \multirow {9}{3.5cm}{Forma} & Indefinida\\    \cline{4-4}
+    & & & Rectangular\\    \cline{4-4}
+    & & & Trapezoidal\\    \cline{4-4}
+    & & & Túnel\\    \cline{4-4}
+    & & & Circular\\    \cline{4-4}
+    & & & Embovedado\\    \cline{4-4}
+    & & & Parabólico\\    \cline{4-4}
+    & & & Triangular\\    \cline{4-4}
+    & & & Semi-circular\\    \cline{3-4}
+	& & \multirow {4}{3.5cm}{Revestimiento} & Sin revestimiento\\    \cline{4-4}
+    & & & 1/3 caras revestidas\\    \cline{4-4}
+    & & & 2/3 caras revestidas\\    \cline{4-4}
+    & & & 3/3 caras revestidas\\    \cline{3-4}  
+    & & \multirow {13}{3.5cm}{Material} & Mezcla Suelo\\    \cline{4-4}
+    & & & Hormigón\\    \cline{4-4}
+    & & & Loseta\\    \cline{4-4}
+    & & & Geomembrana\\    \cline{4-4}
+    & & & Tubo HDPE\\    \cline{4-4}
+    & & & Geomembrana asfáltica\\    \cline{4-4}
+    & & & Hormigón Roca\\    \cline{4-4}
+    & & & Mampostería\\    \cline{4-4}
+    & & & Roca\\    \cline{4-4}
+    & & & Lecho de río\\    \cline{4-4}
+    & & & PVC\\    \cline{4-4}
+    & & & Tubo metálico\\    \cline{4-4}
+    & & & Otro\\    \cline{2-4} \pagebreak
+    \multirow {49}{3cm}{Conducción y distribución} & \multirow {30}{3.5cm}{Distribución} & \multirow {5}{3.5cm}{Función} &  Entrega\\	\cline{4-4}
+	& & & Gestión Frontal\\    \cline{4-4}
+    & & & Gestión Lateral\\    \cline{4-4}
+    & & & Ramal\\    \cline{4-4}
+    & & & Ramal\\    \cline{3-4}
+	& & \multirow {9}{3.5cm}{Tipo} &  Compuerta Volante\\	\cline{4-4}
+    & & & Compuerta Hoja\\    \cline{4-4}
+    & & & Taco\\    \cline{4-4}
+    & & & Captación Bomba\\    \cline{4-4}
+    & & & Captación Gravitacional c/regulación\\    \cline{4-4}
+    & & & Captación Gravitacional s/regulación\\    \cline{4-4}
+    & & & Marco Partidor\\    \cline{4-4}
+    & & & Solo Marco\\    \cline{4-4}
+    & & & Otro\\    \cline{3-4}
+    & & \multirow {11}{3.5cm}{Material} &  Metal\\	\cline{4-4}
+    & & & Madera\\    \cline{4-4}
+    & & & Tubo Metálico\\    \cline{4-4}
+    & & & Tubo Plástico Rígido\\    \cline{4-4}
+    & & & Manguera\\    \cline{4-4}
+    & & & Suelo\\    \cline{4-4}
+    & & & Piedra\\    \cline{4-4}
+    & & & Lata\\    \cline{4-4}
+    & & & Saco\\    \cline{4-4}
+    & & & Hormigón\\    \cline{4-4}
+    & & & Otro\\  \cline{2-4}
+    & \multirow {25}{3.5cm}{Observaciones} & \multirow {25}{3.5cm}{Tipos} & Inicio Desborde\\ \cline{4-4}
+    & & & Punto Desborde\\ \cline{4-4}
+    & & & Fin Desborde\\ \cline{4-4}
+    & & & Inicio Quebrada\\ \cline{4-4}
+    & & & Punto Quebrada\\ \cline{4-4}
+    & & & Fin Quebrada\\ \cline{4-4}
+    & & & Inicio Derrumbe\\ \cline{4-4}
+    & & & Punto Derrumbe\\ \cline{4-4}
+    & & & Fin Derrumbe\\ \cline{4-4}
+    & & & Cruce Camino Inicio\\ \cline{4-4}
+    & & & Cruce Camino Fin\\ \cline{4-4}
+    & & & Inicio Embancamiento\\ \cline{4-4}
+    & & & Punto Embancamiento\\ \cline{4-4}
+    & & & Fin Embancamiento\\ \cline{4-4}
+    & & & Extracciones\\ \cline{4-4}
+    & & & Inicio Contaminación\\ \cline{4-4}
+    & & & Inicio Zona Poblada\\ \cline{4-4}
+    & & & Fin Zona Poblada\\ \cline{4-4}
+    & & & Zona de Filtración\\ \cline{4-4}
+    & & & Aporte Continuo\\ \cline{4-4}
+    & & & Aporte Eventual\\ \cline{4-4}
+    & & & Cámara de Inspección\\ \cline{4-4}
+    & & & Ramal Intermedio\\ \cline{4-4}
+    & & & Ramal Fin\\ \cline{4-4}
+    & & & Otro\\ \cline{2-4}
+    \end{longtable}
 
+El S.I.G. de la red hídrica se genera con el fin de proporcionar esta información a las OUA’s, como base de datos en formatos que permitan su visualización. Además con esta información se genera información para realizar la determinación de pérdidas y posterior priorización de tramos y/o canales para el mejoramiento de la eficiencia de conducción hídrica.
 
+\subsubsection{Determinación de pérdidas generales por conducción}
 
+La determinación de pérdidas de agua por conducción, se basa en la metodología de aforo de caudal. La variable pérdidas generales es fundamental para el desarrollo del Protocolo de priorización de inversiones en mejoramiento de la eficiencia en conducción hídrica. Con la información generada por el S.I.G., podemos generar los tramos y subtramos de aforo.
 
-detalla la infraestructura y revestimientos, mediante la georeferenciación  presentes para la conducción y distribución del recurso.La caracterización del cauce natural, se realiza por medio de la georeferenciación y descripción de bocatomas, trazado de canales de aducción y compuertas de carga perteneciente a la comunidad de aguas. Con los puntos de trazado, se puede determinar la longitud del canal de aducción y su recorrido.\\
+\paragraph{Determinación de tramos y subtramos:} Con la información de longitud y material de revestimientos presentes, se definen tramos de aforo dentro del canal. Estos se dividen en matriz, el cual se considera hasta la primera entrega, y posteriormente tramos por tipo de revestimiento, los cuales nos permitirán establecer las pérdidas generales por conducción del canal y/o tramo. Cada tramo o subtramo consta de un aforo inicial y final, además de los posibles puntos de entregas o aportes que se puedan presentar y/o reglas operacionales del canal (turnos), por lo cual se podrían generar subtramos de forma instantánea al no completarse el trayecto de forma continua.\\
 \\
-Posteriormente, en la caracterización del cauce artificial, se realiza la georeferenciación y descriptor de la infraestructura de conducción y distribución del recurso hídrico. Se capturan todas las obras de arte presentes en el recorrido del canal, desde la compuerta de carga hasta el final del recorrido, además se detalla el tipo de obra, material, finalidad, revestimientos, además de puntos críticos como filtraciones o alteraciones visibles, quebradas, etc.\\
+Una vez determinados los puntos de inicio y final del tramo, debemos seleccionar la sección de aforo, la que dependiendo de sus características, determinará el equipo de aforo que se utilizará. 
+
+\paragraph{Procedimiento de aforo:}
+Previo a la ejecución del aforo, es necesario seleccionar la sección donde se va realizar la medición. Esta sección debe cumplir con ciertos requisitos técnicos y logísticos para obtener una medición confiable, dentro de lo que destaca la ubicación de esta, la que debe ser en un tramo recto del cauce, donde se aprecien líneas de flujo uniformes y paralelas a los márgenes de la corriente, con una pendiente longitudinal constante (evitar tramos con quiebres fuertes y áreas de aguas muertas, además de contracorrientes o remolinos). La base de la sección debe ser lo más regular posible, con un cauce estable y sin obstáculos o vegetación que interfieran, evitando lechos fangosos. La geología del terreno deberá facilitar, en caso de ser necesario, el acceso para construcción, medición y mantención de obras.\\
 \\
-La caracterización de cauce natural y artificial se genera con el fin de proporcionar esta información a las OUA’s, como base de datos en formatos que permitan su visualización. Además con esta información se generan las variables que permitan realizar la determinación de pérdidas y posterior priorización de tramos y/o canales para el mejoramiento de la eficiencia de conducción hídrica.\\
+Los aforos se realizaron siguiendo el método de Área-Velocidad, el que consiste en la determinación del área de la sección transversal y la velocidad media del flujo de esta, obteniendo como producto el caudal pasante. El comienzo de la toma de datos, consiste en la medición del ancho total de la sección conductora, el que se obtiene mediante la medición de la distancia horizontal desde un punto de referencia ubicado en el plano de la sección transversal (espejo de agua). Con este ancho, se determina el número de subsecciones, el que está basado \emph{Manual Auto instructivo de aforo en canales no revestidos -- Ley Nº18.450} de la CNR y que se define por la siguiente fórmula:
 
-\paragraph{Determinación de pérdidas}
+\[{L} = \dfrac{T}{n} \]
 
+donde:\\
+\(n\): Número de subsecciones.\\
+\(T\): Ancho superficial (m).
 
-Con los insumos levantados en la caracterización, se procede a generar los tramos de aforo para la determinación de pérdidas. Estos tramos se dividen en matriz y distribución en primera instancia, para luego establecer los tramos por el cambios en el revestimiento presente, a través de aforos de los caudales de inicio y término de estos.
+\begin{table}[H]
+ \caption{Valores de \(n\)}
+ \centering
+ \begin{tabu} to 0.5\linewidth {>{\centering}X>{\centering}X}
+ \toprule
+ Ancho \(T\) (m) & \(n\)\\
+ \midrule
+ Menos de 1 m & 4 \\  
+    1 - 2 m & 6 \\ 
+    2 - 4 m & 10 \\  
+    4 - 8 m & 16 \\ 
+    8 - 10 m & 20 \\ 
+    Más de 10 m & 24 \\ 
+    \hline 
+ \end{tabu}
+\end{table}
+
+En la planilla PROMMRA Q-CANAL, las subsecciones se determinan de forma automática al ingresar el ancho del canal; procediendo posteriormente a la determinación de la profundidad de cada subsección, lo que se realiza en la parte central de cada una, además de agregar la profundidad de ambos costados del cauce. Con esta información y a partir de la profundidad de las verticales (\(h_{w_s}\)), las mediciones son realizadas al 20\%, 60\% u 80\% de la profundidad de la vertical. Con esta información se genera dos tipos de valores; (1) La primera clasificación corresponde al valor de la altura desde la lámina de agua a la base del canal (del cual deriva el método tradicional de medición) y (2) el valor de altura desde la base a la lámina de agua, cuyo valor es más práctico en terreno.
+
+\begin{table}[H]
+ \caption{Alturas consideradas para la determinación de velocidad}
+ \centering
+ \begin{tabu} {cc}
+ \toprule
+ $h_{w_s}$ & Medida de velocidad en la subsección\\
+ \midrule 
+    $h_{w_s} \leq 0,2$ m & $0,6h_{w_s}$ \\ 
+    $0,2$ m $< h_{w_s} \leq 0,5$ m  & $0,2h_{w_s}$; $0,6h_{w_s}$\\ 
+    $h_{w_s} \geq 0,5$ m & $0,2h_{w_s}$; $0,6h_{w_s}$; $0,8h_{w_s}$\\
+    \hline 
+ \end{tabu}
+\end{table}
+
+Para la determinación del caudal, se utilizó un molinete de tipo electromagnético marca HACH modelo FH 950. Las velocidades determinadas por este equipo fueron ingresadas a la planilla de aforo (PROMMRA Q-Canal) con lo cual se obtuvo el caudal de forma inmediata. Además del caudal, la planilla entrega una gráfica con el perfil transversal de la sección aforada, así como la distribución de las velocidades.\\
+\\
+Finalmente se deberán seguir algunas consideraciones al realizar el aforo, entre las cuales tenemos:
+
+\begin{itemize}
+\tightlist
+\item El molinete debe quedar completamente sumergido de forma de no incorporar distorsiones en la medida realizada.
+\item El molinete debe colocarse de forma perpendicular a la sección de aforo, paralelo al escurrimiento de forma tal que mida la velocidad del punto.
+\item Se deben tomar 3 medidas o repeticiones para determinar el valor de la velocidad en cada punto.
+\item Es recomendable comenzar tomando las medidas en una vertical desde el fondo del canal.
+\item Se debe comenzar el aforo desde el lado izquierdo del canal, observando este desde hacia aguas abajo.
+\item La toma de medida en un punto, debe durar al menos 60 segundos, anotándose posteriormente la velocidad obtenida, en la hoja respectiva destinada para el aforo. Se considerará válido el promedio de 3 repeticiones por punto.
+\end{itemize}
+
+\paragraph{Procedimiento de aforo con trazador químico:}
+
+La medición de caudal mediante este método está basada en la determinación del grado de dilución en el agua de una sustancia trazadora y como esta modifica la conductividad eléctrica del flujo a medir. Este método permite conocer el caudal a partir de la variación de concentración de una sustancia que es inyectada en el flujo. Este tipo de aforo se recomienda para canales con láminas de agua de poca profundidad (menor a 20 cm), de sección irregular, con flujo turbulento, pendientes importantes, lechos inestables y líneas de flujo desordenadas, donde los métodos tradicionales de aforo (molinetes) no son aplicables.\\
+\\
+El criterio principal para definir el emplazamiento, donde se llevara adelante la determinación de caudal mediante el empleo de este método, es que en ese punto se produzca una mezcla homogénea de la solución inyectada en un tramo relativamente corto del canal. La mezcla del trazador con el flujo, se ve potenciada con las rugosidades propias del canal y la presencia de piedras o cantos, los cuales aumentan la turbulencia de la corriente.
+
+\begin{itemize}
+\tightlist
+\item La selección del sitio de inyección, donde se llevara adelante la determinación de caudal mediante el empleo de este método, es que en ese punto se produzca una mezcla homogénea de la solución inyectada en un tramo relativamente corto del canal. La mezcla del trazador con el flujo, se ve potenciada con las rugosidades propias del canal y la presencia de piedras o cantos, los cuales aumentan la turbulencia de la corriente.
+\item Como regla general se recomienda comenzar la medición en la variación de la conductividad eléctrica, desde el punto final del tramo a evaluar hacia atrás, es decir devolviéndose por el canal. Con esto se evita que restos de sales de mediciones anteriores pudiesen interferir al momento de una nueva determinación de la conductividad eléctrica y por ende afectar en la determinación del caudal.
+\item A modo referencial, la cantidad de trazador a utilizar para determinar caudal se estima en 10 g de trazador por cada l/s de caudal. Para estimar el caudal pasante se puede utilizar el método de aforo con flotador.
+\item Se deberá determinar la distancia (L) entre el punto de inyección y el punto de medición, la cual se puede obtener mediante la siguiente expresión:
+
+\[L=0,13*C+\left(\frac{(0.7*C)+6}{g}\right)*\frac{b^2}{d}\]
+
+donde:\\
+\(b\): Ancho medio del canal.\\
+\(d\): Profundidad media del flujo.\\
+\(C\): Coeficiente de Chezy para el tramo $(15<C<50)$.\\
+\(g\): Aceleración de gravedad.\\
+El coeficiente de Chezy $(C)$, puede determinarse con la siguiente expresión:
+
+\[C=\left(\frac{1}{n}*R^\frac{1}{6}\right)\]
+
+donde:\\
+\(n\): Rugosidad del canal (Manning).\\
+\(R\): Radio hidráulico de la sección (área/perímetro).\\
+En caso de no conocer los valores del coeficiente de Manning (n), así como la pendiente
+del tramo a evaluar se recomienda la utilización de la siguiente expresión:
+
+\[L=2*v*\frac{b^2}{d}\]
+
+donde:\\
+\(L\): Distancia para la dilución del trazador ($m$).\\
+\(v\): Velocidad media ($m/s$).\\
+\(b\): Ancho medio del canal ($m$).\\
+\(d\): Profundidad media del flujo ($m$).\\
+\item Se debe medir la conductividad eléctrica inicial del flujo ($C_0$), registrar dicha información.
+\item Medición de la temperatura del flujo y registro de su valor. Se registra esta información para efectuar el ajuste necesario de la CE (a 20°$C$) de manera de poder comparar mediciones, realizadas bajo distintas condiciones de temperatura.
+\item Este procedimiento se debe repetir 3 veces por punto de medición, para obtener una lectura confiable.
+\end{itemize}
+
+\paragraph{Planilla PROMMRA Q- Canal:}
+
+En el aforo de una sección debemos completar la información básica y obligatoria que hace referencia la planilla automática PROMMRA Q-Canal, detallando la ubicación y características de la sección y caudal, además de datos de operación. De cada punto obtendremos el caudal instantáneo.
+
+\paragraph{Determinación de pérdidas:}
+
+Una vez determinados los caudales de inicio y final del tramo, podremos determinar la pérdida de este. En el caso que las pérdidas superen el 20\% y la longitud de este tramo sea mayor a 1 km, debemos proceder a realizar la evaluación de los subtramos necesarios, ejecutando un aforo intermedio, que como resultado obtenga una pérdida menor al 20\% o hasta obtener un subtramo de longitud igual a 1 km.
+
+Una vez aforados los tramos y subtramos del canal, procederemos a la tabulación de los datos de este. Ese proceso se lleva a cabo a través del trabajo de gabinete, donde se debe realizar una codificación de los aforos para un mejor ordenamiento de las variables a evaluar. Los datos tabulados presentan las características del canal, los detalles de cada uno de los aforos, la determinación de pérdidas por tramo y la determinación de pérdidas a nivel general del canal, detallando las pérdidas en el sector de canal matriz y de distribución.
 
 
 
@@ -679,6 +793,9 @@ Las variables que contiene el protocolo de priorización aplicado en SIMCA – E
 
 \subsection{Componente 1. Actividad 1.2. Definición parámetros y generación de los protocolos de variable superficie bajo riego y potencial.}
 
+
+
+
 \subsection{Componente 1. Actividad 1.3. Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico.}
 
 
@@ -690,7 +807,7 @@ Se realizó una validación del protocolo fortalecido, la cual se realizó media
 \clearpage
 \section{Resultados e Hitos}
 
-\subsection{Componente 1. Actividad 1.1. Diagnóstico técnico-social del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica}
+\subsection{Componente 1. Actividad 1.1. Diagnóstico del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica}
 
 En la actualidad, el uso de los recursos hídricos se proyecta a nivel de cuenca, a través de un manejo integrado y sustentable de los diferentes usuarios de aguas. Es por esto, que se busca incluir variables de tipo social, para fortalecer la toma de decisiones en la distribución de recursos para inversión público-privada, y así realizar mejoramientos de la eficiencia de conducción hídrica en sectores donde se promueva el crecimiento y desarrollo, además de no interceder en la disponibilidad de los recursos de otras zonas.\\
 
