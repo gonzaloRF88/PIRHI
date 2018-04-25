@@ -391,4 +391,29 @@ Las variables que contiene el protocolo de priorización aplicado en SIMCA – E
 \clearpage
 \section{Resultados}
 
+\subsection{Resultados Componente 2}
+\subsubsection{Actividad 2.1. Sig red de distribución y conducción hídrica de la Junta de Vigilancia Río Chalinga y sus Afluentes }
+
+Los Sistemas de Información Geográfica (SIG), permiten gestionar información espacial, pudiendo modelar la realidad en este sistema. Entre los modelos más usados se encuentra el modelo vectorial y modelo raster. Mediante el modelo vectorial, se utilizó representar por medio de entidades geométricas (puntos y líneas) los diferentes componente que formaban parte de la red de distribución.
+
+\begin{table}[H]
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Capa}} & \multicolumn{1}{c|}{\textbf{Geometría}} & \multicolumn{1}{c|}{\textbf{Descripción}}                                                                                                                                                                                                                              \\ \hline
+\textbf{BARRERAS\_DESVIACION}       & Punto                                   & Representa las barreras de desviación de cada bocatoma, como atributo presenta el tipo de barrera caracterizado en terreno.                                                                                                                                            \\ \hline
+\textbf{CANALES\_ADUCCION}          & Línea                                   & Representa al canal comprendido entre la barrera de desviación hasta el punto o compuerta de carga del canal. Dentro de sus atributos está el nombre del canal, longitud, tipo de captación, ribera, material, tipo de devolución, observaciones.                      \\ \hline
+\textbf{COMPUERTAS\_CARGA}          & Punto                                   & Representa la obra en donde se entrega el agua desde bocatoma al canal para su distribución. En su información presenta nombre del canal, mecanismo de apertura, fuente del recurso hídrico, dimensiones de la sección donde se emplaza la compuerta.                  \\ \hline
+\textbf{ESTRUCTURAS\_DISTRIBUCION}  & Punto                                   & Representa las obras destinadas a gestión y entrega (compuertas prediales, compuertas frontales y laterales, captación, marco partidor, taco). Dentro de sus atributos se encuentra al canal a la que pertenece, la función, tipo de obra, dimensiones, observaciones. \\ \hline
+\textbf{REVESTIMIENTOS}             & Línea                                   & Representa el recorrido del canal, desde el km 0, correspondiente desde la compuerta de carga hasta el fin del canal. En sus atributos se presenta el revestimiento, tipo, material, forma, dimensiones, observación y su longitud.                                    \\ \hline
+\textbf{OBSERVACIONES}              & Punto                                   & Representa puntos de interés dentro del trazado del canal, como: filtraciones, quebradas, contaminación, desbordes, entre otros.                                                                                                                                       \\ \hline
+\end{tabular}
+\end{table}
+
+
+La generación de los archivos vectorial tipo línea (CANALES\_ADUCCION y REVESTIMIENTOS), se utilizaron los puntos colectados en terreno y se unieron generando el archivo lineal. Las zonas intermedias o inaccesibles que no se pudieron georreferenciar con el GPS, se utilizó imágenes satelitales desde Google Earth para realizar el trazado.
+
+Las capas están proyectadas en el Datum WGS 1984, coordenadas UTM Huso 19 Sur y unidad en metros. El formato utilizado para este modelo (vectorial) es el Shapefile (.shp). 
+
 \end{document}

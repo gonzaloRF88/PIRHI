@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6500 64-bit) (preloaded format=xelatex 2017.12.26)  24 APR 2018 10:22
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6500 64-bit) (preloaded format=xelatex 2017.12.26)  25 APR 2018 11:16
 entering extended mode
 **"./Act. 2.1. SIG.tex"
 ("Act. 2.1. SIG.tex"
@@ -1234,7 +1234,11 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \mult@nat@firstbox=\box92
 \colbreak@box=\box93
 \mc@col@check@num=\count321
-) ("Act. 2.1. SIG.aux")
+) ("Act. 2.1. SIG.aux"
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
 \openout1 = `"Act. 2.1. SIG.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 181.
@@ -1473,20 +1477,28 @@ Underfull \hbox (badness 1237) in paragraph at lines 334--335
  []
 
 [3] [4] [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 394.
- [6
+Overfull \hbox (1039.24144pt too wide) in paragraph at lines 402--412
+[][] 
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 419.
+[6
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 394.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 419.
  ("Act. 2.1. SIG.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 394.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 394.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 419.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 419.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 28696 strings out of 427839
- 504846 string characters out of 3152537
- 642597 words of memory out of 3000000
- 32357 multiletter control sequences out of 15000+200000
+ 28700 strings out of 427839
+ 504897 string characters out of 3152537
+ 642492 words of memory out of 3000000
+ 32361 multiletter control sequences out of 15000+200000
  551164 words of font info for 69 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  59i,11n,94p,10458b,520s stack positions out of 5000i,500n,10000p,200000b,50000s
