@@ -298,8 +298,15 @@ La caracterización por canal se comenzó desde bocatoma la cual tiene como prin
 \begin{itemize}
 \item{\bfseries {Barrera de desviación}}: Corresponde a la estructura utilizada con el fin de desviar el agua desde la fuente (río, estero, quebrada, etc) hacia una posición en particular. Esta puede ser fabricada tanto por materiales fluviales, madera, plástico, como por hormigón o metal. Ésta barrera puede ser temporal o permanente, dependiendo del material y de la resistencia a las crecidas.
 \item{\bfseries {Canal de aducción}}: Canal por donde se deriva el caudal captado.
-\item{\bfseries {Compuerta de carga o punto d entrega}}: corresponde a la estructura de control en donde se entrega el recurso hídrico, este puede ser una compuerta, captación o marco partidor.
+\item{\bfseries {Compuerta de carga o punto de entrega}}: corresponde a la estructura de control en donde se entrega el recurso hídrico, este puede ser una compuerta, captación o marco partidor.
 \item{\bfseries {Sección de control}}: Zona en la cual se controla el caudal entregado, en otras palabras, sección de aforo. Este puede ser de diversos tipos, dentro de los más comunes está el aforador de escurrimiento crítico y la regla limnimétrica.
+\end{itemize}
+
+Para la caracterización de los canales de distribución y conducción del recurso hídrico, se levanta información correspondiente a:
+\begin{itemize}
+\item{\bfseries {Revestimientos}}: Indica cuantas de las paredes del canal presenta revestimiento (1/3 una pared, 2/3 dos paredes y 3/3 100\% revestido), tipo de revestimiento (permanente o temporal), material de revestmiento, forma de la sección conductora, dimensiones de la sección conductora, todo esto indicando su longitud.
+\item{\bfseries {Estructuras de distribución}}: Indica la infraestructura destinada a la entrega y gestión del recurso, ya sean compuertas, marcos partidores, captaciones con energía o gravitacionales y tacos para el primero y como gestión, compuertas frontales y laterales (compuertas de descargas).
+\item{\bfseries {Observaciones}}: Indican puntos de interés, ya sean puntos críticos que puedan afectar a la conducción y distribución normal de recursos, como puntos de filtraciones, derrumbes, quebradas, embancamientos, desbordes, cruce de caminos, entre otros.
 \end{itemize}
 
 
@@ -307,12 +314,24 @@ La caracterización por canal se comenzó desde bocatoma la cual tiene como prin
 
 Se dispuso de información geospacializada de diferentes organismos del Estado de Chile en sus diferentes formatos (shapefile, WMS, entre otros) para tener insumos base para el levantamiento de información desde terreno. 
 
-Desde la Infraestructura de Datos Espaciales del Ministerio de Agricultura (IDE MINIAGRI), se descargó las capas vectoriales de infraestructura de riego dispuesta por la  Comisión Nacional de Riego (CNR), obteniendo la red de canales la cual considera el canal matriz, primer y segundo derivado y la capa de bocatomas la cual es informado por la Dirección General de Aguas, la limitación del área de influencia de las organizaciones de la cuenca del Choapa fue descargada desde la DGA, desde el Sistema Integrado de Información Territorial de la Biblioteca del Congreso Nacional (SIIT-BCN) se obtuvo la red hidrográfica, con esto se pudo delimitar y tener en primera instancia los canales que serían potencialmente sometidos a priorización por organización, para este caso la cuenca del Río Chalinga.
+Desde la Infraestructura de Datos Espaciales del Ministerio de Agricultura (IDE MINIAGRI), se descargó las capas vectoriales de infraestructura de riego dispuesta por la  Comisión Nacional de Riego (CNR), obteniendo la red de canales la cual considera el canal matriz, primer y segundo derivado y la capa de bocatomas la cual es informado por la Dirección General de Aguas (DGA). Al igual de la DGA se obtuvo la delimitación del área de influencia de las organizaciones de la cuenca del Choapa, desde el Sistema Integrado de Información Territorial de la Biblioteca del Congreso Nacional (SIIT-BCN) se obtuvo la red hidrográfica, con esto se pudo delimitar y tener en primera instancia los canales que serían potencialmente sometidos a priorización por organización, para este caso la cuenca del Río Chalinga.
 
 Los datos en terreno se capturaron utilizando un GPS diferencial modelo ProXT y Juno 3B de la marca Trimble, capturando un mínimo de 30 posiciones por característica.
 
+Cada componente de las bocatomas y  canales de distrbución, fueron caracterizados según los atributos especificados en el diccionario (VER SI GONZALO LO ANEXO PARA HACER LA REFERENCIA) de datos elaborado para la campaña de terreno, este diccionario fue ingresado en los GPS diferenciales para la captura y caracterización de los elementos.
+
+El recorrido comenzó en las bocatomas de los canales, caracterizando las barreras de desviación, canal de aducción, compuerta de carga y sección de control. 
+
+En el recorrido de los canales de distribución, se caracterizaron los cambios de tipos de revestimientos, las estructuras de entrega y gestión y las observaciones (puntos de interés) como: filtraciones, derrumbes, quebradas, entre otros.
+
+
 \subsubsection{Posproceso de datos capturados}
 
+Una vez obtenidos los elementos georreferenciados, se realizó la corrección diferencial de estos. Este proceso busca mejorar la calidad de los datos obtenidos en terreno, debido a que los datos brutos obtenidos del GPS varían por interferencia producto de la atmosfera y cambios en los satélites.
+
+La corrección diferencial consiste en corregir las desviaciones del receptor móvil (GPS) utilizado, con una estación base (estática) con coordenadas conocidas. La estación base utilizada para la corrección fue SOPAC, ubicada en Santiago (33°09’01,04238’’ S, 70°40’06,80171’’ O, 723,046 msnm).
+
+Al tomar 30 posiciones por característica georreferenciada, el promedio de estas posiciones corregidas diferencialmente incrementan, la precisión final de las características. Con la corrección diferencial se obtuvieron datos con precisiones que van entre 0,5 a 1 m en el 85\% de los casos. 
 
 
 
