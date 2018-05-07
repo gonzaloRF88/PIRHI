@@ -431,13 +431,15 @@ Además se ha comenzado con el desarrollo de las actividades de la componente 2.
 
 Se estableció una mesa técnica, compuesta por los profesionales de las diferentes áreas del equipo para la revisión y diagnóstico del protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica, generado por el proyecto FIC-R 2013, \textit{``Diseño y puesta en marcha de un sistema de monitoreo de caudales y de un protocolo de determinación de pérdidas de agua, para la priorización de las inversiones público-privadas (SIMCA – ELQUI)"}, el cual tenía por objetivo unificar, estandarizar y normalizar los criterios, procedimientos y decisiones ligadas al mejoramiento de canales pertenecientes a una organización de regantes.\\
 \\
-La metodología de revisión pretende establecer las variables requeridas para ejucutar el protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica, además de la información necesaria para el desarrollo de este. Además, se incluye un diagnóstico de esta herramienta con el fin de generar una propuesta de fortalecimiento para esta.\\
+La metodología de revisión pretende establecer las variables requeridas para ejecutar el protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica, además de la información necesaria para el desarrollo de este. Además, se incluye un diagnóstico de esta herramienta con el fin de generar una propuesta de fortalecimiento para esta.\\
 \\
 En la actualidad, el uso de los recursos hídricos se proyecta a nivel de cuenca, a través de un manejo integrado y sustentable de los diferentes usuarios de aguas. El fortalecimiento de esta herramienta permitirá a las organizaciones realizar una mejor gestión hídrica con el objetivo de obtener un mayor impacto social, técnico y económico, y así realizar mejoramientos de la eficiencia de conducción hídrica en sectores donde se promueva el crecimiento y desarrollo, además de no interceder en la disponibilidad de los recursos de otras zonas.
 
 \subsection{Componente 1. Actividad 1.2. Definición parámetros y generación de los protocolos de variable superficie bajo riego y superficie potencial.}
 
-La propuesta de fortalecimiento plantea la inclusión de tópicos sociales que permitan el desarrollo de la zona, los que se rigen de acuerdo a la posibilidad de recolección de información y levantamiento de datos en terreno. Los parámetros incluidos bajo estos criterios son los de superficie bajo riego y superficie potencial.
+La propuesta de fortalecimiento plantea la inclusión de parámetros sociales que permitan el desarrollo de la zona. Los parámetros definidos se ajustan a la superficie acotada a la zona de estudio, la que nos permitirá establecer la superficie potencial de riego. Esta superficie, está compuesta por los suelos que se encuentran sin cultivar pero que en algún momento tuvieron algún tipo de laboreo, y adicionalmente la superficie actualmente cultivada o bajo riego. El aumento de la superficie cultivada trae consigo beneficios de una mayor área explotada, mayores requerimientos de mano de obra, desarrollo de polos productivos.\\
+\\
+El protocolo para las variables superficie bajo riego y superficie potencial se generó de acuerdo a la posibilidad de recolección o levantamiento de información y datos en terreno, mediante entrevistas a representantes de comunidades de aguas y levantamiento directo desde el recorrido de la zona acotada al canal.
 
 \subsection{Componente 1. Actividad 1.3. Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico.}
 
@@ -452,7 +454,7 @@ Para la validación del Protocolo técnico-social de inversión en mejoramiento 
 
 \subsection{Componente 1. Actividad 1.1. Diagnóstico del Protocolo de Priorización de Inversiones en Mejoramiento de la eficiencia de Conducción Hídrica}
 
-La revisión realizada sobre el protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica, logró identificar las variables o parámetros requeridos para generar el plan de priorización de canales y/o tramos de la red de distribución de una OUA's. 
+La revisión realizada sobre el protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica, logró identificar las variables requeridas para generar el plan de priorización de canales y/o tramos de la red de distribución de una OUA's. 
 
 El diagnóstico considera necesario la inclusión de nuevos parámetros técnicos - sociales para fortalecer la toma de decisiones en la distribución de recursos para inversión público-privada. Además de recopilar información de las comunidades de aguas.
 
@@ -698,11 +700,20 @@ La tabulación y posproceso de la información recopilada en el S.I.G. nos permi
 
 \subsubsection{Determinación de pérdidas generales por conducción}
 
-La determinación de pérdidas de agua por conducción, se basa en la metodología de aforo de caudal. La variable pérdidas generales es fundamental para el desarrollo del Protocolo de priorización de inversiones en mejoramiento de la eficiencia en conducción hídrica. Con la información generada por el S.I.G., podemos generar los tramos y subtramos de aforo. A continuación se presentan ejemplos de tramos y visualización de puntos de aforo para un canal:
+La determinación de pérdidas de agua por conducción, se basa en la metodología de aforo de caudal. La variable pérdidas generales es fundamental para el desarrollo del Protocolo de priorización de inversiones en mejoramiento de la eficiencia en conducción hídrica. Con la información generada por el S.I.G., podemos generar los tramos y subtramos de aforo. A continuación se presenta la visualización de puntos de aforo para un canal:
 
-\begin{table}[]
+\begin{figure}[H]
 \centering
-\caption{Tramos del canal Titón (Junta de Vigilancia del Río Elqui y sus afleuntes.}
+\includegraphics[width=\textwidth]{images/puntos_de_aforo_kml2.eps}
+\caption{Archivo.KMZ con trazado de canal y puntos de aforo. Ejemplo Canal Titón, JVRE.}
+\label{kmz}
+\end{figure}
+
+\paragraph{Determinación de tramos y subtramos:} Con la información de longitud y material de revestimientos presentes, se definen tramos de aforo dentro del canal. Estos se dividen en matriz, el cual se considera hasta la primera entrega, y posteriormente tramos por tipo de revestimiento, los cuales nos permitirán establecer las pérdidas generales por conducción del canal y/o tramo. Cada tramo o subtramo consta de un aforo inicial y final, además de los posibles puntos de entregas o aportes que se puedan presentar y/o reglas operacionales del canal (turnos), por lo cual se podrían generar subtramos de forma instantánea al no completarse el trayecto de forma continua.
+
+\begin{table}[H]
+\centering
+\caption{Tramos del canal Titón (Junta de Vigilancia del Río Elqui y sus afluentes.}
 \label{matriz}
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
@@ -715,16 +726,6 @@ La determinación de pérdidas de agua por conducción, se basa en la metodolog�
 \textbf{6}                             & 18                                                                     & 19                                                                  & 7,19                                                          & 7,24                                                        & 0,05                                                             & Mezcla suelo                                               & -                                                                                                \\ \hline
 \end{tabular}
 \end{table}
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\textwidth]{images/puntos_de_aforo_kml2.eps}
-\caption{Archivo.KMZ con trazado de canal y puntos de aforo. Ejemplo Canal Titón, JVRE.}
-\label{kmz}
-\end{figure}
-
-\paragraph{Determinación de tramos y subtramos:} Con la información de longitud y material de revestimientos presentes, se definen tramos de aforo dentro del canal. Estos se dividen en matriz, el cual se considera hasta la primera entrega, y posteriormente tramos por tipo de revestimiento, los cuales nos permitirán establecer las pérdidas generales por conducción del canal y/o tramo. Cada tramo o subtramo consta de un aforo inicial y final, además de los posibles puntos de entregas o aportes que se puedan presentar y/o reglas operacionales del canal (turnos), por lo cual se podrían generar subtramos de forma instantánea al no completarse el trayecto de forma continua.\\
-\\
 Una vez determinados los puntos de inicio y final del tramo, debemos seleccionar la sección de aforo, la que dependiendo de sus características, determinará el equipo de aforo que se utilizará. 
 
 \paragraph{Procedimiento de aforo:}
@@ -839,7 +840,7 @@ La planilla de cálculo de caudal presenta dos secciones. La primera sección (s
 \label{q_canal}
 \end{figure}
 
-\subparagraph{Información general}
+\subparagraph{Información general:}
 En esta sección se informa al usuario de las instrucciones y potencialidades de la planilla (Figura \ref{info_general}). También existe la posibilidad de ingresar los datos generales del punto de aforo, como nombre del canal, fecha, hora, ubicación (coordenadas) y observaciones. Es recomendable completar dicha información para la caracterización del punto de aforo además de tener un respaldo para el seguimiento de dicho punto.
 
 %insertar figura informacion general.
@@ -926,7 +927,7 @@ Otra de las opciones que incorpora esta planilla corresponde  a una hoja de cál
 Existen dos instancias donde se determinaran pérdidas, dependiendo del elemento que se esté evaluando, vale decir tramos (a nivel individual) o canales (como sumatoria de los tramos que lo componen). Cada uno de estos elementos es evaluado en instancias diferentes, siendo los tramos evaluados en terreno mientras se ejecutan las labores de aforo. En el caso de la evaluación general de pérdidas del canal esta labor es efectuada en gabinete, y con la totalidad de información de pérdidas de cada uno de los tramos que lo componen. Esta evaluación de pérdidas, es un insumo esencial para la etapa de priorización.
 
 \subparagraph{Determinación de pérdidas por tramos.}
-Esta evaluación de pérdidas se hace directamente en terreno mientras se efectúa el aforo de cada uno de los tramos que componen un determinado canal. Para ello se utiliza la capa KMZ (Figura \ref{kmz}) más los archivos asociados con el detalle de cada uno de los puntos y tramos para evaluación de pérdidas (Cuadro \ref{matriz} y Cuadro \ref{caracterización}). En función a la diferencia entre el caudal inicial y final, se decidirá subdividir un tramo para una nueva determinación de pérdidas.  Si la diferencia entre ambos caudales es superior al 20\% y además este tramo es de una extensión superior a 1 km, será necesario subdividir el tramo en partes iguales, para lo cual se deberá guiar por las subsecciones detalladas en el Cuadro \ref{caracterización} para el nuevo aforo. Siguiendo el procedimiento se aforara en el punto medio determinado anteriormente, si la diferencia entre este caudal y los definidos  anteriormente (inicial o final, en función del tramo analizado) es superior al 20\% se deberá hacer una nueva subdivisión siempre y cuando la extensión del sub-tramo evaluado supere 1 km, de caso contrario la evaluación queda circunscrita al sub-tramo original. Para definir las pérdidas en terreno, para el tramo analizado, se utiliza la siguiente fórmula:
+Esta evaluación de pérdidas se hace directamente en terreno mientras se efectúa el aforo de cada uno de los tramos que componen un determinado canal. Para ello se utiliza la capa KMZ (Figura \ref{kmz}) más la información asociada con el detalle de cada uno de los puntos y tramos para evaluación de pérdidas. En función a la diferencia entre el caudal inicial y final, se decidirá subdividir un tramo para una nueva determinación de pérdidas.  Si la diferencia entre ambos caudales es superior al 20\% y además este tramo es de una extensión superior a 1 km, será necesario subdividir el tramo en partes iguales, para lo cual se deberá guiar por las subsecciones para el nuevo aforo. Siguiendo el procedimiento se aforara en el punto medio determinado anteriormente, si la diferencia entre este caudal y los definidos  anteriormente (inicial o final, en función del tramo analizado) es superior al 20\% se deberá hacer una nueva subdivisión siempre y cuando la extensión del sub-tramo evaluado supere 1 km, de caso contrario la evaluación queda circunscrita al sub-tramo original. Para definir las pérdidas en terreno, para el tramo analizado, se utiliza la siguiente fórmula:
 \begin{equation}
 Perdidas Tramo (\%)=\frac{(Q_i - Q_f)}{(Q_i)}*100
 \end{equation}
@@ -1060,18 +1061,17 @@ Perdidas (l/km) = \frac{Perdidas (l/s)}{Longitud del tramo (km)}
 Perdidas (\%/km) = \frac{Perdidas (l/s)}{Longitud del tramo (km)}
 \end{equation}
 
-Las pérdidas de cada uno de los tramos y canales, serán el insumo base para la generación de una capa SIG, lo que facilitara las siguientes etapas del protocolo de aforo.
-%Una vez determinados los caudales de inicio y final del tramo, podremos determinar la pérdida de este. En el caso que las pérdidas superen el 20\% y la longitud de este tramo sea mayor a 1 km, debemos proceder a realizar la evaluación de los subtramos necesarios, ejecutando un aforo intermedio, que como resultado obtenga una pérdida menor al 20\% o hasta obtener un subtramo de longitud igual a 1 km.
-
-%Una vez aforados los tramos y subtramos del canal, procederemos a la tabulación de los datos de este. Ese proceso se lleva a cabo a través del trabajo de gabinete, donde se debe realizar una codificación de los aforos para un mejor ordenamiento de las variables a evaluar. Los datos tabulados presentan las características del canal, los detalles de cada uno de los aforos, la determinación de pérdidas por tramo y la determinación de pérdidas a nivel general del canal, detallando las pérdidas en el sector de canal matriz y de distribución.
-
-%Las variables que contiene el protocolo de priorización aplicado en SIMCA – ELQUI, las cuales se seleccionaron estadísticamente a través de la correlación de PEARSON, mayor a 0,80, en relación a la variable pérdidas generales (l/s) de los tramos.
+Una vez aforados los tramos y subtramos del canal, procederemos a la tabulación de los datos de este. Ese proceso se lleva a cabo a través del trabajo de gabinete, donde se debe realizar una codificación de los aforos para un mejor ordenamiento de las variables a evaluar. Los datos tabulados presentan las características del canal, los detalles de cada uno de los aforos, la determinación de pérdidas por tramo y la determinación de pérdidas a nivel general del canal, detallando las pérdidas en el sector de canal matriz y de distribución.
 
 La información obtenida en la Determinación de pérdidas nos permite generar las variables de Pérdidas generales por conducción, Volumen recuperado por temporada y Volumen recuperado por temporada en función de longitud de mejoramiento.
 
 \subsubsection{Priorización de canales y/o tramos.}
 
-
+A través de la aplicación de un análisis de correlación PEARSON en un software como Statgraphics, Statsoft, Minitab, R, SSPS o similares, ejecutado a la matriz de datos inicial generada en el protocolo de SIMCA-ELQUI, se determinó que las variables requeridas por el protocolo de priorización de inversiones en mejoramiento de la eficiencia de conducción hídrica indicadas en el inicio de la revisión, se correlacionaban sobre un 0,80 con la variable pérdidas generales ($l/s$).\\
+\\
+De acuerdo a las variables requeridas seleccionadas con el análisis PEARSON, se ejecuta un análisis de árbol de decisión (clasificación), para conformar grupos de canales que sean similares y puedan competir entre sí. Una vez determinados los grupos de canales, se procede a realizar una verificación de la clasificación, para la cual se utiliza un análisis de tipo discriminante que permite asignar o clasificar nuevos individuos u observaciones dentro de grupos o segmentos previamente definidos, ocupando las variables definidas por el análisis PEARSON.\\
+\\
+Una vez obtenidos estos análisis se procede a realizar un ordenamiento de los diferentes grupos generados, realizando una jerarquización de acuerdo a la recuperación general ($m^3/temporada$) y recuperación por valor unitario de revestimiento ($m^3/m^2 de revestido$) por temporada. Además se realiza una jerarquización de acuerdo a las variables requeridas, lo que nos otorgará una jerarquización final de los canales. Esta priorización se puede realizar también a nivel de tramos.
 
 \subsubsection{Diagnóstico y propuesta de fortalecimiento}
 
@@ -1095,6 +1095,8 @@ En la recopilación de información considerada por el protocolo, se evidenció 
 \end{itemize}
 
 Junto con estos antecedentes, es necesario individualizar la Comunidad de aguas, Nombre representante y su cargo, además de registrar contactos y fecha de entrevista.\\
+\\
+El proceso de jerarquización u ordenamiento final se debe realizar a nivel de canales, y posteriormente generar un nuevo ordenamiento a nivel de tramos dentro del canal, ejecutado bajo las mismas variables requeridas mencionadas con anterioridad.\\
 \\
 La propuesta de fortalecimiento considera la incorporación de nuevas variables de tipo social, las que consideran parámetros como la superficie potencial, además de una modelación hidrológica de la zona a evaluar. Cada uno de estos parámetros se detallan en los siguientes apartados.
 
@@ -1160,7 +1162,7 @@ Como primera información, se recopiló la ficha de registros de bocatomas, gene
 	\item[$-$] \textbf{Información Junta de Vigilancia Río Chalinga y sus Afluentes}
 \end{itemize}
 
-En mesas de trabajo junto a la organización, se recopiló la siguinete información:
+En mesas de trabajo junto a la organización, se recopiló la siguiente información:
 
 \begin{itemize}	
 	\item Diagrama unifilar: Recopilación de archivos en formato pdf.
@@ -1300,10 +1302,10 @@ En la validación se obtiene que los canales presentan los siguientes estructura
 \end{tabular}
 \end{table}
 
-Dentro de las estructuras de distribución se agrega la función de ramal, la cual no se consideraba para el protocolo del proyecto SIMCA-Elqui, esta función busca conocer donde nacen los derivados y estimar superficie irrigada por el ramal, ajustando la asignación de la superficie a los canales si se encuentra mas de un canal cercano en el territorio.
-
-En el recorrido de canal se obtuvieron coordenadas de inicio, fin y puntuales de algunos puntos críticos que se presenten en el canal, como filtraciones, quebradas, desbordes, entre otros, que puedan afectar la conducción y distribución normal del recurso, por lo cual dependiendo del tipo de observación y longitud de este hito se definirá si es necesario realizar un subtramo adicional para evaluación de pérdidas los cuales son definidos por los cambios de revestimientos.
-
+Dentro de las estructuras de distribución se agrega la función de ramal, la cual no se consideraba para el protocolo del proyecto SIMCA-Elqui, esta función busca conocer donde nacen los derivados y estimar superficie irrigada por el ramal, ajustando la asignación de la superficie a los canales si se encuentra mas de un canal cercano en el territorio.\\
+\\
+En el recorrido de canal se obtuvieron coordenadas de inicio, fin y puntuales de algunos puntos críticos que se presenten en el canal, como filtraciones, quebradas, desbordes, entre otros, que puedan afectar la conducción y distribución normal del recurso, por lo cual dependiendo del tipo de observación y longitud de este hito se definirá si es necesario realizar un subtramo adicional para evaluación de pérdidas los cuales son definidos por los cambios de revestimientos.\\
+\\
 Los resultados obtenidos de la validación para variables que contemple el protocolo de priorización con lo que respecta a S.I.G de canales se presentan a continuación: 
 
 % Please add the following required packages to your document preamble:
@@ -1311,28 +1313,22 @@ Los resultados obtenidos de la validación para variables que contemple el proto
 \begin{longtable}{|l|ccc|}
 \caption{Resultados variables longitudes y dimensiones}\\
 \hline
-\multicolumn{1}{|c|}{\textbf{Variables}}                 & \multicolumn{1}{l}{\textbf{Arboleda Grande}} & \multicolumn{1}{l}{\textbf{Chalinga o Cancha Brava}} & \multicolumn{1}{l|}{\textbf{Huanque}} \\ \hline
+\multicolumn{1}{|c|}{\textbf{Variables}}                 & \multicolumn{1}{l}{\textbf{Arboleda Grande}} & \multicolumn{1}{c}{\textbf{Chalinga o}} & \multicolumn{1}{l|}{\textbf{Huanque}} \\
+ & & \multicolumn{1}{c}{\textbf{Cancha Brava}} &  \\ \hline
 \textbf{Longitud total}                                  & 5.902                                        & 4.406                                                & 7.190                                 \\
 \textbf{Longitud total de canal en uso}                  & 5.902                                        & 4.406                                                & 7.190                                 \\
 \textbf{Longitud tramo matriz}                           & 0.046                                        & 0.045                                                & 0.071                                 \\
 \textbf{Longitud Tramo conducción}                       & 4.989                                        & 3.792                                                & 6.934                                 \\
 \textbf{Longitud de tramos afectos a mejoramiento}       & 2.149                                        & 2.306                                                & 2.472                                 \\
-\textbf{Dimensiones a revestir  (ancho; alto) en metros} & 0,6; 0,5\footnote{Tomados de tramos regulares revestidos rectangulares}                                    & 0,9; 0,7\footnote{Promedio entre tramo revestido rectangular 1 m ancho 0,7 alto y tramo geomembrana 1 m ancho y 0.7 alto}                                          & 0,5; 0,4\footnote{Tomados de sección rectangular revestida en hormigón }                           \\ 
+\textbf{Dimensiones a revestir  (ancho; alto) en metros} & 0,6; 0,5\footnote{Tomados de tramos regulares revestidos rectangulares}                                    & 0,9; 0,7\footnote{Promedio entre tramo revestido rectangular 1 m ancho 0,7 alto y tramo geomembrana 1 m ancho y 0.7 alto}                                          & 0,5; 0,4\footnote{Tomados de sección rectangular revestida en hormigón }\\ 
 \hline
-\end{longtable}%
-
-
-
-
+\end{longtable}
 
 \subsubsection{Superficie bajo riego y superficie potencial.}
 
-Previo al levantamiento de información desde terreno, se generó información base del trazado de canales (CNR) y polígonos que representan uso de suelo agrícola del territorio (PROMUS), cada uno de estos polígonos fue identificado  con un ID y asignado a un canal, según el trazado de este.
-
+Previo al levantamiento de información desde terreno, se generó información base del trazado de canales (CNR) y polígonos que representan uso de suelo agrícola del territorio (PROMUS), cada uno de estos polígonos fue identificado  con un ID y asignado a un canal, según el trazado de este.\\
+\\
 Desde terreno se fue validando desde con personas correspondiente a cada canal, los polígonos que irriga cada canal, junto con eso en el recorrido de caracterización del canal se fueron levantando estas entidades y verificando si corresponde el polígono al canal asignado y uso del suelo de cada polígono. En esta labor se fue identificando zonas que están cultivadas y que no se presentaba en la capa de uso de suelo.
-
-
-
 
 \section{Anexos. Componente 1.}
 
