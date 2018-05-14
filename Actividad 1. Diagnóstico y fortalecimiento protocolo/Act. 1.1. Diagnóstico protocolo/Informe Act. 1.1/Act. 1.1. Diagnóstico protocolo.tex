@@ -1,4 +1,5 @@
 \documentclass[]{article}
+\usepackage{longtable}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -807,6 +808,22 @@ Una vez asignados los polígonos que representan superficie a cada canal, desde 
 
 \subsection{Componente 1. Actividad 1.3. Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico.}
 
+Para visualizar los efectos que genera el revestimiento de los canales sobre los componentes hidrológicos de la cuenca, se modelarán estos escenarios a través del modelo WEAP. Esta herramienta ha sido utilizada ampliamente en la planificación y gestión de los recursos hídrico en la región. La consultora RODHOS el 2014, desarrollo tres modelos de gestión para las tres cuencas de la región de Coquimbo, bajo el estudio financiado por el Gobierno Regional denominado “Estudio de modelos de gestión de recursos hídricos superficiales y subterráneos, para las cuencas de las provincias de Elqui, Limarí y Choapa”. Posterior a ello, el Laboratorio PROMMRA de la Universidad de La Serena, actualizó cada uno de estos modelos en su serie temporal, en el marco del estudio (2016) “Análisis Modelación de Embalses de Pre cordillera”, financiado por el Gobierno Regional.
+
+Basándose en la última actualización del modelo WEAP para la cuenca del río Choapa, se generará la modelación y evaluación del mejoramiento en las eficiencias de conducción de los canales de la cuenca.  
+
+La configuración topológica del modelo de gestión de la cuenca del río Choapa, se basa en la agrupación de canales bajo ciertos criterios: superficie regada por canal, distribución de los canales en la cuenca, y ubicación de estos. Esta topología se desarrolló en función de las capacidades técnicas que posee el modelo y la disponibilidad de los datos como \textit{input} asociado a la serie temporal modelada. 
+ 
+WEAP, es un modelo semi-distribuido, el cual establece características hidrológicas similares en zonas de la cuenca; de esta manera, la agrupación de canales permite un correcto balance hídrico y calibración de lo sucedido en el sistema, obteniendo resultados zonificados de los efectos hidrológicos del revestimiento en las obras de conducción de la cuenca.
+
+La definición de los parámetros de evaluación, se especifican de acuerdo a los resultados que el modelo WEAP es capaz de entregar, asociado a la zonificación de los escenarios y, los efectos hidrológicos que el revestimiento de canales puede generar en otros componentes hidrológicos de la cuenca.
+
+Parte del proceso de ajuste del modelo para generar los escenarios de revestimiento, es la confirmación de los datos utilizados en la configuración de los canales y su agrupación. Para ello es necesario disponer de información actualizada de estas obras a partir de las distintas comunidades de agua.
+
+Con dicha información, se ajustará el modelo de gestión para las distintas organizaciones y se evaluarán los efectos de revestimiento a partir de la generación de escenarios que el protocolo establece para la variable modelamiento hidrológico.
+
+Para dicha variable del protocolo, se establecerán las etapas de actualización de \textit{inputs} en el modelo WEAP, asociado a las comunidades de agua, y la posterior visualización de resultados de los parámetros establecidos, respecto a los escenarios de mejoramiento en la eficiencia de conducción.
+
 
 \subsection{Componente 1. Actividad 1.4. Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica.}
 
@@ -891,6 +908,173 @@ Para tener un mayor conocimento del trazado del canal y sus singularidades, adem
 
 \subsection{Componente 1. Actividad 1.3. Definición de parámetros y generación de los protocolos para la variable modelamiento hidrológico.}
 
+A partir de la modelación de escenarios de revestimiento zonificados en las distintas organizaciones de regantes, se establecieron 5 parámetros que el modelo WEAP entrega a partir de sus resultados, para evaluar los efectos hidrológicos en la cuenca. Tales parámetros se detallan a continuación.
+
+\begin{enumerate}
+
+\item \textit{Volumen almacenado en los embalses}. Se evaluará la condición de los volúmenes almacenados a lo largo de la serie temporal, a partir del escenario base con su condición histórica. A partir de este parámetro, se considerará como efecto negativo la disminución del volumen almacenado en la serie temporal, producto de una menor disponibilidad en la asignación para las siguientes temporadas, y viceversa.
+
+El indicador es el porcentaje de disminución o aumento del volumen almacenado 	como promedio de la serie modelada en el escenario con revestimiento, respecto 	al escenario base.
+
+
+\item \textit{Volumen almacenado en los acuíferos de la zona de influencia}. Se evaluará la dinámica de los volúmenes almacenados en los acuíferos que se encuentren en el área de influencia de los canales, considerando como efecto negativo, una disminución en su almacenamiento a lo largo de la serie temporal, y viceversa. Esto, debido a la menor disponibilidad hídrica para demandas que se abastecen de esta fuente de agua, sobretodo en periodos de escasez hídrica.
+
+El indicador es el porcentaje de disminución o aumento del volumen almacenado 	como promedio de la serie modelada en el escenario con revestimiento, respecto 	al escenario base.
+
+\item \textit{Caudales superficiales}. Se evaluará el comportamiento de los cauces naturales en puntos establecidos de la cuenca, con el fin de evidenciar la dinámica a lo largo de la serie temporal. Se considerará como efecto negativo, la disminución de los caudales a lo largo de la serie, debido a la disminución de la oferta hídrica en la asignación de la temporada, y viceversa.
+	
+El indicador es el porcentaje de disminución o aumento del caudal superficial como promedio de la serie modelada en el escenario con revestimiento, respecto al escenario base.
+
+
+\item \textit{Satisfacción de la demanda agrícola}.Se evaluará el porcentaje de la cobertura de la demanda agrícola, tanto de los cultivos frutales, como cultivos anuales. En ambos casos, se considerará como efecto positivo, el aumento de la satisfacción de la demanda a lo largo de la serie temporal, y viceversa.
+
+El indicador es el porcentaje de disminución o aumento de la cobertura de la 	demanda en el escenario con revestimiento, respecto al escenario base.
+
+
+\item \textit{Seguridad de la cobertura de la demanda agrícola}.Se evaluará el porcentaje de la cobertura de la demanda agrícola, tanto de los cultivos frutales, como cultivos anuales. En ambos casos, se considerará como efecto positivo, el aumento de la satisfacción de la demanda a lo largo de la serie temporal, y viceversa.
+
+El indicador es el porcentaje de disminución o aumento de la cobertura de la 	demanda en el escenario con revestimiento, respecto al escenario base.
+
+\end{enumerate}
+
+La variable modelación hidrológica en el protocolo, consiste en evaluar los parámetros ya establecidos bajo escenarios de revestimiento de canales zonificados en las tres áreas de influencia de cada organización, Junta de Vigilancia del río Chalinga y sus Afluentes; Junta de Vigilancia del río Choapa y sus Afluentes; y Junta de Vigilancia del río Illapel y sus Afluentes. Cada escenario de revestimiento será contrastado con un escenario base, el cual cuenta con una serie temporal entre 1990 – 2016, y detalla la situación histórica ocurrida en la cuenca.
+
+Para la generación de estos escenarios de revestimiento, se debe disponer de información de cada comunidad, que permita contrastar la información utilizada en el modelo para su verificación. A continuación, se mencionan la información necesaria a verificar y el proceso de actualización.
+
+\begin{itemize}
+
+\item \textbf{\textit{Diagrama unifilar de los canales de cada organización}:} Dicha información permitirá verificar la zonificación de los canales y su correspondiente agrupación dentro del modelo respecto a: área de influencia de riego, ubicación y distribución dentro de la cuenca.
+
+En el modeo WEAP de la cuenca del río Choapa, es posible verificar la agrupación de canales establecidas en la topología, estás son flechas de color naranjo llamadas \textit{“Diversion”}. En la figura \ref{etiqueta_figura3}, se observa la topología establecida para la modelación de la cuenca.
+
+
+\begin{figure}[H]
+\begin{center}
+\fbox{\includegraphics[width=\textwidth]{Logo/WEAPTopologia}}
+\caption{Topología Modelo WEAP: Cuenca del río Choapa CRDP - PROMMRA}
+\label{etiqueta_figura3}
+\end{center}
+\end{figure}
+
+En el siguiente cuadro \ref{etiqueta_cuadro1} , se presenta la configuración topológica inicial del modelo Cuenca del río Choapa para sus distintos canales y, la fuente de cada uno de ellos. Además de los nombres de los canales, correspondiente a su respectiva agrupación. 
+
+\begin{longtable}[c]{|l|l|l|}
+\caption{Nomenclatura y composición de las agrupaciones de canales del modelo.}
+\label{etiqueta_cuadro1}\\
+\hline
+\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Nomenclatura \\ WEAP\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Nombre}} & \multicolumn{1}{c|}{\textbf{Fuente}} \\ \hline
+\endfirsthead
+%
+\endhead
+%
+CA-01 & \begin{tabular}[c]{@{}l@{}}Los Morros, Cabecita de León, Eusebio,\\ Huinganal, Los Blancos, El Valle\end{tabular} & Río Valle \\ \hline
+CA-02 & Piedrino & Río Choapa \\ \hline
+CA-03 & Batuco, Manzano Derecho, Manzano Izquierdo & Río Choapa \\ \hline
+CA-04 & Rodadero o Manzano & Río Choapa \\ \hline
+CA-05 & Pangue o Inquilinos & Río Choapa \\ \hline
+CA-06 & Molino de Tranquilla & Río Choapa \\ \hline
+CA-07 & \begin{tabular}[c]{@{}l@{}}Molino de Tencadán, Tencadán Derecho,\\ Tencadán Izquierdo, Codicia o Las Pampitas, \\ Tencadán Cortadera Derecho, \\ Tencadán Aletón Izquierdo\end{tabular} & Río Tencadan \\ \hline
+CA-08 & \begin{tabular}[c]{@{}l@{}}Buitrón, El Bosque, Los Loros o Los\\ Arriendos\end{tabular} & Río Cuncumén \\ \hline
+CA-09 & Tiralarga & Río Cuncumén \\ \hline
+CA-10 & Araya, Barraco Grande, Los Ranchos Choapa & Río Choapa \\ \hline
+CA-11 & Silvano & Río Choapa \\ \hline
+CA-120 & Barraco Chico, Del Sauco & Río Choapa \\ \hline
+CA-121 & Aguas Claras de Chillepín, El Pavo & Río Choapa \\ \hline
+CA-13 & El Molino de Quelén & Río Choapa \\ \hline
+CA-14 & Breas o Molino de Llimpo & Río Choapa \\ \hline
+CA-15 & De La Higuera, Potrero El Buey, Maitén & Est. Quelén \\ \hline
+CA-16 & Panguecillo Uno o Del Medio, Panguecillo Dos & Río Choapa \\ \hline
+CA-17 & Higueral & Río Choapa \\ \hline
+CA-18 & Pardo & Río Choapa \\ \hline
+CA-19 & El Queñe, Aguas Claras & Río Choapa \\ \hline
+CA-20 & Población & Río Choapa \\ \hline
+CA-21 & Buzeta & Río Choapa \\ \hline
+CA-22 & Molino de Zapallar & Río Chalinga \\ \hline
+CA-23 & Batuco de Chalinga & Río Chalinga \\ \hline
+CA-24 & \begin{tabular}[c]{@{}l@{}}Alameda, Maravillal o La Viña, Palquial o\\ Molino de San Agustín, Valentino y Canelo\end{tabular} & Río Chalinga \\ \hline
+CA-25 & \begin{tabular}[c]{@{}l@{}}Vert. Los Guindos, Vert. San Francisco,\\ Vert. Las Casas, Chañar Chalinga, Cunlagua, Huanque, \\ Arboleda Grande, Chalinga o Cancha Brava, \\ Chilcas, Tebal\end{tabular} & Río Chalinga \\ \hline
+CA-26 & Tahuincano, Las Viudas & Río Choapa \\ \hline
+CA-27 & Caracha & Río Choapa \\ \hline
+CA-28 & El Boldo o Chuchiñí & Río Choapa \\ \hline
+CA-29 & Jote, Camisas o Batito & Est. Camisas \\ \hline
+CA-30 & \begin{tabular}[c]{@{}l@{}}El Molino de Peralillo, Las Chacras, Los\\ Loros o Del Medio\end{tabular} & Río Choapa \\ \hline
+CA-31 & Pintacura Norte, Pintacura Sur o Alto & Río Choapa \\ \hline
+CA-32 & \begin{tabular}[c]{@{}l@{}}Los Gonzalez, Salinas, Las Burras Bajas, El\\ Durazno Illapel, Los Perales Illapel, Las Burras Altas\end{tabular} & Río Illapel \\ \hline
+CA-33 & \begin{tabular}[c]{@{}l@{}}Llano Alto, Llano Bajo, Covachas, Los Manque, \\ Alcantarilla, Pichicaven, Calderón,Mala Ladera, \\ El Agüita, Los Sauces, La Montaña,Rodado, \\ El Bajo, El Macal Illapel\end{tabular} & Río Illapel \\ \hline
+CA-34 & Santa Margot & Río Illapel \\ \hline
+CA-35 & \begin{tabular}[c]{@{}l@{}}Molino de Carén Illapel, Santa Ana, San\\ Arturo, Carrizo Carén, San Isidro Carén, \\ El Buitre Carén, Tizón\end{tabular} & Río Caren \\ \hline
+CA-36 & Santa Margarita, El Palqui Illapel & Río Illapel \\ \hline
+CA-37 & El Peumo, San Jorge, Santa Isabel, San Javier & Río Illapel \\ \hline
+CA-38 & La Turbina & Río Illapel \\ \hline
+CA-39 & \begin{tabular}[c]{@{}l@{}}Santa Olga, Los Pelados, San Isidro, El\\ Silo, San Patricio, Camarote, Escorial Illapel, \\ Plantación\end{tabular} & Río Illapel \\ \hline
+CA-40 & La Higuera, Cocinera & Río Illapel \\ \hline
+CA-41 & \begin{tabular}[c]{@{}l@{}}Vert. Luna, Hospital, Molino de Cárcamo,\\   Potrero Nuevo\end{tabular} & Río Illapel \\ \hline
+CA-42 & \begin{tabular}[c]{@{}l@{}}Zepedino, Cuz Cuz, Población Los Guindos,\\   San Juan de Dios\end{tabular} & Río Illapel \\ \hline
+CA-43 & \begin{tabular}[c]{@{}l@{}}Inquilinos o Del Bajo, Molino El Peral,\\   Bellavista o Del Alto, Del Medio o Bellavista Bajo\end{tabular} & Río Illapel \\ \hline
+CA-44 & Junta El Maitén & Río Illapel \\ \hline
+CA-45 & \begin{tabular}[c]{@{}l@{}}Coyuntagua Norte, Coyuntagua Sur Uno,\\ Coyuntagua Sur Dos, San Francisco, San Pedro,\\ Doña Juana, Mincha Norte,\\ Mincha Sur Arriba, Mincha Sur Abajo, \\ Matriz de Mincha, Tunga Norte Bajo\end{tabular} & Río Choapa \\ \hline
+CA-46 & \begin{tabular}[c]{@{}l@{}}Salinero, Millahue Uno o Lílenes, Millahue\\ Dos o Los Patos, Los Rulos, San Antonio, \\ Molino de Choapa\end{tabular} & Río Choapa \\ \hline
+CA-47 & Canal Alimentador Corrales & Río Choapa \\ \hline
+\end{longtable}
+
+\item \textbf{ \textit{Actualización de las acciones y capacidad de porteo}:} En el modelo WEAP de la cuenca del río Choapa, existe una sección llamada datos, en ella, podemos observar todos los \textit{inputs} que componen los nodos del modelo: \textit{Key Assumptions}, \textit{Demand Sites and Catchments}, \textit{Hydrology, Supply and Resources}, y \textit{Other Assumptions} (Figura \ref{etiqueta_figura4}).
+
+\begin{figure}[H]
+\begin{center}
+\fbox{\includegraphics[width=\textwidth]{Logo/WEAP1}}
+\caption{Herramientas del Modelo WEAP.}
+\label{etiqueta_figura4}
+\end{center}
+\end{figure}
+
+
+En la sección Key Assumptions, se especifican los datos que forman parte de la demanda u oferta del sistema, o datos matemáticos dentro del modelo, que permiten establecer algoritmos de cálculo o lógica. En esta sección, existen variables que permiten ir actualizando al modelo de acuerdo a la disponibilidad de datos y a la configuración establecida. En la sección CANALES, se observa que posee las variables ACCIONES, CAPACIDADES y PERDIDAS para las 3 organizaciones de la cuenca respectivamente (Figura \ref{etiqueta_figura5}).
+
+\begin{figure}[H]
+\begin{center}
+\fbox{\includegraphics[width=\textwidth]{Logo/WEAP2}}
+\caption{\textit{Key Assumptions del modelo}.}
+\label{etiqueta_figura5}
+\end{center}
+\end{figure}
+
+
+
+
+
+En la sección \textbf{ACCIONES}, es posible configurar el número de los derechos nominales que cada comunidad presenta de las tres Juntas de Vigilancia, en función de los litros/segundo que poseen sobre el río.
+
+De igual manera, es posible configurar la capacidad de porteo ($L/s$) que cada canal posee, de acuerdo a cada organización. Esta variable se actualiza en la sección \textbf{CAPACIDADES}.
+
+\item \textbf{\textit{Generación de escenarios de revestimiento}:} Para la generación de escenarios de revestimiento de canales, se procederá mejorando la eficiencia de conducción por cada agrupación, comparando los efectos frente al escenario base y, además a los grupos de canales dentro de su misma área de influencia de cada Junta de Vigilancia.
+
+Para crear estos escenarios, se debe ingresar a la sección \textit{Data} del modelo y luego a \textit{Manage Scenarios}, tal como se observa en la figura \ref{etiqueta_figura6}.
+
+\begin{figure}[H]
+\begin{center}
+\fbox{\includegraphics[width=\textwidth]{Logo/WEAP3}}
+\caption{\textit{Manage Scenarios}.}
+\label{etiqueta_figura6}
+\end{center}
+\end{figure}
+
+En esta sección se crean los escenarios, en función de los cambios que se deseen realizar. En este caso, se desarrollan escenarios de mejoramiento en la eficiencia de conducción de los canales, basados en la conformación por grupos en el modelo. Se configurará como pérdida por conducción, de 0\%; esto representará el revestimiento de los canales en su totalidad.
+
+Para ello, a partir del escenario base, se crea un nuevo escenario correspondiente al revestimiento de canales. En la pantalla Data, se creará automáticamente el escenario para su posterior configuración, (Figura \ref{etiqueta_figura7}).
+
+En dicha pantalla y, en la sección de \textit{Key Assumptions}, se modifica en \textbf{PERDIDAS}, los valores del \% de pérdidas de los canales a revestir en el escenario. Posterior a ello se “corre” el modelo en la sección \textit{Results}, para la visualización de resultados de los distintos parámetros a evaluar. 
+
+\begin{figure}[H]
+\begin{center}
+\fbox{\includegraphics[width=\textwidth]{Logo/WEAP4}}
+\caption{Creación de un nuevo escenario.}
+\label{etiqueta_figura7}
+\end{center}
+\end{figure}
+
+Cada parámetro a evaluar, se analiza en el campo de los resultados, configurando la visualización de la manera más óptima para su comprensión. Es decir, WEAP permite ajustar la visualización en función de la serie temporal, unidades de medida, tipos de gráficos, parámetros a comparar, entre otros. Cada resultado se puede descargar en formato \textit{.XLSX} o \textit{.CSV} para su análisis externo. 
+
+\end{itemize}
 
 \subsection{Componente 1. Actividad 1.4. Validación del protocolo técnico-social de inversión en mejoramiento de la eficiencia en conducción hídrica.}
 
@@ -1036,6 +1220,52 @@ En la campaña de terreno, junto a usuarios de cada canal se valido el área reg
 
 Los resultados obtenidos de las superficie por canal, se puede ver que no existe una gran diferencia entre los polígonos asignados desde gabinete los que posteriormente fueron rectificados desde terreno.
 
+\subsubsection{Componente 1. Actividad 1.4.3. Validación variable modelación hidrológica.}
+
+
+A partir del diagrama unifilar (Figura \ref{etiqueta_figura8}), se puede constatar que los canales a validar, pertenecen a la segunda sección y corresponden en el modelo WEAP al canal CA-25, el cual contiene todos los canales pertenecientes a esta sección.
+
+\begin{figure}[H]
+\begin{center}
+\fbox{\includegraphics[width=\textwidth]{Logo/DiagramaChalinga}}
+\caption{Diagrama Unifilar Junta de Vigilancia del Río Chalinga y sus Afluentes.}
+\label{etiqueta_figura8}
+\end{center}
+\end{figure}
+
+Se actualizaron los datos de acciones y capacidad de porteo a partir de la información levantada a la organización correspondiente (Junta de Vigilancia del Río Chalinga y sus Afluentes), de los canales:
+\begin{itemize}
+
+\item \textbf{Arboleda Grande}, con 98,76 acciones, equivalentes a 119 $L/s$.
+\item \textbf{Chalinga o Cancha Brava}, con 104,93 acciones, equivalentes a 150 $L/s$.
+\item \textbf{Huanque}, con 109,26 acciones, equivalentes a 140 $L/s$.\\
+
+\end{itemize}
+
+Se generó un escenario llamado \textit{Escenario Revestimiento}, el cual contiene la actualización del número de acciones asociada a los derechos nominales sobre el río Chalinga
+y la pérdida por conducción equivalente a 0\% \\
+
+Al correr tal escenario, el modelo muestra como el revestimiento de esta sección del río Chalinga, afecta de manera positiva la cobertura de la demanda agrícola, particularmente los cultivos anuales. Tal efecto muestra un 4\% como promedio de mayor cobertura a lo largo de la serie temporal. Sin embargo, es en los momento de menor disponibilidad hídrica cuando los efectos son mayores, donde la cobertura aumenta en mas de un 10\% en meses de mayor demanda.
+
+\begin{figure}[H]
+\begin{center}
+\fbox{\includegraphics[width=\textwidth]{Logo/Validación1}}
+\caption{Cobertura de la demanda de cultivos anuales (\%). Zona influenciada por los canales de la sección 2 del río Chalinga.}
+\label{etiqueta_figura9}
+\end{center}
+\end{figure}
+
+De igual manera la seguridad de la cobertura de la demanda de esta zona agrícola (cultivos anuales), sostuvo un aumento producto del revestimiento de sus canales a lo largo de la serie temporal. En el escenario base, la demanda fue satisfecha en un 100\%, el 68,5\% de las oportunidades, mientras que en el escenario con revestimiento de canales, la seguridad aumentó a un 77,2\% (Figura \ref{etiqueta_figura10}).
+
+\begin{figure}[H]
+\begin{center}
+\fbox{\includegraphics[width=\textwidth]{Logo/Validación2}}
+\caption{Seguridad en la cobertura de la demanda de cultivos anuales (\%). Zona influenciada por los canales de la sección 2 del río Chalinga.}
+\label{etiqueta_figura10}
+\end{center}
+\end{figure}
+
+Los otros parámetros evaluados no tuvieron diferencias significativas entre ambos escenarios.
 
 
 \end{document}
